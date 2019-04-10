@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Palatino Linotype';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Palatino Linotype Regular'), local('Palatino Linotype Regular'),
+    url('pala.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Palatino Linotype';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Palatino Linotype Bold'), local('Palatino Linotype Bold'),
+    url('palab.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
