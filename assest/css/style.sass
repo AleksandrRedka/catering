@@ -1,0 +1,70 @@
+$screen: 1680px
+$tablet: 992px
+$mobile: 767px
+$mini: 320px
+$landscape: 420px
+///-------My variable--------------------------------
+$fontUb: 'Ubuntu', sans-serif
+$fontFt: 'Palatino Linotype', sans-serif
+$green: #00A651
+$white: #fff
+$black: #000
+/////------------------------------------------------
+body,html, *
+  font-size: 10px
+  color: #000
+  @media screen and (max-width: 1680px)
+    font-size: 8px
+  @media screen and (max-width: 1200px)
+    font-size: 6px
+a
+  cursor: pointer
+  text-decoration: none
+  a:hover
+    text-decoration: none
+button
+  cursor: pointer
+  background-color: #00A651
+  height: 6.66rem
+  width: 6.66rem
+  font-family: $fontUb
+  border-radius: 20px
+  @media screen and (min-width: $mobile)
+    width: auto
+  &>p
+    font-weight: 700
+    color: $white
+    font-size: 2rem
+    line-height: 2.5rem
+h2
+  font-size: 4.33rem
+  font-family: $fontFt
+  color: $black
+  @media screen and (min-width: $mobile)
+    font-size: 7rem
+    line-height: 8.66rem
+    @media screen and (min-width: $tablet)
+      font-size: 5rem
+      line-height: 6.7rem
+
+///-------My variable
+
+/////-------------------------------------------------
+
+.wrapper_main_bg
+  padding: 0 6rem
+  position: absolute
+  width: 100vw
+  height: 100%
+  display: flex
+  @media  screen and (min-width: $tablet)
+    padding: 0 13.33rem
+    @media  screen and (min-width: $tablet)
+      padding: 0 10rem
+.main_bg_col
+  width: 25%
+  border-right: 1px solid #F5F7FB
+  @media  screen and (min-width: $tablet)
+    width: calc(100% / 6)
+  &:first-child
+    b

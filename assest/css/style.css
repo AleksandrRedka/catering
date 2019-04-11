@@ -1,3 +1,90 @@
+body, html, * {
+  font-size: 10px;
+  color: #000;
+}
+@media screen and (max-width: 1680px) {
+  body, html, * {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body, html, * {
+    font-size: 6px;
+  }
+}
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a a:hover {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #00A651;
+  height: 6.66rem;
+  width: 6.66rem;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 20px;
+}
+@media screen and (min-width: 767px) {
+  button {
+    width: auto;
+  }
+}
+button > p {
+  font-weight: 700;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 4.33rem;
+  font-family: "Palatino Linotype", sans-serif;
+  color: #000;
+}
+@media screen and (min-width: 767px) {
+  h2 {
+    font-size: 7rem;
+    line-height: 8.66rem;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  h2 {
+    font-size: 5rem;
+    line-height: 6.7rem;
+  }
+}
+
+.wrapper_main_bg {
+  padding: 0 6rem;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .wrapper_main_bg {
+    padding: 0 13.33rem;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .wrapper_main_bg {
+    padding: 0 10rem;
+  }
+}
+
+.main_bg_col {
+  width: 25%;
+  border-right: 1px solid #F5F7FB;
+}
+@media screen and (min-width: 992px) {
+  .main_bg_col {
+    width: calc(100% / 6);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
