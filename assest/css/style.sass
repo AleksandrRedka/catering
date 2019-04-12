@@ -22,14 +22,15 @@ a
   text-decoration: none
   a:hover
     text-decoration: none
-button
+.btn
   cursor: pointer
   background-color: #00A651
-  height: 6.66rem
-  width: 6.66rem
+  height: 40px
   font-family: $fontUb
   border-radius: 20px
+  border: none
   @media screen and (min-width: $mobile)
+    height: 45px
     width: auto
   &>p
     font-weight: 700
@@ -53,7 +54,10 @@ h2
 
 .wrapper_main_bg
   padding: 0 6rem
-  position: absolute
+  position: fixed
+  z-index: -1
+  top: 0
+  left: 0
   width: 100vw
   height: 100%
   display: flex
@@ -67,4 +71,11 @@ h2
   @media  screen and (min-width: $tablet)
     width: calc(100% / 6)
   &:first-child
-    b
+    border-left: 1px solid #F5F7FB
+
+@import'header'
+@import "main_services"
+@import "main_about_us"
+@import "main_portfolio"
+@import "reviews"
+@import "form"

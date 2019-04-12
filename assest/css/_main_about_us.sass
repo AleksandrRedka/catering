@@ -1,0 +1,81 @@
+.about_us
+  padding: 0 2.5rem
+  padding-top: 5rem
+  padding-bottom: 13.33rem
+  position: relative
+  &_title
+    display: none
+    &_mobile
+      font-size: 4rem
+      line-height: 5rem
+      margin-bottom: 6rem
+      position: relative
+      &:after
+        content: ''
+        width: 50%
+        height: 1px
+        background-color: $black
+        position: absolute
+        top: 50%
+        right: 0%
+
+      @media  screen and (min-width: $tablet)
+        display: none
+  &_subtitle
+    width: 90%
+    font-family: $fontUb
+    font-size: 2.66rem
+    line-height: 4rem
+    margin-bottom: 5rem
+
+  &_img
+    width: 100%
+    position: relative
+    padding-top: 20vh
+    overflow: hidden
+    margin-bottom: 2rem
+    &>img
+      width: 100%
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+  .bg_title
+    font-size: 18rem
+    font-family: $fontUb
+    color: $black
+    opacity: 0.05
+    position: absolute
+    top: -65%
+    right: -6rem
+    width: 45vw
+    overflow: hidden
+    white-space: nowrap
+  &_bg_logo
+    position: absolute
+    width: 40vw
+    left: 6rem
+    bottom: -20%
+    opacity: 0.28
+    transform: rotate(-45deg)
+    &>img
+      width: 100%
+  &_wrapper_info
+    &_text
+      width: 80%
+      height: 16rem
+      overflow: hidden
+      &>p
+        font-size: 2.66rem
+        line-height: 4rem
+        color: #818181
+
+  &_read_more
+    font-family: $fontUb
+    font-size: 2.66rem
+    line-height: 4rem
+    text-decoration: underline
+    color: $black
+
+

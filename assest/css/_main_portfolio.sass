@@ -1,0 +1,39 @@
+.portfolio
+  padding: 0 6rem
+  padding-bottom: 13.3rem
+  &_title
+    text-align: center
+    margin-bottom: 6rem
+
+  &_category
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    overflow: hidden
+    margin: 0rem -6rem
+    padding-left: 6rem
+    margin-bottom: 8.33rem
+    &_item
+      padding: 0 3rem
+      padding-bottom: 2rem
+      font-family: $fontUb
+      font-size: 2rem
+      line-height: 3.66rem
+      white-space: nowrap
+      &:first-child
+        margin-left: 0
+      &_active
+        border-bottom: 2px solid $black
+.portfolio_slider
+  &_wrapper_img
+    padding-top: 75%
+    position: relative
+    overflow: hidden
+    width: 40vw
+    &>img
+      position: absolute
+      top: 50%
+      left: 50%
+      width: auto
+      height: 100%
+      transform: translate(-50%,-50%)

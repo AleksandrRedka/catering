@@ -1,0 +1,59 @@
+.wrapper_form
+  overflow: hidden
+  padding: 6rem
+  width: 100%
+  height: auto
+  position: relative
+  z-index: 1
+  .form_bg
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      width: 100%
+      height: 100%
+      background-color: rgba(255,255,255,0.8)
+    &>img
+      width: 100%
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      z-index: -1
+
+.form
+  position: relative
+  z-index: 2
+  &_title
+    position: relative
+    z-index: 2
+    font-family: $fontUb
+    font-size: 4rem
+    line-height: 5rem
+    color: $green
+    padding-bottom: 3.33rem
+    text-align: center
+    margin-bottom: 8rem
+    &:after
+      content: ''
+      background-color: $green
+      width: 50%
+      height: 2px
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translate(-50%,-50%)
+  &_input
+    width: 100%
+    &>input
+      width: 100%
+      background-color: transparent
+      border: none
+      border-bottom: 1px solid #000
