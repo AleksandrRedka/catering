@@ -1,0 +1,68 @@
+.page_portfolio
+  padding: 0 3.5rem
+  padding-top: 16rem
+  position: relative
+  overflow: hidden
+  &_title
+    text-align: center
+    position: relative
+    margin-bottom: 5rem
+  &_list
+    margin-bottom: 8.33rem
+    &_item
+      font-family: $fontUb
+      font-size: 3rem
+      line-height: 3.66rem
+      color: $black
+      margin-bottom: 2vh
+      position: relative
+      &:last-child
+        margin-bottom: 0
+      &_active
+        &:after
+          content: ''
+          width: 15rem
+          height: 1px
+          background-color: $black
+          position: absolute
+          right: -10%
+          top: 50%
+          transform: translate(0%,-50%)
+.categories
+  padding: 0 3.5rem
+  &_item
+    display: block
+    position: relative
+    margin-bottom: 8.33rem
+    &_img
+      padding-top: 100%
+      width: 100%
+      position: relative
+      overflow: hidden
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: auto
+        height: 100%
+        z-index: 1
+    &_title
+      padding: 1rem 3rem
+      position: absolute
+      //top: 0
+      bottom: 0
+      left: 0
+      background-color: $white
+      width: 70%
+      height: 5rem
+      font-family: $fontUb
+      font-size: 2.66rem
+      line-height: 3.33rem
+      display: flex
+      align-items: center
+      z-index: 2
+
+
+
+

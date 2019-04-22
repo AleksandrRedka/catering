@@ -1,8 +1,9 @@
 .about_us
   padding: 0 2.5rem
-  padding-top: 5rem
+  padding-top: 10rem
   padding-bottom: 13.33rem
   position: relative
+  overflow: hidden
   &_title
     display: none
     &_mobile
@@ -19,8 +20,6 @@
         top: 50%
         right: 0%
 
-      @media  screen and (min-width: $tablet)
-        display: none
   &_subtitle
     width: 90%
     font-family: $fontUb
@@ -41,35 +40,27 @@
       left: 50%
       transform: translate(-50%,-50%)
 
-  .bg_title
-    font-size: 18rem
-    font-family: $fontUb
-    color: $black
-    opacity: 0.05
-    position: absolute
-    top: -65%
-    right: -6rem
-    width: 45vw
-    overflow: hidden
-    white-space: nowrap
   &_bg_logo
+    pointer-events: none
     position: absolute
     width: 40vw
     left: 6rem
-    bottom: -20%
+    bottom: -6rem
     opacity: 0.28
     transform: rotate(-45deg)
-    &>img
+    img
       width: 100%
   &_wrapper_info
     &_text
       width: 80%
       height: 16rem
       overflow: hidden
-      &>p
+      p
         font-size: 2.66rem
         line-height: 4rem
         color: #818181
+      &_open
+        height: auto
 
   &_read_more
     font-family: $fontUb
@@ -77,5 +68,7 @@
     line-height: 4rem
     text-decoration: underline
     color: $black
-
+  &_bg_title
+    left: auto
+    right: -20rem
 

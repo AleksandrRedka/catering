@@ -1,0 +1,54 @@
+.blog
+  padding: 0 3.5rem
+  padding-top: 16rem
+  position: relative
+  overflow: hidden
+  &_title
+    margin-bottom: 5rem
+  &_list_item
+    &_img
+      margin-bottom: 1.5rem
+      img
+        width: 100%
+        height: auto
+
+    &_info
+      margin-bottom: 9.33rem
+    &_title
+      margin-bottom: 1.5rem
+      font-size: 2.66rem
+      line-height: 3.33rem
+      color: $black
+      font-weight: 600
+    &_text
+      font-size: 2.66rem
+      line-height: 3.33rem
+      font-weight: 300
+      font-family: $fontUb
+      margin-bottom: 3.33rem
+    &_read
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+      p
+        font-family: $fontUb
+        line-height: 2.66rem
+        font-size: 2.33rem
+        font-weight: 500
+      &_icon
+        height: 100%
+        width: 20%
+        margin-left: 3rem
+        img
+          width: auto
+          height: 100%
+.row-md-even-reverse
+  @media screen and (min-height: $mobile)
+    &:nth-child(even)
+      flex-direction: row-reverse
+
+
+
+
+

@@ -1,6 +1,8 @@
 .portfolio
   padding: 0 6rem
+  width: 100vw
   padding-bottom: 13.3rem
+  overflow: hidden
   &_title
     text-align: center
     margin-bottom: 6rem
@@ -25,15 +27,99 @@
       &_active
         border-bottom: 2px solid $black
 .portfolio_slider
+  margin: 0 -6rem
   &_wrapper_img
-    padding-top: 75%
+    height: 25vh
+    margin: 0 1rem
     position: relative
     overflow: hidden
-    width: 40vw
+    transition: height 500ms
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: #ffffff
+      opacity: 0.5
+      transition: opacity 500ms 500ms
     &>img
       position: absolute
       top: 50%
       left: 50%
+      transform: translate(-50%,-50%)
       width: auto
       height: 100%
-      transform: translate(-50%,-50%)
+.slick-center
+  .portfolio_slider_wrapper_img
+    height: 35vh
+    transition: height 500ms
+    &:after
+      opacity: 0
+      transition: 100ms
+.slick-track
+  min-height: 35vh
+
+
+.slick_main_portfolio_prev
+  position: absolute
+  bottom: 0
+  left: calc(11rem - 8vh)
+  transform: rotate(180deg)
+  width: 8vh
+  height: 9vh
+  background-color: $black
+  z-index: 50
+  outline: none
+  border: none
+  &:before
+    content: ''
+    width: 50%
+    height: 2px
+    position: absolute
+    background-color: $white
+    top: 35%
+    left: 50%
+    transform: translate(-50%,-50%) rotate(45deg)
+  &:after
+    content: ''
+    width: 50%
+    height: 2px
+    position: absolute
+    background-color: $white
+    top: 65%
+    left: 50%
+    transform: translate(-50%,-50%) rotate(-45deg)
+
+
+.slick_main_portfolio_next
+  position: absolute
+  bottom: 0
+  right: calc(11rem - 8vh)
+  width: 8vh
+  height: 9vh
+  background-color: $black
+  z-index: 50
+  outline: none
+  border: none
+  &:before
+    content: ''
+    width: 50%
+    height: 2px
+    position: absolute
+    background-color: $white
+    top: 35%
+    left: 50%
+    transform: translate(-50%,-50%) rotate(45deg)
+  &:after
+    content: ''
+    width: 50%
+    height: 2px
+    position: absolute
+    background-color: $white
+    top: 65%
+    left: 50%
+    transform: translate(-50%,-50%) rotate(-45deg)
+
+

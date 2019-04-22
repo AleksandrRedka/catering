@@ -29,18 +29,22 @@ a
   font-family: $fontUb
   border-radius: 20px
   border: none
+  outline: none
   @media screen and (min-width: $mobile)
     height: 45px
     width: auto
-  &>p
+  p
     font-weight: 700
     color: $white
     font-size: 2rem
     line-height: 2.5rem
 h2
-  font-size: 4.33rem
+  font-size: 4rem
+  line-height: 5rem
   font-family: $fontFt
   color: $black
+  position: relative
+  font-weight: 300
   @media screen and (min-width: $mobile)
     font-size: 7rem
     line-height: 8.66rem
@@ -48,10 +52,22 @@ h2
       font-size: 5rem
       line-height: 6.7rem
 
-///-------My variable
-
-/////-------------------------------------------------
-
+.bg_title
+  font-size: 18rem
+  font-family: $fontFt
+  color: $black
+  font-weight: 700
+  opacity: 0.05
+  position: absolute
+  //top: -65%
+  //left: 30%
+  text-align: center
+  top: 50%
+  left: -15rem
+  transform: translate(0%,-50%)
+  //width: 55vw
+  //overflow: hidden
+  white-space: nowrap
 .wrapper_main_bg
   padding: 0 6rem
   position: fixed
@@ -79,3 +95,13 @@ h2
 @import "main_portfolio"
 @import "reviews"
 @import "form"
+@import "footer"
+@import "page_blog"
+@import "blog_article"
+@import "page_portfolio"
+@import "portfolio_article"
+@import "page_contacts"
+@import "page_services"
+@import "service"
+@import "merch"
+@import "pop_up"

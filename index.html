@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assest/fonts/ubuntu.css">
     <link rel="stylesheet" href="assest/css/reset.css">
     <link rel="stylesheet" href="assest/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assest/js/slick/slick.css">
     <link rel="stylesheet" href="assest/css/style.css">
     <title>Catering</title>
 </head>
@@ -16,22 +17,29 @@
 <div class="main_wrapper">
     <header>
         <div class="container-fluid">
-            <div class="row d-flex flex-row align-items-center">
-                <div class="col-2 d-block d-md-none">
-                    <div class="menu_burger">
+            <div class="row d-flex flex-row align-items-center ">
+                <div class="col-3 d-block  col-md-6">
+                    <div class=" d-md-none menu_burger menu_burger-js">
                         <p></p>
                     </div>
-                </div>
-                <div class="col-1 col-md-6">
                     <div class="menu d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
-                        <a class="menu_item">УСЛУГИ</a>
-                        <a class="menu_item">ПОРТФОЛИО</a>
-                        <a class="menu_item">БЛОГ</a>
-                        <a class="menu_item">КОНТАКТЫ</a>
-                        <a class="menu_item d-md-none">МEРЧ</a>
+                        <a class="menu_item" href="services.html">УСЛУГИ</a>
+                        <a class="menu_item" href="portfolio.html">ПОРТФОЛИО</a>
+                        <a class="menu_item" href="blog.html">БЛОГ</a>
+                        <a class="menu_item" href="contacts.html">КОНТАКТЫ</a>
+                        <a class="menu_item d-md-none" href="merch.html">МEРЧ</a>
+                        <div class="menu_social d-md-none">
+                            <div class="menu_social_icon">
+                                <img src="assest/img/svg/facebook_black.svg" alt="">
+                            </div>
+                            <div class="menu_social_icon">
+                                <img src="assest/img/svg/002-instagram-black.svg" alt="">
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <div class="col-8 col-md-2">
+                <div class="col-4 col-md-2">
                     <div class="logo_wrapper">
                         <img src="assest/img/svg/photo_2019-01-15_16-06-22.png" alt="">
                     </div>
@@ -136,8 +144,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 d-md-none">
-                    <p class="bg_title">О нас</p>
-                    <h2 class="about_us_title_mobile">О нас</h2>
+                    <h2 class="about_us_title_mobile">О нас
+                        <p class="bg_title about_us_bg_title">О нас</p>
+                    </h2>
                 </div>
                 <div class="col-12 col-md-3 col-lg-4">
                     <div class="about_us_img">
@@ -145,7 +154,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-9 col-lg-8">
-                    <h2 class="about_us_title">О нас</h2>
+                    <h2 class="about_us_title d-none d-md-block">О нас
+                        <p class="bg_title">О нас</p></h2>
                     <div class="about_us_subtitle">
                         <p>Мы занимаем лидирующие позиции на рынке кейтеринга Украины с 2007 года</p>
                     </div>
@@ -162,7 +172,7 @@
                                 организационных вопросов. Команда профессионалов воплотит в жизнь все Ваши идеи и мечты!
                             </p>
                         </div>
-                        <div class="about_us_read_more d-block d-md-none">Читать...</div>
+                        <div class="about_us_read_more read-more-js d-block d-md-none">Читать...</div>
                         <div class="about_us_bg_logo">
                             <img src="assest/img/svg/photo_2019-01-15_16-06-22.png" alt="">
                         </div>
@@ -196,6 +206,11 @@
             <div class="portfolio_slider_item">
                 <div class="portfolio_slider_wrapper_img">
                     <img src="assest/img/portholio%203.jpg" alt="">
+                </div>
+            </div>
+            <div class="portfolio_slider_item">
+                <div class="portfolio_slider_wrapper_img">
+                    <img src="assest/img/portholio%204.jpg" alt="">
                 </div>
             </div>
             <div class="portfolio_slider_item">
@@ -291,14 +306,17 @@
             <div class="form_input">
                 <input id="name" name="name" type="text">
                 <label for="name">Имя</label>
+                <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>
             </div>
             <div class="form_input">
                 <input id="phone" name="tel" type="tel">
                 <label for="phone">Номер телефона</label>
+                <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>
             </div>
             <div class="form_input">
-                <input id="email" name="email" type="email">
+                <input id="email" name="email" type="email" >
                 <label for="email">Email</label>
+                <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>
             </div>
             <button class="btn btn_form" type="submit">Получить консультацию</button>
         </form>
@@ -309,7 +327,7 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 m-md-auto d-flex justify-content-between">
+                <div class="col-12 col-md-6 m-md-auto d-flex justify-content-around">
                     <a href="" class="footer_link">УСЛУГИ</a>
                     <a href="" class="footer_link">ПОРТФОЛИО</a>
                     <a href="" class="footer_link">БЛОГ</a>
@@ -317,12 +335,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="d-none d-md-block col-md-3 d-flex align-items-md-center">
-                    <div class="footer_logo_wrapper">img</div>
-                </div>
                 <div class="col-12 col-md-6 d-flex  align-items-md-center justify-content-center">
-                    <div class="footer_social_icon"><img src="assest/img/svg/001-facebook.svg" alt=""></div>
-                    <div class="footer_social_icon"><img src="assest/img/svg/instagram.svg" alt=""></div>
+                    <div class="footer_social_icon"><img src="assest/img/svg/facebook_black.svg" alt=""></div>
+                    <div class="footer_social_icon"><img src="assest/img/svg/002-instagram-black.svg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -330,7 +345,9 @@
 </div>
 <!-----------------Pop_up--------------------->
 
+<div class="pop_up_form">
 
+</div>
 
 <!------------------Scripts------------------->
 <div class="wrapper_main_bg">

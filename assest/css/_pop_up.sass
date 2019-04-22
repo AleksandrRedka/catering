@@ -1,0 +1,210 @@
+.wrapper_pop_up_product
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+  &_open
+    display: block
+.pop_up_close
+  position: absolute
+  top: 3rem
+  right: 3rem
+  width: 4rem
+  height: 4rem
+  z-index: 201
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: $black
+    width: 120%
+    height: 1px
+    transform: translate(-50%,-50%) rotate(-45deg)
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: $black
+    width: 120%
+    height: 1px
+    transform: translate(-50%,-50%) rotate(45deg)
+.buy_product
+  width: 100%
+  height: auto
+  padding: 5rem 6rem
+  background-color: $white
+  display: flex
+  flex-direction: column
+  &_slider
+    margin-bottom: 5rem
+  &_info
+    &_name
+      font-size: 6.66rem
+      font-family: $fontUb
+      line-height: 8rem
+      color: $black
+      margin-bottom: 5rem
+      position: relative
+      &:after
+        content: ''
+        height: 1px
+        width: 70%
+        max-width: 100%
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $green
+    &_price
+      font-size: 9rem
+      line-height: 11rem
+      color: $green
+      font-family: $fontUb
+      margin-bottom: 8rem
+      p
+        font-size: 5.33rem
+        line-height: 7.66rem
+        color: #818181
+    &_title
+      font-size: 2.66rem
+      color: #818181
+      line-height: 4rem
+      margin-bottom: 1.5rem
+    &_size
+      margin-bottom: 5rem
+    &_full_price
+      display: flex
+      flex-direction: row
+      align-items: flex-end
+
+.product_foto
+  position: relative
+  overflow: hidden
+
+  img
+    width: 100%
+    height: auto
+.check_size
+  width: 7.5rem
+  height: 7.5rem
+  position: relative
+  margin-right: 3rem
+  input
+    display: none
+    &:checked + label
+      background: #E4F5EC
+      //border: 1px solid rgba(0,166,81,0.2)
+      box-shadow: 5px 0 6px 0 rgba(0,166,81,0.2)
+  label
+    position: relative
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2.44rem
+    line-height: 4rem
+    font-family: $fontUb
+    font-weight: 600
+    border-radius: 10px
+    box-shadow: 5px 0 6px 0 rgba(0,0,0,0.11)
+.buy_product_info_quantity
+  margin-bottom: 5rem
+  input
+    outline: none
+    width: 11rem
+    height: 6.66rem
+    border: none
+    border-radius: 10px
+    box-shadow: 5px 0 6px 0 rgba(0,0,0,0.11)
+    font-size: 2.44rem
+    line-height: 4rem
+    font-family: $fontUb
+    font-weight: 600
+    text-align: center
+.full_price_quantity
+  font-size: 2.44rem
+  line-height: 4rem
+  font-family: $fontUb
+  font-weight: 600
+  margin-right: 2rem
+.full_price_sum
+  font-size: 4rem
+  line-height: 5rem
+  font-family: $fontUb
+  font-weight: 600
+  p
+    display: inline-block
+    font-size: 2.66rem
+    line-height: 3rem
+    color: #818181
+
+.wrapper_form_buy
+  background-color: $white
+  z-index: 200
+  position: relative
+  padding: 5rem 6rem
+  &:before
+    content: ''
+    z-index: 201
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(0,166,81,0.1)
+.form_buy
+  position: relative
+  z-index: 203
+  &_title
+    text-align: center
+    font-family: $fontUb
+    font-size: 5.33rem
+    color: $black
+    line-height: 6rem
+    margin-bottom: 5rem
+  &_input
+    z-index: 203
+
+  &_btn
+    width: 100%
+    font-size: 3rem
+    line-height: 4rem
+    color: $white
+    font-family: $fontUb
+.pop_up_thanks
+  display: none
+  width: 100%
+  height: 100%
+  background-color: $white
+  z-index: 200
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  &_open
+    display: flex
+    justify-content: center
+    align-items: center
+  &_text
+    position: relative
+    p
+      font-size: 6rem
+      line-height: 8rem
+      font-family: $fontUb
+      color: $black
+  &_icon
+    position: absolute
+    top: 2rem
+    left: -8rem
+    width: 30vw
+    img
+      width: 100%
+      height: auto
+
+
+
