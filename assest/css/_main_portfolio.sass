@@ -20,6 +20,8 @@
     margin-bottom: 8.33rem
     @media screen and (min-width: $mobile)
       padding-left: 0
+    @media screen and (max-height: 420px)
+      margin-bottom: 5vh
     &_item
       padding: 0 3rem
       padding-bottom: 2rem
@@ -34,6 +36,8 @@
 .portfolio_slider
   margin: 0 -6rem
   height: 35vh
+  @media screen and (max-height: 420px)
+    height: 60vh
   @media screen and (min-width: $mobile)
     margin: 0 -13rem
     height: 45vh
@@ -45,6 +49,8 @@
     transition: height 500ms
     @media screen and (min-width: $mobile)
       height: 35vh
+    @media screen and (max-height: 420px)
+      height: 50vh
     &:after
       content: ''
       width: 100%
@@ -64,6 +70,9 @@
       height: 100%
       min-height: 80%
       transition: height 500ms
+      @media screen and (max-height: 420px)
+        width: 100%
+        height: auto
       //@media screen and (min-width: $mobile)
       //  width: auto
       //  height: auto
@@ -73,6 +82,8 @@
     transition: height 500ms
     @media screen and (min-width: $mobile)
       height: 45vh
+    @media screen and (max-height: 420px)
+      height: 60vh
     &:after
       opacity: 0
       transition: 100ms
