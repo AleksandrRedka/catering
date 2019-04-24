@@ -86,5 +86,21 @@ $(document).ready(
         //         nextArrow: '<button class="slick-review slick-prev slick-shop-next"></button>',
         //     })
         // })()
+        (function () {
+            $('.main_section_slider_img').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.main_section_slider_text'
+            });
+            $('.main_section_slider_text').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.main_section_slider_img',
+                arrows: true,
+                prevArrow: '<button class="slick-review slick-prev slick-main-prev"><img src="assest/img/svg/Symbol9–1.svg" alt=""></button>',
+                nextArrow: '<button class="slick-review slick-next slick-main-next"><img src="assest/img/svg/Symbol9–1.svg" alt=""></button>',
+            });
+        })()
     })()
 );
