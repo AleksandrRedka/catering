@@ -370,6 +370,16 @@ header {
   left: 8rem;
   z-index: 2;
   transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.slick-main-prev img {
+  width: 100%;
+  height: auto;
 }
 
 .slick-main-next {
@@ -378,6 +388,16 @@ header {
   left: calc(6rem + 20vw);
   transform: translate(-50%, -50%) rotate(-180deg);
   z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.slick-main-next img {
+  width: 100%;
+  height: auto;
 }
 
 .services {
