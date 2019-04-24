@@ -307,7 +307,7 @@ header {
 
 .main_section_slider_text_wrapper {
   position: relative;
-  height: 40vh;
+  min-height: 40vh;
 }
 @media screen and (max-width: 350px) {
   .main_section_slider_text_wrapper {
@@ -320,11 +320,11 @@ header {
 }
 
 .slider_text_item {
-  height: 40vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0rem 6rem;
+  padding: 0 6rem;
 }
 @media screen and (max-width: 350px) {
   .slider_text_item {
