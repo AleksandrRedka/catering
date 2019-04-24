@@ -95,10 +95,14 @@ $(document).ready(
                 arrows: false,
                 asNavFor: '.main_section_slider_text',
                 fade: true,
+                autoplay: true,
+                speed: 600,
             });
             $('.main_section_slider_text').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                autoplay: true,
+                speed: 600,
                 asNavFor: '.main_section_slider_img',
                 arrows: true,
                 fade: true,

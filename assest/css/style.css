@@ -331,6 +331,11 @@ header {
     margin-top: 20vh;
   }
 }
+@media screen and (min-width: 767px) {
+  .main_section {
+    padding-left: 13.33rem;
+  }
+}
 
 .slider_img_item {
   width: 100%;
@@ -338,6 +343,11 @@ header {
   margin-bottom: 2rem;
   overflow: hidden;
   position: relative;
+}
+@media screen and (min-width: 767px) {
+  .slider_img_item {
+    height: 70vh;
+  }
 }
 .slider_img_item img {
   position: absolute;
@@ -347,6 +357,12 @@ header {
   width: 100%;
   height: auto;
 }
+@media screen and (min-width: 767px) {
+  .slider_img_item img {
+    width: auto;
+    height: 100%;
+  }
+}
 
 .main_section_slider_text_wrapper {
   position: relative;
@@ -355,6 +371,14 @@ header {
 @media screen and (max-width: 350px) {
   .main_section_slider_text_wrapper {
     height: 45vh;
+  }
+}
+@media screen and (min-width: 767px) {
+  .main_section_slider_text_wrapper {
+    position: absolute;
+    width: 75vw;
+    top: 35vh;
+    left: 0;
   }
 }
 
@@ -373,15 +397,31 @@ header {
     height: 45vh;
   }
 }
+@media screen and (min-width: 767px) {
+  .slider_text_item {
+    padding: 2.5rem 13.33rem 5rem;
+    background-color: #fff;
+    min-height: 35vh;
+  }
+}
 .slider_text_item_head {
   font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   font-size: 3rem;
   line-height: 4rem;
   color: #000;
-  margin-bottom: 3rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
+  max-height: 12rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  .slider_text_item_head {
+    font-size: 4rem;
+    line-height: 5rem;
+    max-height: 20rem;
+  }
 }
 .slider_text_item_desc p {
   font-family: "Ubuntu", sans-serif;
@@ -391,6 +431,11 @@ header {
   color: #818181;
   margin-bottom: 5.66rem;
 }
+@media screen and (min-width: 767px) {
+  .slider_text_item_desc p {
+    line-height: 4rem;
+  }
+}
 .slider_text_item_button {
   position: absolute;
   bottom: 0;
@@ -399,12 +444,23 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+@media screen and (min-width: 767px) {
+  .slider_text_item_button {
+    right: 13.33rem;
+    bottom: 5rem;
+  }
+}
 .slider_text_item_button a {
   width: 40vw;
   font-size: 3rem;
   font-weight: 400;
   line-height: 3.33rem;
   color: #fff;
+}
+@media screen and (min-width: 767px) {
+  .slider_text_item_button a {
+    width: 30vw;
+  }
 }
 
 .slick-main-prev {
@@ -419,6 +475,12 @@ header {
   border: none;
   padding: 0;
   outline: none;
+}
+@media screen and (min-width: 767px) {
+  .slick-main-prev {
+    bottom: 6rem;
+    left: 15rem;
+  }
 }
 .slick-main-prev img {
   position: absolute;
@@ -441,6 +503,12 @@ header {
   border: none;
   padding: 0;
   outline: none;
+}
+@media screen and (min-width: 767px) {
+  .slick-main-next {
+    bottom: 6rem;
+    left: calc(6rem + 20vw);
+  }
 }
 .slick-main-next img {
   position: absolute;
