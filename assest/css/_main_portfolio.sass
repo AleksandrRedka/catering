@@ -3,6 +3,9 @@
   width: 100vw
   padding-bottom: 13.3rem
   overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 13.33rem
+    padding-bottom: 20rem
   &_title
     text-align: center
     margin-bottom: 6rem
@@ -15,6 +18,8 @@
     margin: 0rem -6rem
     padding-left: 6rem
     margin-bottom: 8.33rem
+    @media screen and (min-width: $mobile)
+      padding-left: 0
     &_item
       padding: 0 3rem
       padding-bottom: 2rem
@@ -28,12 +33,18 @@
         border-bottom: 2px solid $black
 .portfolio_slider
   margin: 0 -6rem
+  height: 35vh
+  @media screen and (min-width: $mobile)
+    margin: 0 -13rem
+    height: 45vh
   &_wrapper_img
     height: 25vh
     margin: 0 1rem
     position: relative
     overflow: hidden
     transition: height 500ms
+    @media screen and (min-width: $mobile)
+      height: 35vh
     &:after
       content: ''
       width: 100%
@@ -51,15 +62,23 @@
       transform: translate(-50%,-50%)
       width: auto
       height: 100%
+      min-height: 80%
+      transition: height 500ms
+      //@media screen and (min-width: $mobile)
+      //  width: auto
+      //  height: auto
 .slick-center
   .portfolio_slider_wrapper_img
     height: 35vh
     transition: height 500ms
+    @media screen and (min-width: $mobile)
+      height: 45vh
     &:after
       opacity: 0
       transition: 100ms
 .slick-track
   min-height: 35vh
+
 
 
 .slick_main_portfolio_prev
@@ -73,6 +92,8 @@
   z-index: 50
   outline: none
   border: none
+  @media screen and (min-width: $mobile)
+    left: calc(27rem - 8vh)
   &:before
     content: ''
     width: 50%
@@ -103,6 +124,8 @@
   z-index: 50
   outline: none
   border: none
+  @media screen and (min-width: $mobile)
+    right: calc(27rem - 8vh)
   &:before
     content: ''
     width: 50%

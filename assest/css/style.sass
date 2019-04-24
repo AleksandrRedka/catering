@@ -48,9 +48,12 @@ h2
   @media screen and (min-width: $mobile)
     font-size: 7rem
     line-height: 8.66rem
+    width: 100%
+    text-align: center
     @media screen and (min-width: $tablet)
       font-size: 5rem
       line-height: 6.7rem
+
 
 .bg_title
   font-size: 18rem
@@ -59,15 +62,16 @@ h2
   font-weight: 700
   opacity: 0.05
   position: absolute
-  //top: -65%
-  //left: 30%
   text-align: center
   top: 50%
   left: -15rem
   transform: translate(0%,-50%)
-  //width: 55vw
-  //overflow: hidden
   white-space: nowrap
+  @media screen and (min-width: $mobile)
+    font-size: 40rem
+    line-height: 50rem
+    left: 0
+    width: 100%
 .wrapper_main_bg
   padding: 0 6rem
   position: fixed

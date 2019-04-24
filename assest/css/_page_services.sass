@@ -10,6 +10,8 @@
       padding-top: 25vh
       position: relative
       overflow: hidden
+      @media screen and (min-width: $mobile)
+        padding-top: 21vh
       img
         position: absolute
         top: 50%
@@ -17,6 +19,9 @@
         transform: translate(-50%,-50%)
         width: 100%
         z-index: 1
+        @media screen and (min-width: $mobile)
+          width: auto
+          height: 100%
     &_info
       padding: 1.5rem
       overflow: hidden

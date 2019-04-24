@@ -8,7 +8,10 @@ header
   z-index: 100
   width: 100vw
   transition: background-color 500ms
-
+  @media screen and (min-width: $mobile)
+    padding: 0 13.33rem
+    padding-top: 4.33rem
+    padding-bottom: 4.33rem
 .menu_burger
   position: relative
   width: 10vw
@@ -49,6 +52,14 @@ header
   z-index: 100
   background-color: #fff
   transition: 500ms
+  @media screen and (min-width: $mobile)
+    padding: 0
+    position: static
+    width: auto
+    height: auto
+    background-color: transparent
+    margin-left: -15px
+
   &_item
     font-family: $fontUb
     font-size: 4rem
@@ -56,6 +67,9 @@ header
     color: $black
     margin-bottom: 5vh
     text-align: center
+    @media screen and (min-width: $mobile)
+      margin-bottom: 0
+      font-size: 2.33rem
     &:last-child
       margin-bottom: 0
   &_open
@@ -90,6 +104,7 @@ header
 
 
 .logo_wrapper
+  display: block
   position: relative
   padding-top: 50%
   z-index: 110
@@ -99,6 +114,10 @@ header
     left: 0
     width: auto
     height: 100%
+.header_merch
+  font-size: 2.66rem
+  line-height: 3rem
+  margin-left: -15px
 .header_btn
   opacity: 0.6
   position: absolute
@@ -106,3 +125,7 @@ header
   right: 6rem
   top: 1rem
   width: 40px
+  @media screen and (min-width: $mobile)
+    width: 25vw
+    top: 4rem
+    right: 4rem

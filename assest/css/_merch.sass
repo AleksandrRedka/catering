@@ -3,6 +3,11 @@
   margin-top: 6rem
   padding-top: 10rem
   overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-top: 19rem
+    margin-top: 0
+    margin-bottom: 10rem
   &_bg_title
     left: 0%
     width: 100%
@@ -14,11 +19,17 @@
     margin-bottom: 3.33rem
     position: relative
     overflow: hidden
+    @media screen and (min-width: $mobile)
+      margin-bottom: 3.33rem
+      &:nth-child(odd)
+        margin-right: 15px
     &_img
       width: 100%
       position: relative
       overflow: hidden
       padding-top: 45vh
+      @media screen and (min-width: $mobile)
+        padding-top: 25vh
       img
         width: 100%
         height: auto
@@ -86,8 +97,12 @@
 
   &_form
     background-color: rgba(81,168,0,0.1)
+    form
+      @media screen and (min-width: $mobile)
+        width: 100%
     &_title
       text-align: left
+      color: $black
       &:after
         left: 0
         transform: none

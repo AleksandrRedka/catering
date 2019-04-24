@@ -3,29 +3,59 @@
   padding-top: 16rem
   position: relative
   overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-top: 19rem
+    margin-bottom: 20rem
   &_title
     margin-bottom: 5rem
   &_list_item
     &_img
       margin-bottom: 1.5rem
+      position: relative
+      overflow: hidden
+      padding-top: 60%
+      @media screen and (min-width: $mobile)
+        padding-top: 30%
+        margin-bottom: 4rem
       img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
         width: 100%
         height: auto
 
     &_info
       margin-bottom: 9.33rem
+      @media screen and (min-width: $mobile)
+        margin-bottom: 8.33rem
     &_title
       margin-bottom: 1.5rem
       font-size: 2.66rem
       line-height: 3.33rem
       color: $black
       font-weight: 600
+      @media screen and (min-width: $mobile)
+        font-size: 3rem
+        line-height: 4rem
+        width: 35%
+        margin-right: 5rem
     &_text
-      font-size: 2.66rem
-      line-height: 3.33rem
-      font-weight: 300
-      font-family: $fontUb
-      margin-bottom: 3.33rem
+      @media screen and (min-width: $mobile)
+        width: 60%
+      p
+        font-size: 2.66rem
+        line-height: 3.33rem
+        font-weight: 300
+        font-family: $fontUb
+        margin-bottom: 3.33rem
+        @media screen and (min-width: $mobile)
+          font-size: 3rem
+          line-height: 4rem
+          margin-bottom: 5rem
+          max-height: 16rem
+          overflow: hidden
     &_read
       display: flex
       flex-direction: row
@@ -36,6 +66,7 @@
         line-height: 2.66rem
         font-size: 2.33rem
         font-weight: 500
+        margin-bottom: 0
       &_icon
         height: 100%
         width: 20%
@@ -44,7 +75,7 @@
           width: auto
           height: 100%
 .row-md-even-reverse
-  @media screen and (min-height: $mobile)
+  @media screen and (min-height: $tablet)
     &:nth-child(even)
       flex-direction: row-reverse
 

@@ -1,6 +1,9 @@
 .blog_article
   padding: 0 3.5rem
   padding-top: 16rem
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-top: 19rem
   &_slider
     margin-bottom: 8.33rem
     &_item
@@ -29,12 +32,16 @@
   position: relative
   padding: 5rem 3.5rem
   background-color: rgba(0,166,81,0.1)
+  @media screen and (min-width: $mobile)
+    padding: 8.33rem 11rem
   &_box_title
     position: relative
   &_title
     padding-bottom: 2rem
     margin-bottom: 5rem
     position: relative
+    @media screen and (min-width: $mobile)
+      text-align: left
     &:after
       content: ''
       position: absolute
@@ -43,6 +50,8 @@
       width: 70%
       height: 1px
       background-color: $black
+      @media screen and (min-width: $mobile)
+        width: 25%
   &_bg_logo
     width: 15rem
     height: auto
@@ -51,16 +60,25 @@
     right: -4rem
     opacity: 0.5
     transform: rotate(-30deg)
+    @media screen and (min-width: $mobile)
+      width: 10vw
+      top: 40%
+      right: 40rem
     img
       width: 100%
       height: auto
 
   &_list
     &_item
+      @media screen and (min-width: $mobile)
+        width: 25%
+        position: relative
       &_img
         overflow: hidden
         position: relative
-        height: 13rem
+        padding-top: 30%
+        @media screen and (min-width: $mobile)
+          padding-top: 150%
         img
           position: absolute
           top: 50%
@@ -68,10 +86,19 @@
           width: 100%
           height: auto
           transform: translate(-50%,-50%)
+          @media screen and (min-width: $mobile)
+            width: auto
+            height: 100%
       &_title
         min-height: 7.5rem
         padding: 1rem  2rem
         background-color: #F5F9FD
+        @media screen and (min-width: $mobile)
+          position: absolute
+          bottom: 0
+          left: 0
+          height: 40%
+          width: 100%
         p
           width: 70%
           font-size: 2.33rem
@@ -79,6 +106,8 @@
           font-weight: 300
           line-height: 2.66rem
           color: $black
+          @media screen and (min-width: $mobile)
+            width: 100%
 
         
 

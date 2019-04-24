@@ -3,7 +3,7 @@ $(document).ready(
         (function () {
             $('.portfolio_slider').slick({
                 centerMode: true,
-                centerPadding: '70px',
+                centerPadding: '22vw',
                 dots:false,
                 infinite: true,
                 slidesToShow: 1,
@@ -11,6 +11,20 @@ $(document).ready(
                 arrows: true,
                 prevArrow: '<button class="slick-review slick-prev slick_main_portfolio_prev"></button>',
                 nextArrow: '<button class="slick-review slick-next slick_main_portfolio_next"></button>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            centerPadding: '22vw'
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            centerPadding: '70px'
+                        }
+                    }
+                ],
             })
         })();
         (function () {
