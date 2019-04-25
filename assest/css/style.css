@@ -431,7 +431,7 @@ header {
   color: #818181;
   margin-bottom: 5.66rem;
   overflow: hidden;
-  max-height: 20rem;
+  max-height: 19rem;
 }
 @media screen and (min-width: 767px) {
   .slider_text_item_desc p {
