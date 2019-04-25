@@ -987,6 +987,9 @@ header {
   width: 2rem;
   height: 4rem;
   left: -3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .slick-reviews-prev img {
   width: auto;
@@ -1004,6 +1007,9 @@ header {
   width: 2rem;
   height: 4rem;
   right: -3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .slick-reviews-next img {
   position: absolute;
