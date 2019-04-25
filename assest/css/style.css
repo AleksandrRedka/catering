@@ -935,8 +935,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 .reviews_slider_item_info_num {
   font-size: 5rem;
@@ -956,6 +956,11 @@ header {
   line-height: 3.33rem;
   font-family: "Ubuntu", sans-serif;
   color: #000;
+}
+.reviews_slider button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .reviews_slider_down_wrapper {
@@ -987,9 +992,6 @@ header {
   width: 2rem;
   height: 4rem;
   left: -3rem;
-  background-color: transparent;
-  border: none;
-  outline: none;
 }
 .slick-reviews-prev img {
   width: auto;
@@ -1007,9 +1009,6 @@ header {
   width: 2rem;
   height: 4rem;
   right: -3rem;
-  background-color: transparent;
-  border: none;
-  outline: none;
 }
 .slick-reviews-next img {
   position: absolute;

@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/assest/css/_reviews.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_reviews.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assest/css/_service.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_service.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assest/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle 39.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle 39@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle 40.png" beforeDir="false" />
@@ -41,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assest/css/_reviews.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="285">
+              <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -68,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assest/css/_main_slider.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+            <state relative-caret-position="133">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -145,8 +146,8 @@
         <option value="$PROJECT_DIR$/merch.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assest/js/script.js" />
-        <option value="$PROJECT_DIR$/assest/css/_reviews.sass" />
         <option value="$PROJECT_DIR$/assest/css/_main_slider.sass" />
+        <option value="$PROJECT_DIR$/assest/css/_reviews.sass" />
       </list>
     </option>
   </component>
@@ -251,15 +252,16 @@
       <workItem from="1555311752141" duration="83880000" />
       <workItem from="1555919353430" duration="21000" />
       <workItem from="1555919405614" duration="32000" />
-      <workItem from="1555919454039" duration="51459000" />
+      <workItem from="1555919454039" duration="51930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171735000" />
+    <option name="totallyTimeSpent" value="172206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18097281" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -619,17 +621,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_reviews.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assest/css/_main_services.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
           <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assest/css/_main_slider.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -640,10 +642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_main_slider.sass">
+    <entry file="file://$PROJECT_DIR$/assest/css/_reviews.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="285">
+          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
         </state>
       </provider>
     </entry>
