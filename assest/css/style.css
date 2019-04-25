@@ -339,7 +339,7 @@ header {
 
 .slider_img_item {
   width: 100%;
-  height: 35vh;
+  padding-top: 32vh;
   margin-bottom: 2rem;
   overflow: hidden;
   position: relative;
@@ -414,7 +414,6 @@ header {
   display: flex;
   align-items: center;
   max-height: 12rem;
-  overflow: hidden;
 }
 @media screen and (min-width: 767px) {
   .slider_text_item_head {
