@@ -2,6 +2,8 @@
   margin-top: 10rem
   margin-bottom: 5rem
   padding: 0 3.5rem
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
   &_title
     text-align: center
     margin-bottom: 5rem
@@ -12,6 +14,8 @@
     justify-content: center
     margin-bottom: 3rem
     height: 15vh
+    @media screen and (min-width: $mobile)
+      margin-bottom: 8rem
     &_img
       position: relative
       width: auto
@@ -32,38 +36,52 @@
       line-height: 2.5rem
       font-family: $fontUb
       color: $black
+      @media screen and (min-width: $mobile)
+        font-size: 3rem
+        line-height: 4rem
+
+    &_more
+      @media screen and (min-width: $mobile)
+        width: auto
+        height: auto
+        margin-bottom: 0
+        p
+          @media screen and (min-width: $mobile)
+            margin-right: 7rem
 
 .services_icon_more
+  position: relative
   margin: auto
   height: 15vw
   width: 15vw
   border: 2px solid $green
   margin-bottom: 3rem
-  display: flex
-  justify-content: center
-  align-items: center
-  p
-    width: 40%
-    height: 100%
-    position: relative
-    @media screen and (max-height: 420px)
-      width: 8%
-    &:before
-      content: ''
-      width: 100%
-      height: 2px
-      background-color: $green
-      position: absolute
-      top: 35%
-      right: 0%
-      transform: rotate(45deg)
-    &:after
-      content: ''
-      width: 100%
-      height: 2px
-      background-color: $green
-      position: absolute
-      top: 60%
-      right: 0%
-      transform: rotate(-45deg)
+  @media screen and (min-width: $mobile)
+    height: auto
+    width: auto
+    padding: 3rem
+    border: 2px solid $black
+    margin-bottom: 0
+  &:before
+    content: ''
+    width: 45%
+    height: 2px
+    background-color: $green
+    position: absolute
+    top: 35%
+    right: 50%
+    transform: translate(50%,50%) rotate(45deg)
+    @media screen and (min-width: $mobile)
+      background-color: $black
+  &:after
+    content: ''
+    width: 45%
+    height: 2px
+    background-color: $green
+    position: absolute
+    top: 65%
+    right: 50%
+    transform: translate(50%,50%) rotate(-45deg)
+    @media screen and (min-width: $mobile)
+      background-color: $black
 

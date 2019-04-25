@@ -4,23 +4,31 @@
   overflow: hidden
   position: relative
   @media screen and (min-width: $mobile)
-    padding: 0 8.33rem
+    padding: 0 13.33rem
   &_title
     position: relative
     text-align: center
     margin-bottom: 6rem
+    @media screen and (min-width: $mobile)
+      margin-bottom: 8.33rem
     &_logo
       position: absolute
       top: 0
       left: 8%
       width: 30%
+      @media screen and (min-width: $mobile)
+        width: 20%
+        left: 25%
       img
         width: 100%
         height: auto
 
   &_slider
     &_item
+      position: relative
       margin-bottom: 5rem
+      @media screen and (min-width: $mobile)
+        width: calc(100% / 7)
       &_img
         width: 100%
         height: auto
@@ -28,6 +36,9 @@
         padding-top: 100%
         overflow: hidden
         margin-bottom: 2rem
+        @media screen and (min-width: $mobile)
+          padding-top: 14rem
+          margin-bottom: 0
         img
           position: absolute
           top: 50%
@@ -35,8 +46,16 @@
           transform: translate(-50%,-50%)
           height: 100%
           width: auto
+          @media screen and (min-width: $mobile)
+            width: 100%
+            height: auto
 
       &_info
+        @media screen and (min-width: $mobile)
+          display: none
+          position: absolute
+          top: 0
+          left: 0
         &_num
           font-size: 5rem
           line-height: 6rem
@@ -80,7 +99,9 @@
   width: 2rem
   height: 4rem
   left: -3rem
-
+  @media screen and (min-width: $mobile)
+    bottom: auto
+    top: 50%
   img
     width: auto
     height: 100%
@@ -97,7 +118,9 @@
   width: 2rem
   height: 4rem
   right: -3rem
-
+  @media screen and (min-width: $mobile)
+    bottom: auto
+    top: 50%
   img
     position: absolute
     top: 50%

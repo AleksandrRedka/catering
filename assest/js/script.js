@@ -112,7 +112,7 @@ $(document).ready(
         })();
         // Slider reviews
         (function () {
-            if ($(window).width() < '767') {
+            if ($(window).width() <= '767') {
                 $('.reviews_slider').slick({
                     fade: true,
                     prevArrow: '<button class="slick-review slick-prev slick-reviews-prev"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
@@ -127,8 +127,19 @@ $(document).ready(
                     slidesToScroll: 1,
                     asNavFor: '.reviews_slider',
                     arrows: false,
-                })
+                });
             }
-        })()
+            if ($(window).width() > '767'){
+                $('.reviews_slider').slick({
+                    arrows: true,
+                    prevArrow: '<button class="slick-review slick-prev slick-reviews-prev"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
+                    nextArrow: '<button class="slick-review slick-next slick-reviews-next"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
+                    slidesToShow: 7,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '30rem'
+                });
+            }
+                })()
     })()
 );
