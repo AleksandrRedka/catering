@@ -1,6 +1,8 @@
 .reviews
   padding: 0 6rem
-  margin-bottom: 13.33rem
+  margin-bottom: 6rem
+  overflow: hidden
+  position: relative
   @media screen and (min-width: $mobile)
     padding: 0 8.33rem
   &_title
@@ -51,3 +53,54 @@
           line-height: 3.33rem
           font-family: $fontUb
           color: $black
+.reviews_slider_down_wrapper
+  overflow: hidden
+.reviews_slider_down
+  height: 30vh
+  position: relative
+  &_img
+    position: relative
+    overflow: hidden
+    margin: 0 1rem
+    padding-top: 25vh
+    img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      height: 100%
+      width: auto
+.slick-reviews-prev
+  position: absolute
+  bottom: -13.5vh
+  width: 2rem
+  height: 4rem
+  left: -3rem
+  img
+    width: auto
+    height: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+
+.slick-reviews-next
+  position: absolute
+  bottom: -13.5vh
+  transform: rotate(180deg)
+  width: 2rem
+  height: 4rem
+  right: -3rem
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: auto
+    height: 100%
+
+
+
+
+

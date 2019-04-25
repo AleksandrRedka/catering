@@ -57,6 +57,17 @@ $(document).ready(
             $('.buy-js').click(openShop);
             function openShop() {
                 $('.wrapper_pop_up_product').addClass('wrapper_pop_up_product_open');
+                // slider-pop-up-shop
+                // (function () {
+                //     $('.buy_product_slider').slick({
+                //         infinite: true,
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1,
+                //         arrows:true,
+                //         prevArrow: '<button class="slick-review slick-prev slick-shop-prev"></button>',
+                //         nextArrow: '<button class="slick-review slick-prev slick-shop-next"></button>',
+                //     })
+                // })()
             };
             $('.close-pop-up-js').click(closeShop);
             function closeShop() {
@@ -77,17 +88,6 @@ $(document).ready(
                     ,2000)
             }
         })();
-        // slider-pop-up-shop
-        // (function () {
-        //     $('.buy_product_slider').slick({
-        //         infinite: true,
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1,
-        //         arrows:true,
-        //         prevArrow: '<button class="slick-review slick-prev slick-shop-prev"></button>',
-        //         nextArrow: '<button class="slick-review slick-prev slick-shop-next"></button>',
-        //     })
-        // })()
         (function () {
             $('.main_section_slider_img').slick({
                 slidesToShow: 1,
@@ -96,19 +96,39 @@ $(document).ready(
                 asNavFor: '.main_section_slider_text',
                 fade: true,
                 autoplay: true,
-                speed: 600,
+                speed: 800,
             });
             $('.main_section_slider_text').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                speed: 600,
+                speed: 800,
                 asNavFor: '.main_section_slider_img',
                 arrows: true,
                 fade: true,
                 prevArrow: '<button class="slick-review slick-prev slick-main-prev"><img src="assest/img/svg/Symbol9–1.svg" alt=""></button>',
                 nextArrow: '<button class="slick-review slick-next slick-main-next"><img src="assest/img/svg/Symbol9–1.svg" alt=""></button>',
             });
+        })();
+        // Slider reviews
+        (function () {
+            if ($(window).width() < '767') {
+                $('.reviews_slider').slick({
+                    fade: true,
+                    prevArrow: '<button class="slick-review slick-prev slick-reviews-prev"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
+                    nextArrow: '<button class="slick-review slick-next slick-reviews-next"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    asNavFor: '.reviews_slider_down',
+                });
+                $('.reviews_slider_down').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    asNavFor: '.reviews_slider',
+                    arrows: false,
+                })
+            }
         })()
     })()
 );

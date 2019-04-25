@@ -307,7 +307,7 @@ header {
 }
 
 .header_btn {
-  opacity: 0.6;
+  background-color: rgba(0, 166, 81, 0.6);
   position: absolute;
   z-index: 110;
   right: 6rem;
@@ -831,7 +831,7 @@ header {
 }
 @media screen and (min-width: 767px) {
   .slick_main_portfolio_prev {
-    left: calc(27rem - 8vh);
+    left: calc(22vw - 8vh - 1rem);
   }
 }
 .slick_main_portfolio_prev:before {
@@ -868,7 +868,7 @@ header {
 }
 @media screen and (min-width: 767px) {
   .slick_main_portfolio_next {
-    right: calc(27rem - 8vh);
+    right: calc(22vw - 8vh - 1rem);
   }
 }
 .slick_main_portfolio_next:before {
@@ -894,7 +894,9 @@ header {
 
 .reviews {
   padding: 0 6rem;
-  margin-bottom: 13.33rem;
+  margin-bottom: 6rem;
+  overflow: hidden;
+  position: relative;
 }
 @media screen and (min-width: 767px) {
   .reviews {
@@ -953,6 +955,62 @@ header {
   line-height: 3.33rem;
   font-family: "Ubuntu", sans-serif;
   color: #000;
+}
+
+.reviews_slider_down_wrapper {
+  overflow: hidden;
+}
+
+.reviews_slider_down {
+  height: 30vh;
+  position: relative;
+}
+.reviews_slider_down_img {
+  position: relative;
+  overflow: hidden;
+  margin: 0 1rem;
+  padding-top: 25vh;
+}
+.reviews_slider_down_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+}
+
+.slick-reviews-prev {
+  position: absolute;
+  bottom: -13.5vh;
+  width: 2rem;
+  height: 4rem;
+  left: -3rem;
+}
+.slick-reviews-prev img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slick-reviews-next {
+  position: absolute;
+  bottom: -13.5vh;
+  transform: rotate(180deg);
+  width: 2rem;
+  height: 4rem;
+  right: -3rem;
+}
+.slick-reviews-next img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
 }
 
 .wrapper_form {
@@ -1529,8 +1587,10 @@ header {
   z-index: 2;
 }
 
-.top-md-padding {
-  padding-top: 25rem;
+@media screen and (min-width: 767px) {
+  .top-md-padding {
+    padding-top: 25rem;
+  }
 }
 
 .portfolio_article_main {
@@ -2449,6 +2509,11 @@ header {
   left: 5%;
   width: 20vw;
 }
+@media screen and (max-height: 420px) {
+  .service_reviews_title_logo {
+    width: 13vw;
+  }
+}
 
 .service_reviews_subtitle {
   font-size: 2.66rem;
@@ -2652,8 +2717,6 @@ header {
   height: auto;
   padding: 5rem 6rem;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 .buy_product_slider {
   margin-bottom: 5rem;
@@ -2704,8 +2767,7 @@ header {
 }
 
 .product_foto {
-  position: relative;
-  overflow: hidden;
+  width: 100%;
 }
 .product_foto img {
   width: 100%;
