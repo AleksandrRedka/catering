@@ -8,6 +8,8 @@
     padding: 0 11rem
     padding-top: 20rem
     padding-bottom: 20rem
+    @media screen and (min-width: $tablet)
+      padding: 0 10rem
   &_title
     @media screen and (min-width: $mobile)
       text-align: left
@@ -55,7 +57,7 @@
     overflow: hidden
     margin-bottom: 2rem
     @media screen and (min-width: $mobile)
-      width: 25vw
+      width: calc(100% + 13.33rem)
       padding-top: 0
       height: 100%
       left: -13.33rem
@@ -68,8 +70,6 @@
       @media screen and (min-width: $mobile)
         width: auto
         height: 100%
-
-
   &_bg_logo
     pointer-events: none
     position: absolute

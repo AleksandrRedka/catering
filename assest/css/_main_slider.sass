@@ -5,6 +5,10 @@
     margin-top: 20vh
   @media screen and (min-width: $mobile)
     padding-left: 13.33rem
+    position: relative
+    @media screen and (min-width: $tablet)
+      padding: 0 10rem
+      margin-top: 10rem
 .slider_img_item
   width: 100%
   padding-top: 32vh
@@ -12,6 +16,8 @@
   position: relative
   @media screen and (min-width: $mobile)
     height: 70vh
+    @media screen and (min-width: $tablet)
+      height: calc(100vh - 10rem)
   img
     position: absolute
     top: 50%
@@ -22,6 +28,10 @@
     @media screen and (min-width: $mobile)
       width: auto
       height: 100%
+    @media screen and (min-width: $tablet)
+      width: 100%
+      height: auto
+
 
 .main_section_slider_text_wrapper
   position: relative
@@ -31,8 +41,11 @@
   @media screen and (min-width: $mobile)
     position: absolute
     width: 75vw
-    top: 35vh
+    top: 20vh
     left: 0
+    @media screen and (min-width: $tablet)
+      width: calc(50vw + 10rem)
+      height: 45vh
 .main_section_slider_text
   height: 100%
 .slider_text_item
@@ -46,8 +59,11 @@
     padding: 2.5rem 13.33rem 5rem
     background-color: $white
     min-height: 35vh
+    @media screen and (min-width: $tablet)
+      min-height: 50vh
+      padding: 2rem 5rem 3rem 10rem
   &_head
-    font-family: $fontUb
+    font-family: $fontFt
     font-weight: 600
     font-size: 3rem
     line-height: 3.33rem
@@ -60,6 +76,10 @@
       font-size: 4rem
       line-height: 5rem
       max-height: 20rem
+      @media screen and (min-width: $tablet)
+        font-size: 2.8rem
+        line-height: 3.5rem
+        margin-bottom: 3rem
 
   &_desc
     p
@@ -73,6 +93,9 @@
       max-height: 19rem
       @media screen and (min-width: $mobile)
         line-height: 4rem
+        @media screen and (min-width: $tablet)
+          font-size: 1.8rem
+          line-height: 2.7rem
 
   &_button
     position: absolute
@@ -92,7 +115,10 @@
       color: $white
       @media screen and (min-width: $mobile)
         width: 30vw
-
+        @media screen and (min-width: $tablet)
+          width: 20vw
+          font-size: 1.8rem
+          line-height: 2.4rem
 .slick-main-prev
   position: absolute
   bottom: 0
@@ -108,6 +134,10 @@
   @media screen and (min-width: $mobile)
     bottom: 6rem
     left: 15rem
+    @media screen and (min-width: $tablet)
+      bottom: 1rem
+      left: 10rem
+      transform: none
   img
     position: absolute
     top: 50%
@@ -119,7 +149,7 @@
   position: absolute
   bottom: 0
   left: calc(6rem + 20vw)
-  transform: translate(-50%,-50%) rotate(-180deg)
+  transform: translate(-50%,-50%)
   z-index: 2
   width: 3rem
   height: 3rem
@@ -130,13 +160,38 @@
   @media screen and (min-width: $mobile)
     bottom: 6rem
     left: calc(6rem + 20vw)
+    @media screen and (min-width: $tablet)
+      bottom: 1rem
+      left: calc(10rem + 5vw)
+      transform: none
   img
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%) rotate(-180deg)
     width: 100%
     height: auto
 
+.main_section_icons
+  position: absolute
+  left: 7rem
+  top: 35vh
+  @media screen and (min-width: $tablet)
+    transform: translate(-50%,-50%)
+    left: 5rem
+    top: calc((100vh - 10rem) / 2)
+.main_section_icon
+  display: block
+  width: 3rem
+  height: 3rem
+  margin-bottom: 5rem
+  &:last-child
+    margin-bottom: 0
+  @media screen and (min-width: $tablet)
+    width: 2rem
+    height: 2rem
+  img
+    width: 100%
+    height: auto
 
 

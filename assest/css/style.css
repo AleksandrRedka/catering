@@ -2,12 +2,7 @@ body, html, * {
   font-size: 10px;
   color: #000;
 }
-@media screen and (max-width: 1680px) {
-  body, html, * {
-    font-size: 8px;
-  }
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   body, html, * {
     font-size: 6px;
   }
@@ -144,6 +139,11 @@ header {
     padding-bottom: 4.33rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  header {
+    padding: 2rem 10rem;
+  }
+}
 
 .menu_burger {
   position: relative;
@@ -243,6 +243,12 @@ header {
     margin-bottom: 3vh;
   }
 }
+@media screen and (min-width: 992px) {
+  .menu_item {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+}
 .menu_item:last-child {
   margin-bottom: 0;
 }
@@ -292,6 +298,11 @@ header {
     padding-top: 30%;
   }
 }
+@media screen and (min-width: 992px) {
+  .logo_wrapper {
+    padding-top: 29%;
+  }
+}
 .logo_wrapper img {
   position: absolute;
   top: 0;
@@ -304,6 +315,12 @@ header {
   font-size: 2.66rem;
   line-height: 3rem;
   margin-left: -15px;
+}
+@media screen and (min-width: 992px) {
+  .header_merch {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
 }
 
 .header_btn {
@@ -321,6 +338,17 @@ header {
     right: 4rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .header_btn {
+    width: 20vw;
+    top: 2rem;
+    right: 2rem;
+  }
+  .header_btn p {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
 
 .main_section {
   margin-top: 14vh;
@@ -334,6 +362,13 @@ header {
 @media screen and (min-width: 767px) {
   .main_section {
     padding-left: 13.33rem;
+    position: relative;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .main_section {
+    padding: 0 10rem;
+    margin-top: 10rem;
   }
 }
 
@@ -346,6 +381,11 @@ header {
 @media screen and (min-width: 767px) {
   .slider_img_item {
     height: 70vh;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slider_img_item {
+    height: calc(100vh - 10rem);
   }
 }
 .slider_img_item img {
@@ -362,6 +402,12 @@ header {
     height: 100%;
   }
 }
+@media screen and (min-width: 992px) {
+  .slider_img_item img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .main_section_slider_text_wrapper {
   position: relative;
@@ -376,8 +422,14 @@ header {
   .main_section_slider_text_wrapper {
     position: absolute;
     width: 75vw;
-    top: 35vh;
+    top: 20vh;
     left: 0;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .main_section_slider_text_wrapper {
+    width: calc(50vw + 10rem);
+    height: 45vh;
   }
 }
 
@@ -403,8 +455,14 @@ header {
     min-height: 35vh;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slider_text_item {
+    min-height: 50vh;
+    padding: 2rem 5rem 3rem 10rem;
+  }
+}
 .slider_text_item_head {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Palatino Linotype", sans-serif;
   font-weight: 600;
   font-size: 3rem;
   line-height: 3.33rem;
@@ -421,6 +479,13 @@ header {
     max-height: 20rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slider_text_item_head {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+  }
+}
 .slider_text_item_desc p {
   font-family: "Ubuntu", sans-serif;
   font-size: 2.66rem;
@@ -434,6 +499,12 @@ header {
 @media screen and (min-width: 767px) {
   .slider_text_item_desc p {
     line-height: 4rem;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slider_text_item_desc p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
   }
 }
 .slider_text_item_button {
@@ -462,6 +533,13 @@ header {
     width: 30vw;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slider_text_item_button a {
+    width: 20vw;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
 
 .slick-main-prev {
   position: absolute;
@@ -482,6 +560,13 @@ header {
     left: 15rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slick-main-prev {
+    bottom: 1rem;
+    left: 10rem;
+    transform: none;
+  }
+}
 .slick-main-prev img {
   position: absolute;
   top: 50%;
@@ -495,7 +580,7 @@ header {
   position: absolute;
   bottom: 0;
   left: calc(6rem + 20vw);
-  transform: translate(-50%, -50%) rotate(-180deg);
+  transform: translate(-50%, -50%);
   z-index: 2;
   width: 3rem;
   height: 3rem;
@@ -510,11 +595,51 @@ header {
     left: calc(6rem + 20vw);
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .slick-main-next {
+    bottom: 1rem;
+    left: calc(10rem + 5vw);
+    transform: none;
+  }
+}
 .slick-main-next img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-180deg);
+  width: 100%;
+  height: auto;
+}
+
+.main_section_icons {
+  position: absolute;
+  left: 7rem;
+  top: 35vh;
+}
+@media screen and (min-width: 992px) {
+  .main_section_icons {
+    transform: translate(-50%, -50%);
+    left: 5rem;
+    top: calc((100vh - 10rem) / 2);
+  }
+}
+
+.main_section_icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 5rem;
+}
+.main_section_icon:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) {
+  .main_section_icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.main_section_icon img {
   width: 100%;
   height: auto;
 }
@@ -650,6 +775,11 @@ header {
     padding-bottom: 20rem;
   }
 }
+@media screen and (min-width: 767px) and (min-width: 992px) {
+  .about_us {
+    padding: 0 10rem;
+  }
+}
 @media screen and (min-width: 767px) {
   .about_us_title {
     text-align: left;
@@ -708,7 +838,7 @@ header {
 }
 @media screen and (min-width: 767px) {
   .about_us_img {
-    width: 25vw;
+    width: calc(100% + 13.33rem);
     padding-top: 0;
     height: 100%;
     left: -13.33rem;
@@ -1045,7 +1175,8 @@ header {
 }
 @media screen and (min-width: 767px) {
   .reviews_slider_item {
-    width: calc(100% / 7);
+    margin: 0 1.33rem;
+    transition: padding 500ms;
   }
 }
 .reviews_slider_item_img {
@@ -1107,6 +1238,23 @@ header {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.slick-center .reviews_slider_item {
+  width: 20vw;
+}
+.slick-center .reviews_slider_item_img {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 30vw;
+}
+.slick-center .reviews_slider_item_img img {
+  width: auto;
+  height: 100%;
+}
+.slick-center .reviews_slider_item img {
+  width: auto;
+  height: 100%;
 }
 
 .reviews_slider_down_wrapper {
@@ -1582,6 +1730,7 @@ header {
   .other_articles_list_item {
     width: 25%;
     position: relative;
+    overflow: hidden;
   }
 }
 .other_articles_list_item_img {

@@ -5,6 +5,7 @@
   position: relative
   @media screen and (min-width: $mobile)
     padding: 0 13.33rem
+
   &_title
     position: relative
     text-align: center
@@ -28,7 +29,8 @@
       position: relative
       margin-bottom: 5rem
       @media screen and (min-width: $mobile)
-        width: calc(100% / 7)
+        margin: 0 1.33rem
+        transition: padding 500ms
       &_img
         width: 100%
         height: auto
@@ -76,6 +78,19 @@
       background-color: transparent
       border: none
       outline: none
+.slick-center
+  .reviews_slider_item
+    width: 20vw
+    &_img
+      width: 100%
+      padding-top: 0
+      padding-bottom: 30vw
+      img
+        width: auto
+        height: 100%
+    img
+      width: auto
+      height: 100%
 .reviews_slider_down_wrapper
   overflow: hidden
 .reviews_slider_down

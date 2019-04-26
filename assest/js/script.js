@@ -134,10 +134,10 @@ $(document).ready(
                     arrows: true,
                     prevArrow: '<button class="slick-review slick-prev slick-reviews-prev"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
                     nextArrow: '<button class="slick-review slick-next slick-reviews-next"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
-                    slidesToShow: 7,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                     centerMode: true,
-                    centerPadding: '30rem'
+                    centerPadding: '15rem'
                 });
             }
                 })()
