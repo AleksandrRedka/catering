@@ -9,12 +9,14 @@
     padding-top: 20rem
     padding-bottom: 20rem
     @media screen and (min-width: $tablet)
-      padding: 0 10rem
+      padding: 12rem 10rem
   &_title
     @media screen and (min-width: $mobile)
       text-align: left
       margin-top: 10vh
       margin-bottom: 5rem
+      @media screen and (min-width: $tablet)
+        margin-bottom: 2.5rem
     &:after
       content: ''
       width: 50%
@@ -49,7 +51,10 @@
     margin-bottom: 5rem
     @media screen and (min-width: $mobile)
       font-size: 3rem
-
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
+        margin-bottom: 4rem
   &_img
     width: 100%
     position: relative
@@ -61,6 +66,9 @@
       padding-top: 0
       height: 100%
       left: -13.33rem
+      @media screen and (min-width: $tablet)
+        width: 100%
+        left: 0
     &>img
       width: 100%
       position: absolute
@@ -83,6 +91,9 @@
       left: -12vw
       bottom: -3vh
       z-index: -1
+      @media screen and (min-width: $tablet)
+        z-index: 1
+        left: -24vw
     img
       width: 100%
   &_wrapper_info
@@ -103,6 +114,9 @@
           font-size: 3rem
           line-height: 4rem
           margin-bottom: 2rem
+          @media screen and (min-width: $tablet)
+            font-size: 1.4rem
+            line-height: 2.1rem
 
       &_open
         height: auto
@@ -120,4 +134,8 @@
       font-size: 50rem
       left: 0
       top: 0
+      @media screen and (min-width: $tablet)
+        font-size: 30rem
+        left: (-100vw / 6)
+
 

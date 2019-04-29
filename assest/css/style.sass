@@ -13,8 +13,8 @@ $black: #000
 body,html, *
   font-size: 10px
   color: #000
-  //@media screen and (max-width: 1680px)
-  //  font-size: 8px
+  @media screen and (min-width: 1500px)
+    font-size: 12px
   @media screen and (max-width: 1024px)
     font-size: 6px
 a
@@ -72,6 +72,10 @@ h2
     line-height: 50rem
     left: 0
     width: 100%
+    @media screen and (min-width: $tablet)
+      font-size: 5rem
+      line-height: 6rem
+      margin-bottom: 3rem
 .wrapper_main_bg
   padding: 0 6rem
   position: fixed

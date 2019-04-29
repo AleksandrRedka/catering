@@ -4,6 +4,8 @@
   padding: 0 3.5rem
   @media screen and (min-width: $mobile)
     padding: 0 11rem
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
   &_title
     text-align: center
     margin-bottom: 5rem
@@ -16,11 +18,17 @@
     height: 15vh
     @media screen and (min-width: $mobile)
       margin-bottom: 8rem
+      @media screen and (min-width: $tablet)
+        height: 20vh
+        margin-bottom: 4rem
     &_img
       position: relative
       width: auto
       height: 60%
       margin-bottom: 3rem
+      @media screen and (min-width: $tablet)
+        height: 75%
+        margin-bottom: 0
       img
         position: absolute
         top: 50%
@@ -35,11 +43,14 @@
       font-size: 2rem
       line-height: 2.5rem
       font-family: $fontUb
-      color: $black
+      color: #707070
       @media screen and (min-width: $mobile)
         font-size: 3rem
         line-height: 4rem
-
+        @media screen and (min-width: $tablet)
+          margin-top: 1.5rem
+          font-size: 1.8rem
+          line-height: 2.7rem
     &_more
       @media screen and (min-width: $mobile)
         width: auto
@@ -48,6 +59,9 @@
         p
           @media screen and (min-width: $mobile)
             margin-right: 7rem
+            @media screen and (min-width: $tablet)
+              margin: 0
+              width: 40%
 
 .services_icon_more
   position: relative
@@ -62,6 +76,9 @@
     padding: 3rem
     border: 2px solid $black
     margin-bottom: 0
+    @media screen and (min-width: $tablet)
+      padding: 1.8rem
+      margin: 0
   &:before
     content: ''
     width: 45%

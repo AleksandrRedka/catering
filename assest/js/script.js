@@ -2,25 +2,30 @@ $(document).ready(
     (function () {
         (function () {
             $('.portfolio_slider').slick({
-                centerMode: true,
-                centerPadding: '22vw',
                 dots:false,
                 infinite: true,
-                slidesToShow: 1,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 arrows: true,
                 prevArrow: '<button class="slick-review slick-prev slick_main_portfolio_prev"></button>',
                 nextArrow: '<button class="slick-review slick-next slick_main_portfolio_next"></button>',
                 responsive: [
+
                     {
                         breakpoint: 1024,
                         settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
                             centerPadding: '22vw'
                         }
                     },
                     {
                         breakpoint: 767,
                         settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
                             centerPadding: '70px'
                         }
                     }
@@ -97,6 +102,7 @@ $(document).ready(
                 fade: true,
                 autoplay: true,
                 speed: 800,
+                infinite: true,
             });
             $('.main_section_slider_text').slick({
                 slidesToShow: 1,
@@ -106,6 +112,7 @@ $(document).ready(
                 asNavFor: '.main_section_slider_img',
                 arrows: true,
                 fade: true,
+                infinite: true,
                 prevArrow: '<button class="slick-review slick-prev slick-main-prev"><img src="assest/img/svg/Symbol9–1.svg" alt=""></button>',
                 nextArrow: '<button class="slick-review slick-next slick-main-next"><img src="assest/img/svg/Symbol9–1.svg" alt=""></button>',
             });
@@ -118,6 +125,7 @@ $(document).ready(
                     prevArrow: '<button class="slick-review slick-prev slick-reviews-prev"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
                     nextArrow: '<button class="slick-review slick-next slick-reviews-next"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
                     arrows: true,
+                    infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     asNavFor: '.reviews_slider_down',
@@ -127,6 +135,8 @@ $(document).ready(
                     slidesToScroll: 1,
                     asNavFor: '.reviews_slider',
                     arrows: false,
+                    infinite: true,
+                    fade: false,
                 });
             }
             if ($(window).width() > '767'){
