@@ -8,6 +8,9 @@
     padding-top: 19rem
     margin-top: 0
     margin-bottom: 10rem
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-top: 15rem
   &_bg_title
     left: 0%
     width: 100%
@@ -23,6 +26,9 @@
       margin-bottom: 3.33rem
       &:nth-child(odd)
         margin-right: 15px
+      @media screen and (min-width: $tablet)
+          &:hover>&_info
+            bottom: 0
     &_img
       width: 100%
       position: relative
@@ -30,6 +36,8 @@
       padding-top: 45vh
       @media screen and (min-width: $mobile)
         padding-top: 25vh
+        @media screen and (min-width: $tablet)
+          padding-top: 50vh
       img
         width: 100%
         height: auto
@@ -45,6 +53,9 @@
       background-color: rgba(255,255,255,0.9)
       padding: 1rem 1.66rem
       width: 100%
+      @media screen and (min-width: $tablet)
+        bottom: -30%
+        transition: bottom 500ms
       &_name
         min-width: 40%
         position: relative
@@ -100,9 +111,15 @@
     form
       @media screen and (min-width: $mobile)
         width: 100%
+        @media screen and (min-width: $tablet)
+          width: 40vw
     &_title
       text-align: left
       color: $black
+      @media screen and (min-width: $tablet)
+        width: 40vw
+        margin: auto
+        margin-bottom: 5rem
       &:after
         left: 0
         transform: none

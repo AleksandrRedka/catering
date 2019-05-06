@@ -1,9 +1,25 @@
 .services_list
   padding: 0 3.5rem
   padding-top: 16rem
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-top: 19rem
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-top: 15rem
   &_item
     width: 100%
     position: relative
+    &:hover>&_info
+      opacity: 1
+      @media screen and (min-width: $tablet)
+        max-height: 70%
+        height: auto
+        transition: max-height 500ms
+        &>.services_list_item_text
+          margin-top: 2rem
+          transition: margin-bottom 200ms
+
     &_img
       width: 100%
       height: auto
@@ -12,6 +28,8 @@
       overflow: hidden
       @media screen and (min-width: $mobile)
         padding-top: 21vh
+        @media screen and (min-width: $tablet)
+          padding-top: 45vh
       img
         position: absolute
         top: 50%
@@ -29,6 +47,15 @@
       height: 7rem
       max-height: 30rem
       background-color: #F5F9FD
+      @media screen and (min-width: $tablet)
+        z-index: 2
+        position: absolute
+        bottom: 0
+        left: 0
+        height: auto
+        max-height: 8rem
+        transition: max-height 500ms
+        padding: 1.5rem 4rem
     &_title
       font-family: $fontFt
       font-weight: 400
@@ -36,4 +63,34 @@
       line-height: 5rem
       margin-bottom: 2rem
       color: $black
+      @media screen and (min-width: $tablet)
+        font-size: 2.4rem
+        line-height: 3rem
+        margin-bottom: 0
+    &_text
+      margin-top: 4rem
+      margin-bottom: 1rem
+      transition: margin-top 200ms 200ms
+      p
+        font-size: 1.4rem
+        line-height: 2.1rem
+        color: $black
+        font-family: $fontUb
+    &_more
+      @media screen and (min-width: $tablet)
+        justify-content: space-between
+        text-align: center
+      p
+        font-size: 1.4rem
+        line-height: 2.1rem
+        color: $black
+        font-weight: 700
+        display: flex
+        align-items: center
+      &_icon
+        position: relative
+        overflow: hidden
+        img
+          height: 100%
+          width: auto
 
