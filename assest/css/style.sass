@@ -30,6 +30,7 @@ a
   border-radius: 20px
   border: none
   outline: none
+  font-weight: 400
   @media screen and (min-width: $mobile)
     height: 45px
     width: auto
@@ -54,7 +55,12 @@ h2
       font-size: 5rem
       line-height: 6.7rem
 
-
+.main_wrapper
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  section
+    flex-grow: 1
 .bg_title
   font-size: 18rem
   font-family: $fontFt

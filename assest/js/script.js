@@ -1,5 +1,6 @@
 $(document).ready(
     (function () {
+        // Portfolio Slider
         (function () {
             $('.portfolio_slider').slick({
                 dots:false,
@@ -32,6 +33,7 @@ $(document).ready(
                 ],
             })
         })();
+        // Burger menu mobil
         (function () {
             $('.menu_burger-js').click(function () {
                 $('.menu').toggleClass('menu_open');
@@ -39,6 +41,7 @@ $(document).ready(
                 $('.menu_burger').toggleClass('menu_burger_open')
             })
         })();
+        // Read More
         (function () {
             $('.read-more-js').click(function () {
                 $('.about_us_wrapper_info_text').toggleClass('about_us_wrapper_info_text_open');
@@ -46,6 +49,7 @@ $(document).ready(
                 else{$(this).text('Читать...')}
             })
         })();
+        // backgroundColor header
         (function () {
             $(document).on('scroll', function () {
                 let lengthScroll = $(document).scrollTop();
@@ -62,17 +66,6 @@ $(document).ready(
             $('.buy-js').click(openShop);
             function openShop() {
                 $('.wrapper_pop_up_product').addClass('wrapper_pop_up_product_open');
-                // slider-pop-up-shop
-                // (function () {
-                //     $('.buy_product_slider').slick({
-                //         infinite: true,
-                //         slidesToShow: 1,
-                //         slidesToScroll: 1,
-                //         arrows:true,
-                //         prevArrow: '<button class="slick-review slick-prev slick-shop-prev"></button>',
-                //         nextArrow: '<button class="slick-review slick-prev slick-shop-next"></button>',
-                //     })
-                // })()
             };
             $('.close-pop-up-js').click(closeShop);
             function closeShop() {
@@ -93,13 +86,41 @@ $(document).ready(
                     ,2000)
             }
         })();
+        // pop up call
+        (function () {
+            $('.form-call-js').click(openForm);
+            function openForm() {
+                $('body').css('overflow','hidden');
+                $('.wrapper_pop_up_call').addClass('wrapper_pop_up_call_open');
+            }
+            $('.close-form-call-js').click(closeForm);
+            function closeForm() {
+                $('body').css('overflow','auto');
+                $('.wrapper_pop_up_call').removeClass('wrapper_pop_up_call_open');
+            }
+            $('.form-post-js').click(postForm);
+            function postForm(e) {
+                e.preventDefault();
+                $('.pop_up_call_title').css('display','none');
+                $('.call_form').css('display','none');
+                $('.form-thanks-js').addClass('form_thanks_open');
+                setTimeout(function () {
+                        closeForm();
+                        $('.pop_up_call_title').css('display','block');
+                        $('.call_form').css('display','block');
+                        $('.form-thanks-js').removeClass('form_thanks_open');
+                    }
+                    ,2000)
+            }
+        })();
+        // Slick slider Main
         (function () {
             $('.main_section_slider_img').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
                 asNavFor: '.main_section_slider_text',
-                fade: true,
+                // fade: true,
                 autoplay: true,
                 speed: 800,
                 infinite: true,
@@ -150,6 +171,28 @@ $(document).ready(
                     centerPadding: '15rem'
                 });
             }
-                })()
+                })();
+        // pop-up-calc
+        (function () {
+            $('.calc-js').click(calcEvent);
+            function calcEvent() {
+                $('.wrapper_pop_up_calc').addClass('wrapper_pop_up_calc_open');
+            }
+            $('.close-calc-js').click(closeCalc);
+            function closeCalc() {
+                $('.wrapper_pop_up_calc').removeClass('wrapper_pop_up_calc_open');
+            }
+        })();
+        //input range on pop-up-calc
+        (function() {
+            $('#quantity').on('input',range);
+            function range() {
+                let maxValue = $('#quantity').attr('max');
+                let value = $('#quantity').val();
+                let val = (value / maxValue * 100);
+                $('#quantity').css('background','-webkit-linear-gradient(left,#00A651 0%,#00A651 '+val+'%,#EBEBEB  '+val+'%, #EBEBEB 100% )');
+                $('.calc_quantity_check_number').html('<p>'+value+'/<span>'+maxValue+'</span></p>')
+            }
+        })()
     })()
 );

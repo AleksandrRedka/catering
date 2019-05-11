@@ -11,32 +11,32 @@
     @media screen and (min-width: $tablet)
       padding: 5rem 10rem 13rem
 
-  .form_bg
-    width: 100%
-    height: 100%
+.form_bg
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  &:before
+    content: ''
     position: absolute
     top: 0
     left: 0
-    &:before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      z-index: 1
+    z-index: 1
+    width: 100%
+    height: 100%
+    background-color: rgba(255,255,255,0.8)
+  img
+    width: auto
+    height: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: -1
+    @media screen and (min-width: $tablet)
       width: 100%
-      height: 100%
-      background-color: rgba(255,255,255,0.8)
-    img
-      width: auto
-      height: 100%
-      position: absolute
-      top: 50%
-      left: 50%
-      transform: translate(-50%,-50%)
-      z-index: -1
-      @media screen and (min-width: $tablet)
-        width: 100%
-        height: auto
+      height: auto
 
 .form
   position: relative
@@ -85,20 +85,25 @@
       border: none
       border-bottom: 1px solid #000
       outline: none
+      font-family: $fontUb
+      font-weight: 400
       font-size: 3rem
-      line-height: 3rem
+      line-height: 5rem
       color: $black
-      text-indent: 2rem
-      &:placeholder-shown + label
-        opacity: 0
-      &:invalid
-        border-bottom: 1px solid #E20047
-      &:valid+.form_input_property
-          opacity: 1
+      text-indent: 5rem
+      @media screen and (min-width: $tablet)
+        font-size: 1.8rem
+        line-height: 2.7rem
+        text-indent: 2rem
+      //&:placeholder-shown + label
+      //  opacity: 0
+      //&:invalid
+      //  border-bottom: 1px solid #E20047
+      //&:valid+.form_input_property
+      //    opacity: 1
     label
-      opacity: 1
       position: absolute
-      top: -2rem
+      top: -3rem
       left: 0
       font-family: $fontUb
       font-weight: 300
@@ -107,8 +112,9 @@
       color: $black
       pointer-events: none
       @media screen and (min-width: $tablet)
-        font-size: 2rem
-        line-height: 3rem
+        top: -2rem
+        font-size: 1.8rem
+        line-height: 2.7rem
     &_property
       opacity: 0
       height: 80%

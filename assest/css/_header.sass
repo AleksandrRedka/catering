@@ -100,6 +100,19 @@ header
       font-size: 1.6rem
       line-height: 1.8rem
       font-weight: 400
+      position: relative
+      &:after
+        content: ""
+        width: 0
+        height: 2px
+        background-color: $green
+        position: absolute
+        bottom: -3px
+        left: 5%
+        transition: width 500ms
+      &:hover
+        &:after
+          width: 90%
     &:last-child
       margin-bottom: 0
   &_open
@@ -155,6 +168,19 @@ header
   @media screen and (min-width: $tablet)
     font-size: 1.6rem
     line-height: 1.8rem
+    position: relative
+    &:after
+      content: ""
+      width: 0
+      height: 2px
+      background-color: $green
+      position: absolute
+      bottom: -3px
+      left: 5%
+      transition: width 500ms
+    &:hover
+      &:after
+        width: 100%
 .header_btn
   background-color: rgba(0,166,81,0.6)
   position: absolute

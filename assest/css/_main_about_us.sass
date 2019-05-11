@@ -99,8 +99,10 @@
   &_wrapper_info
     &_text
       width: 80%
-      height: 16rem
+      max-height: 16rem
+      height: auto
       overflow: hidden
+      transition: max-height 500ms
       @media screen and (min-width: $mobile)
         overflow: auto
         height: auto
@@ -119,7 +121,8 @@
             line-height: 2.1rem
 
       &_open
-        height: auto
+        max-height: 80rem
+
 
   &_read_more
     font-family: $fontUb

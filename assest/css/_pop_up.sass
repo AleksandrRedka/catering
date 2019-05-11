@@ -1,6 +1,7 @@
 .wrapper_pop_up_product
   display: none
-  position: absolute
+  position: fixed
+  overflow: scroll
   top: 0
   left: 0
   width: 100%
@@ -9,12 +10,16 @@
   &_open
     display: block
 .pop_up_close
+  cursor: pointer
   position: absolute
-  top: 3rem
-  right: 3rem
+  top: 1.5rem
+  right: 1.5rem
   width: 4rem
   height: 4rem
   z-index: 201
+  @media screen and (min-width: $mobile)
+    top: 3.33rem
+    right: 3.33rem
   &:before
     content: ''
     position: absolute
@@ -199,11 +204,352 @@
   &_icon
     position: absolute
     top: 2rem
-    left: -8rem
+    left: -15vw
     width: 30vw
     img
       width: 100%
       height: auto
+
+//POP_UP_CALL
+.wrapper_pop_up_call
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+  background-color: rgba(255,255,255,0.95)
+  &_open
+    display: flex
+.pop_up_call
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+  display: flex
+  align-items: center
+  @media screen and (min-width: $tablet)
+    width: 80%
+    height: 90%
+.call_form
+  width: 100%
+.form_thanks
+  display: none
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  color: $green
+  font-size: 4.8rem
+  line-height: 6rem
+  font-family: $fontUb
+  font-weight: 600
+  z-index: 2
+  &_open
+    display: flex
+
+
+
+//POP UP CALC
+
+
+
+.wrapper_pop_up_calc
+  position: fixed
+  top: 0
+  left: 0
+  overflow: scroll
+  display: none
+  width: 100%
+  height: 100%
+  z-index: 200
+  &_open
+    display: block
+.pop_up_calc
+  z-index: 200
+  position: relative
+  overflow: hidden
+.choice_box
+  padding: 5rem 6rem
+  background-color: $white
+.calc_header
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+.choice_event
+  width: calc(50% - 1rem)
+  margin-bottom: 1.5rem
+  input
+    display: none
+    &:checked + label
+      background-color: #E4F5EC
+      //border: 1px solid rgba(0,166,81,0.2)
+      box-shadow: 5px 0 6px 0 rgba(0,166,81,0.2)
+  label
+    padding: 2rem 3rem
+    position: relative
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2.33rem
+    line-height: 3.5rem
+    font-family: $fontUb
+    color: $black
+    font-weight: 600
+    border-radius: 10px
+    box-shadow: 5px 0 6px 0 rgba(0,0,0,0.11)
+    background-color: $white
+  &:last-child
+    width: 100%
+    margin-bottom: 0
+.calc_title
+  padding: 0 9rem
+  margin-top: 8.33rem
+  margin-bottom: 15rem
+  display: flex
+  flex-direction: column
+  width: 100%
+  align-items: center
+  h3
+    font-family: $fontUb
+    font-size: 4rem
+    line-height: 5rem
+    color: $black
+    padding-left: 25%
+    position: relative
+    font-weight: 600
+    &:before
+      content: ''
+      width: 20%
+      height: 1px
+      background-color: $green
+      position: absolute
+      top: 50%
+      left: 10%
+      transform: translate(-50%,-50%)
+.calc_subtitle
+  font-size: 3rem
+  line-height: 2.7rem
+  font-family: $fontUb
+  color: $black
+.calc_quantity
+  margin-bottom: 8.33rem
+  &_title
+    font-size: 2.66rem
+    font-weight: 400
+    line-height: 2.4rem
+    color: $black
+    font-family: $fontUb
+    margin-bottom: 3.33rem
+  &_check
+    position: relative
+    &_number
+      padding: 1rem 2rem
+      border-radius: 10px
+      border: 1px solid #EBEBEB
+      position: absolute
+      top: -8rem
+      right: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      p
+        font-family: $fontUb
+        font-size: 2.66rem
+        line-height: 3rem
+        color: #818181
+        span
+          font-family: $fontUb
+          font-size: 2.33rem
+          color: #818181
+
+    input[type='range']
+      -webkit-appearance: none
+      width: 100%
+      outline: none
+      background: -webkit-linear-gradient(left,#00A651 0%,#00A651 20%,#EBEBEB 20%, #EBEBEB 100%)
+    input[type='range']::-webkit-slider-thumb
+      -webkit-appearance: none
+      height: 4.5rem
+      width: 4.5rem
+      margin-top: -2rem
+      border-radius: 4.5rem
+      background: #818181
+      cursor: pointer
+    input[type='range']::-moz-range-thumb
+      -moz-appearance: none
+      height: 4.5rem
+      width: 4.5rem
+      margin-top: -2rem
+      border-radius: 4.5rem
+      background: #818181
+      cursor: pointer
+    input[type=range]:focus
+      outline: none
+    //input[type=range]::-ms-track
+    //  outline: none
+    //  width: 100%
+    //  cursor: pointer
+    //  background: transparent
+    //  border-color: transparent
+    //  color: transparent
+    //  height: 2px
+    //  background: -ms-linear-gradient(left,#00A651 0%,#00A651 20%, #EBEBEB 20%, #EBEBEB 100% )
+    input[type=range]::-webkit-slider-runnable-track
+      width: 100%
+      height: 2px
+      //background: -webkit-linear-gradient(left, #00A651 0%,#00A651 20%,#EBEBEB 20%, #EBEBEB 100% )
+      cursor: pointer
+      outline: none
+    input[type=range]::-moz-range-track
+      outline: none
+      width: 100%
+      height: 2px
+      background: -moz-linear-gradient(left,#00A651 0%,#00A651 20%,#EBEBEB  20%, #EBEBEB 100% )
+      cursor: pointer
+
+
+.calc_extra
+  &_title
+    font-size: 2.66rem
+    font-weight: 400
+    line-height: 2.4rem
+    color: $black
+    font-family: $fontUb
+    margin-bottom: 3.33rem
+.choice_extra_services
+  margin-bottom: 8.33rem
+  .choice_extra
+    margin-bottom: 1.5rem
+    &:last-child
+      margin-bottom: 0
+    input
+      display: none
+      &:checked + label
+        border: 1px solid $green
+    label
+      padding: 2rem 3rem
+      position: relative
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      font-size: 2.66rem
+      line-height: 4rem
+      font-family: $fontUb
+      color: #818181
+      font-weight: 400
+      border-radius: 10px
+      background-color: $white
+      border: 1px solid #EBEBEB
+.full_price
+  position: relative
+  padding: 5rem 6rem
+  background-color: rgb(229,246,238)
+  &:before
+    position: absolute
+    content: ""
+    width: calc(100% - 12rem)
+    height: 1px
+    top: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $green
+  &_title
+    font-size: 3rem
+    line-height: 4.5rem
+    font-family: $fontUb
+    color: $black
+    font-weight: 600
+    margin-bottom: 3.33rem
+.price_person
+  width: 100%
+  padding: 5rem 0
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  background: rgb(168,255,120)
+  background: -moz-linear-gradient(left, rgb(168,255,120) 0%, rgb(120,255,214) 100%)
+  background: -webkit-linear-gradient(left, rgb(168,255,120) 0%, rgb(120,255,214) 100%)
+  background: linear-gradient(to right, rgb(168,255,120) 0%, rgb(120,255,214) 100%)
+  border-radius: 10px
+  font-family: $fontUb
+  font-weight: 400
+  color: $white
+  font-size: 3rem
+  line-height: 3rem
+  margin-bottom: 8.33rem
+  &_value
+    font-family: $fontUb
+    font-weight: 400
+    color: $white
+    font-size: 8.33rem
+    line-height: 8rem
+    margin-right: 1.5rem
+
+.full_price_option
+  margin-bottom: 8.33rem
+  .option
+    margin-bottom: 4rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &_title
+      font-size: 2.33rem
+      font-family: $fontUb
+      line-height: 4rem
+      color: #818181
+    &_value
+      display: flex
+      text-align: center
+      justify-content: center
+      font-size: 2.66rem
+      line-height: 4rem
+      color: $black
+      font-family: $fontUb
+      font-weight: 500
+      span
+        font-weight: 400
+        margin-left: 1rem
+    &_sum
+      &_title
+        font-family: $fontUb
+        font-weight: 400
+        font-size: 3rem
+        line-height: 4.5rem
+        color: #818181
+      &_value
+        display: flex
+        text-align: center
+        justify-content: center
+        font-size: 3rem
+        line-height: 4.5rem
+        color: $black
+        font-family: $fontUb
+        font-weight: 500
+        span
+          font-weight: 400
+          margin-left: 1rem
+.full_price_btn
+  button
+    width: 100%
+    color: $white
+    font-size: 3rem
+    line-height: 4.5rem
+
+
+
+
+
+
+
+
+
 
 
 

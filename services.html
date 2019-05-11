@@ -29,12 +29,12 @@
                         <a class="menu_item" href="contacts.html">КОНТАКТЫ</a>
                         <a class="menu_item d-md-none" href="merch.html">МEРЧ</a>
                         <div class="menu_social d-md-none">
-                            <div class="menu_social_icon">
+                            <a href="#" class="menu_social_icon">
                                 <img src="assest/img/svg/facebook_black.svg" alt="">
-                            </div>
-                            <div class="menu_social_icon">
+                            </a>
+                            <a href="#" class="menu_social_icon">
                                 <img src="assest/img/svg/002-instagram-black.svg" alt="">
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -210,10 +210,10 @@
                         </div>
                         <div class="services_list_item_info">
                             <div class="services_list_item_title">
-                                 Доставка
+                                Доставка
                             </div>
                             <div class="services_list_item_text d-none d-lg-flex">
-                                 <p>Мероприятие со свободным выбором блюд и приемом пищи стоя.</p>
+                                <p>Мероприятие со свободным выбором блюд и приемом пищи стоя.</p>
                             </div>
                             <div class="services_list_item_more d-none d-lg-flex">
                                 <p>Читать больше</p>
@@ -230,25 +230,66 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 m-md-auto d-flex justify-content-around">
+                <div class="col-12 col-md-12 col-lg-8 offset-lg-2 m-md-auto d-flex justify-content-around justify-content-md-between">
                     <a href="" class="footer_link">УСЛУГИ</a>
                     <a href="" class="footer_link">ПОРТФОЛИО</a>
                     <a href="" class="footer_link">БЛОГ</a>
                     <a href="" class="footer_link">КОНТАКТЫ</a>
+                    <div class="d-none d-md-flex footer_btn form-call-js"><p>ОСТАВИТЬ ЗАЯВКУ</p></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 d-flex  align-items-md-center justify-content-center">
-                    <div class="footer_social_icon"><img src="assest/img/svg/facebook_black.svg" alt=""></div>
-                    <div class="footer_social_icon"><img src="assest/img/svg/002-instagram-black.svg" alt=""></div>
+                    <a href="#" class="footer_social_icon"><img src="assest/img/svg/facebook_black.svg" alt=""></a>
+                    <a href="#" class="footer_social_icon"><img src="assest/img/svg/002-instagram-black.svg" alt=""></a>
+
                 </div>
             </div>
         </div>
     </footer>
 </div>
 <!-----------------Pop_up--------------------->
-
-
+<div class="wrapper_pop_up_call justify-content-md-center align-items-md-center">
+    <div class="pop_up_call">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form_title pop_up_call_title">
+                        Оставить заявку
+                    </div>
+                </div>
+                <div class="col-12  col-md-8 offset-md-2 col-lg-4 offset-lg-4">
+                    <form class="form call_form" action="#" method="post">
+                        <div class="form_input call_form_input">
+                            <input id="name" name="name" type="text">
+                            <label for="name">Имя</label>
+                            <!--                <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>-->
+                        </div>
+                        <div class="form_input call_form_input">
+                            <input id="phone" name="tel" type="tel">
+                            <label for="phone">Номер телефона</label>
+                            <!--                <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>-->
+                        </div>
+                        <div class="form_input call_form_input">
+                            <input id="email" name="email" type="email">
+                            <label for="email">Email</label>
+                            <!--                <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>-->
+                        </div>
+                        <button class="btn btn_form form-post-js" type="submit">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="form_thanks form-thanks-js">
+            Спасибо!
+        </div>
+        <div class="pop_up_close close-form-call-js">
+        </div>
+        <div class="form_bg">
+            <img src="assest/img/footer.jpg" alt="">
+        </div>
+    </div>
+</div>
 <!------------------Scripts------------------->
 <div class="wrapper_main_bg">
     <div class="main_bg_col"></div>
