@@ -193,6 +193,10 @@ $(document).ready(
                 $('#quantity').css('background','-webkit-linear-gradient(left,#00A651 0%,#00A651 '+val+'%,#EBEBEB  '+val+'%, #EBEBEB 100% )');
                 $('.calc_quantity_check_number').html('<p>'+value+'/<span>'+maxValue+'</span></p>')
             }
+        })();
+        // Slider select Categories
+        (function () {
+
         })()
     })()
 );
