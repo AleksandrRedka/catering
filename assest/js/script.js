@@ -31,7 +31,39 @@ $(document).ready(
                         }
                     }
                 ],
-            })
+            });
+        })();
+        //Gallery Slider
+        (function () {
+            $('.gallery_slider').slick({
+                dots:false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: '<button class="slick-review slick-prev slick_main_gallery_prev"></button>',
+                nextArrow: '<button class="slick-review slick-next slick_main_gallery_next"></button>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            centerPadding: '22vw'
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            centerPadding: '70px'
+                        }
+                    }
+                ],
+            });
         })();
         // Burger menu mobil
         (function () {
@@ -168,7 +200,23 @@ $(document).ready(
                     slidesToShow: 5,
                     slidesToScroll: 1,
                     centerMode: true,
-                    centerPadding: '15rem'
+                    centerPadding: '40rem',
+                    responsive: [
+
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                arrows: true,
+                                prevArrow: '<button class="slick-review slick-prev slick-reviews-prev"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
+                                nextArrow: '<button class="slick-review slick-next slick-reviews-next"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                centerPadding: '30rem',
+                                centerMode: true,
+
+                            }
+                        },
+                ],
                 });
             }
                 })();
@@ -177,10 +225,14 @@ $(document).ready(
             $('.calc-js').click(calcEvent);
             function calcEvent() {
                 $('.wrapper_pop_up_calc').addClass('wrapper_pop_up_calc_open');
+                // $('.main_wrapper').addClass('main_wrapper_open');
+                $('body').css('overflow','hidden');
             }
             $('.close-calc-js').click(closeCalc);
             function closeCalc() {
                 $('.wrapper_pop_up_calc').removeClass('wrapper_pop_up_calc_open');
+                // $('.main_wrapper').css('display','block');
+                $('body').css('overflow','auto');
             }
         })();
         //input range on pop-up-calc
@@ -196,7 +248,16 @@ $(document).ready(
         })();
         // Slider select Categories
         (function () {
-
+        })();
+        // Calc-Form
+        (function () {
+            $('.full-price-next-js').click(function () {
+                    $('.wrapper_calc_form').css('right','0%')
+                }
+            );
+            $('.full-price-return-js').click(function () {
+                $('.wrapper_calc_form').css('right','-100%')
+            })
         })()
     })()
 );

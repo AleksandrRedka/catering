@@ -43,8 +43,12 @@
         overflow: hidden
         margin-bottom: 2rem
         @media screen and (min-width: $mobile)
-          padding-top: 14rem
+          padding-top: 0
+          padding-bottom: 20rem
           margin-bottom: 0
+          @media screen and (min-width: $tablet)
+            padding-bottom: 15rem
+            padding-top: 0
         img
           position: absolute
           top: 50%
@@ -82,19 +86,16 @@
       background-color: transparent
       border: none
       outline: none
-.slick-center
-  .reviews_slider_item
-    width: 20vw
-    &_img
-      width: 100%
-      padding-top: 0
-      padding-bottom: 30vw
-      img
-        width: auto
-        height: 100%
-    img
-      width: auto
-      height: 100%
+  //.slick-center
+  //  width: 30vw
+  //  .reviews_slider_item
+  //    width: 20vw
+  //    &_img
+  //      width: 100%
+  //      padding-bottom: 20rem
+  //      img
+  //        width: auto
+  //        height: 100%
 .reviews_slider_down_wrapper
   overflow: hidden
 .reviews_slider_down

@@ -630,35 +630,62 @@
                 </div>
             </div>
         </div>
-        <div class="full_price">
-            <div class="full_price_title">Стоимость на персону:</div>
-            <div class="price_person">
-                <div class="price_person_value">600</div>
-                грн
+        <div class="wrapper_full_price">
+            <div class="full_price">
+                <div class="full_price_title">Стоимость на персону:</div>
+                <div class="price_person">
+                    <div class="price_person_value">600</div>
+                    грн
+                </div>
+                <div class="full_price_option">
+                    <div class="option">
+                        <div class="option_title">Количество человек:</div>
+                        <div id="quantity_person" class="option_value">100 <span>чел</span></div>
+                    </div>
+                    <div class="option">
+                        <div class="option_title">Стоимость за человека:</div>
+                        <div id="prise_one_person" class="option_value">600 <span>грн</span></div>
+                    </div>
+                    <div class="option">
+                        <div class="option_title">Дополнительно:</div>
+                        <div id="price_extra" class="option_value">300<span>грн</span></div>
+                    </div>
+                    <div class=" option option_sum">
+                        <div class="option_sum_title">Общая стоимость:</div>
+                        <div id="price_sum" class="option_sum_value">90000<span>грн</span></div>
+                    </div>
+                </div>
+                <div class="full_price_btn">
+                    <button class="btn full-price-next-js">ДАЛЕЕ</button>
+                </div>
             </div>
-            <div class="full_price_option">
-                <div class="option">
-                    <div class="option_title">Количество человек:</div>
-                    <div id="quantity_person" class="option_value">100 <span>грн</span></div>
+            <div class="wrapper_calc_form">
+                <div class="form_title calc_form_title">Сделать заказ</div>
+                <form class="form calc_form" action="#" method="post">
+                    <div class="form_input calc_form_input">
+                        <input id="calc-name" name="name" type="text" >
+                        <label for="calc-name">Имя :</label>
+                        <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>
+                    </div>
+                    <div class="form_input calc_form_input">
+                        <input id="calc-phone" name="tel" type="tel">
+                        <label for="calc-phone">Телефон :</label>
+                        <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>
+                    </div>
+                    <div class="form_input calc_form_input">
+                        <input id="calc-email" name="email" type="email">
+                        <label for="calc-email">Email :</label>
+                        <div class="form_input_property"><img src="assest/img/svg/properly.svg" alt=""></div>
+                    </div>
+                    <button class="btn btn_form calc_form_btn" type="submit">Заказать</button>
+                </form>
+                <div class="wrapper_calc_btn_return">
+                    <button class="btn calc_btn_return full-price-return-js">Назад</button>
                 </div>
-                <div class="option">
-                    <div class="option_title">Стоимость за человека:</div>
-                    <div id="prise_one_person" class="option_value">600 <span>грн</span></div>
-                </div>
-                <div class="option">
-                    <div class="option_title">Дополнительно:</div>
-                    <div id="price_extra" class="option_value">300<span>грн</span></div>
-                </div>
-                <div class=" option option_sum">
-                    <div class="option_sum_title">Общая стоимость:</div>
-                    <div id="price_sum" class="option_sum_value">90000<span>грн</span></div>
-                </div>
-            </div>
-            <div class="full_price_btn">
-                <button class="btn">ЗАКАЗАТЬ</button>
             </div>
         </div>
-        <div class="pop_up_close close-calc-js">
+
+        <div class="pop_up_close pop_up_close_calc close-calc-js">
         </div>
     </div>
 </div>

@@ -59,7 +59,7 @@
             background-color: $black
             @media screen and (min-width: $tablet)
               width: 2vw
-.portfolio_slider
+.gallery_slider
   margin: 0 -6rem
   height: 35vh
   @media screen and (max-height: 420px)
@@ -104,7 +104,7 @@
         width: 100%
         height: auto
 .slick-center
-  .portfolio_slider_wrapper_img
+  .gallery_slider_wrapper_img
     height: 35vh
     transition: height 500ms
     @media screen and (min-width: $mobile)
@@ -119,7 +119,7 @@
 
 
 
-.slick_main_portfolio_prev
+.slick_main_gallery_prev
   position: absolute
   bottom: 0
   left: calc(11rem - 8vh)
@@ -155,7 +155,7 @@
     transform: translate(-50%,-50%) rotate(-45deg)
 
 
-.slick_main_portfolio_next
+.slick_main_gallery_next
   position: absolute
   bottom: 0
   right: calc(11rem - 8vh)
@@ -168,7 +168,7 @@
   @media screen and (min-width: $mobile)
     right: calc(22vw - 8vh - 1rem)
     @media screen and (min-width: $tablet)
-      right: 0
+      right: 1rem
   &:before
     content: ''
     width: 50%
