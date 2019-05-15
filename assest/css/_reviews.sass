@@ -29,12 +29,17 @@
         height: auto
 
   &_slider
+    @media screen and (min-width: $mobile)
+      min-height: 45rem
+      display: flex
+      align-items: flex-end
     &_item
       position: relative
       margin-bottom: 5rem
       @media screen and (min-width: $mobile)
         margin: 0 1.33rem
         transition: padding 500ms
+
       &_img
         width: 100%
         height: auto
@@ -46,6 +51,8 @@
           padding-top: 0
           padding-bottom: 20rem
           margin-bottom: 0
+          transition: padding-bottom 500ms
+          z-index: 2
           @media screen and (min-width: $tablet)
             padding-bottom: 15rem
             padding-top: 0
@@ -56,46 +63,79 @@
           transform: translate(-50%,-50%)
           height: 100%
           width: auto
-          @media screen and (min-width: $mobile)
-            width: 100%
-            height: auto
 
       &_info
         @media screen and (min-width: $mobile)
-          display: none
+          display: block
+          width: 0
+          overflow: hidden
           position: absolute
           top: 0
-          left: 0
+          left: 100%
+          opacity: 0
+          transition: right 500ms 300ms, opacity 300ms 300ms
+          z-index: 1
         &_num
           font-size: 5rem
           line-height: 6rem
           font-family: $fontUb
           color: $black
+          @media screen and (min-width: $mobile)
+            display: none
         &_name
           font-size: 4rem
           line-height: 4rem
           font-family: $fontUb
           color: $black
           margin-bottom: 1.5rem
+          @media screen and (min-width: $mobile)
+            margin-top: 1.5rem
         &_text
           font-size: 2.66rem
           line-height: 3.33rem
           font-family: $fontUb
           color: $black
+          @media screen and (min-width: $mobile)
+            font-size: 2.33rem
     button
       background-color: transparent
       border: none
       outline: none
-  //.slick-center
-  //  width: 30vw
-  //  .reviews_slider_item
-  //    width: 20vw
-  //    &_img
-  //      width: 100%
-  //      padding-bottom: 20rem
-  //      img
-  //        width: auto
-  //        height: 100%
+  .slick-center
+    @media screen and (min-width: $mobile)
+      min-width: 40rem
+      transition: min-height 500ms
+    .reviews_slider_item
+      width: 20vw
+      @media screen and (min-width: $mobile)
+        width: 100%
+        margin: 0
+      &_img
+        width: 100%
+        padding-bottom: 20rem
+        @media screen and (min-width: $mobile)
+          padding-bottom: 45rem
+          padding-top: 0
+          transition: padding-bottom 500ms
+        img
+          width: auto
+          height: 100%
+          @media screen and (min-width: $mobile)
+            width: 100%
+            height: auto
+      &_info
+        @media screen and (min-width: $mobile)
+          width: 150%
+          left: calc(100% + 3.33rem)
+          opacity: 1
+  .slick-track
+    @media screen and (min-width: $mobile)
+      position: relative
+      left: -45rem
+      display: flex
+      flex-direction: row
+      align-items: flex-end
+
 .reviews_slider_down_wrapper
   overflow: hidden
 .reviews_slider_down
@@ -121,7 +161,10 @@
   left: -3rem
   @media screen and (min-width: $mobile)
     bottom: auto
-    top: 50%
+    top: 75%
+    left: -6rem
+    width: 4rem
+    height: 6rem
   img
     width: auto
     height: 100%
@@ -139,8 +182,11 @@
   height: 4rem
   right: -3rem
   @media screen and (min-width: $mobile)
+    width: 4rem
+    height: 6rem
     bottom: auto
-    top: 50%
+    top: 75%
+    right: -6rem
 
   img
     position: absolute
@@ -149,6 +195,7 @@
     transform: translate(-50%,-50%)
     width: auto
     height: 100%
+
 
 
 

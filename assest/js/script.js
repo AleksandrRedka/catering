@@ -211,7 +211,7 @@ $(document).ready(
                                 nextArrow: '<button class="slick-review slick-next slick-reviews-next"><img src="assest/img/svg/Symbol15–7.svg" alt=""></button>',
                                 slidesToShow: 2,
                                 slidesToScroll: 1,
-                                centerPadding: '30rem',
+                                centerPadding: '28rem',
                                 centerMode: true,
 
                             }
