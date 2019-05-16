@@ -219,6 +219,7 @@
     height: 45vh
     @media screen and (min-width: $tablet)
       margin: 0 -15px
+      min-height: 50vh
   &_wrapper_img
     height: 25vh
     margin: 0 1rem
@@ -239,8 +240,6 @@
       background-color: #ffffff
       opacity: 0.5
       transition: opacity 500ms 500ms
-      @media screen and (min-width: $tablet)
-        background-color: transparent
     &>img
       position: absolute
       top: 50%
@@ -253,21 +252,43 @@
       @media screen and (max-height: 420px)
         width: 100%
         height: auto
-.slick-center
-  .portfolio_slider_wrapper_img
-    height: 35vh
-    transition: height 500ms
+  .slick-track
+    min-height: 35vh
     @media screen and (min-width: $mobile)
-      height: 45vh
-    @media screen and (max-height: 420px)
-      height: 60vh
-    &:after
-      opacity: 0
-      transition: 100ms
-.slick-track
-  min-height: 35vh
-  @media screen and (min-width: $mobile)
-    min-height: 0
+      max-height: 50vh
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+  .slick-active
+    @media screen and (min-width: $tablet)
+      max-width: 16vw
+      min-width: 16vw
+      transition: min-width 500ms
+    .portfolio_slider_wrapper_img
+      height: 50vh
+
+
+  .slick-current
+    @media screen and (min-width: $tablet)
+      min-width: 37vw
+    .portfolio_slider_wrapper_img
+      height: 35vh
+      transition: height 500ms
+      @media screen and (min-width: $mobile)
+        height: 45vh
+        @media screen and (min-width: $tablet)
+          height: 50vh
+      @media screen and (max-height: 420px)
+        height: 60vh
+      img
+        width: auto
+        height: 100%
+      &:after
+        opacity: 0
+        transition: 100ms
+
+
+
 
 
 
@@ -285,8 +306,10 @@
   @media screen and (min-width: $mobile)
     left: calc(22vw - 8vh - 1rem)
     @media screen and (min-width: $tablet)
+      width: 7rem
+      height: 8rem
       left: auto
-      right: calc(8vh + 3rem)
+      right: calc(12vh + 3rem)
   &:before
     content: ''
     width: 50%
@@ -320,7 +343,9 @@
   @media screen and (min-width: $mobile)
     right: calc(22vw - 8vh - 1rem)
     @media screen and (min-width: $tablet)
-      right: 1rem
+      width: 7rem
+      height: 8rem
+      right: 0
   &:before
     content: ''
     width: 50%

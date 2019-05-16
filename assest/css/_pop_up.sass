@@ -55,6 +55,7 @@
     overflow: scroll
     box-shadow: 5px 10px 30px 0 rgba(0,0,0,0.15)
     @media screen and (min-width: $tablet)
+      overflow: auto
       width: 90%
       display: flex
       justify-content: space-between
@@ -382,6 +383,7 @@
   z-index: 200
   @media screen and (min-width: $mobile)
     background-color: rgba(255,255,255,0.9)
+
   &_open
     display: block
     @media screen and (min-width: $mobile)
@@ -399,6 +401,7 @@
     @media screen and (min-width: $tablet)
       width: 75%
       display: flex
+      overflow: hidden
       flex-direction: row
       padding-top: 5.4rem
 .choice_box

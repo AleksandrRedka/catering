@@ -5,7 +5,7 @@
   position: relative
   @media screen and (min-width: $mobile)
     padding: 0 13.33rem
-
+    margin-bottom: 16.66rem
   &_title
     position: relative
     text-align: center
@@ -30,16 +30,14 @@
 
   &_slider
     @media screen and (min-width: $mobile)
-      min-height: 45rem
-      display: flex
-      align-items: flex-end
+      position: relative
     &_item
       position: relative
       margin-bottom: 5rem
       @media screen and (min-width: $mobile)
-        margin: 0 1.33rem
-        transition: padding 500ms
-
+        margin: 0
+        transition: width 500ms
+        width: 15vw
       &_img
         width: 100%
         height: auto
@@ -49,12 +47,13 @@
         margin-bottom: 2rem
         @media screen and (min-width: $mobile)
           padding-top: 0
-          padding-bottom: 20rem
+          //height: 15vh
           margin-bottom: 0
-          transition: padding-bottom 500ms
           z-index: 2
+          min-height: 15vh
+          transition: min-height 500ms
           @media screen and (min-width: $tablet)
-            padding-bottom: 15rem
+            padding-bottom: 15vh
             padding-top: 0
         img
           position: absolute
@@ -63,6 +62,9 @@
           transform: translate(-50%,-50%)
           height: 100%
           width: auto
+          img
+            width: auto
+            height: 100%
 
       &_info
         @media screen and (min-width: $mobile)
@@ -101,41 +103,31 @@
       background-color: transparent
       border: none
       outline: none
-  .slick-center
-    @media screen and (min-width: $mobile)
-      min-width: 40rem
-      transition: min-height 500ms
-    .reviews_slider_item
-      width: 20vw
-      @media screen and (min-width: $mobile)
-        width: 100%
-        margin: 0
-      &_img
-        width: 100%
-        padding-bottom: 20rem
-        @media screen and (min-width: $mobile)
-          padding-bottom: 45rem
-          padding-top: 0
-          transition: padding-bottom 500ms
-        img
-          width: auto
-          height: 100%
-          @media screen and (min-width: $mobile)
-            width: 100%
-            height: auto
-      &_info
-        @media screen and (min-width: $mobile)
-          width: 150%
-          left: calc(100% + 3.33rem)
-          opacity: 1
-  .slick-track
-    @media screen and (min-width: $mobile)
+  .owl-stage-outer
+    height: 30vh
+    overflow: hidden
+    position: relative
+    .owl-stage
       position: relative
-      left: -45rem
+      width: 100%
+      height: 30vh
       display: flex
       flex-direction: row
       align-items: flex-end
-
+    .review_active
+        .reviews_slider_item
+          width: 30vw
+          &_img
+            //height: 30vh
+            min-height: 30vh
+            img
+              width: auto
+              height: 100%
+          &_info
+            @media screen and (min-width: $mobile)
+              width: 150%
+              left: calc(100% + 3.33rem)
+              opacity: 1
 .reviews_slider_down_wrapper
   overflow: hidden
 .reviews_slider_down
@@ -160,18 +152,19 @@
   height: 4rem
   left: -3rem
   @media screen and (min-width: $mobile)
-    bottom: auto
-    top: 75%
-    left: -6rem
-    width: 4rem
-    height: 6rem
+    bottom: 20%
+    left: -7rem
+    width: 5rem
+    height: 5rem
+    padding: 0
   img
-    width: auto
-    height: 100%
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
+    width: auto
+    height: 100%
+    @media screen and (min-width: $mobile)
 
 
 .slick-reviews-next
@@ -182,12 +175,11 @@
   height: 4rem
   right: -3rem
   @media screen and (min-width: $mobile)
-    width: 4rem
-    height: 6rem
-    bottom: auto
-    top: 75%
-    right: -6rem
-
+    bottom: 20%
+    right: -7rem
+    width: 5rem
+    height: 5rem
+    padding: 0
   img
     position: absolute
     top: 50%
@@ -195,6 +187,7 @@
     transform: translate(-50%,-50%)
     width: auto
     height: 100%
+
 
 
 
