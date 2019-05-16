@@ -220,20 +220,26 @@ $(document).ready(
         })();
         //Select Active class in Reviews Slider
         (function () {
-            function addClassActive(){
+            function addClassActive() {
                 let slidesActive = $('.reviews_slider').find('div.active:first');
                 slidesActive.addClass('review_active');
             }
+
             addClassActive();
-            // owl = $('#owl-carousel');
+            // owl = $('.owl-carousel');
             // owl.owlCarousel({onInitialized: carouselInitialized});
             // function carouselInitialized(event) {
-                $('.review_change').click(function () {
-                    $('.review_active').removeClass('review_active');
-                    $('.reviews_slider').find('.owl-stage').css('left','16vw');
-                    addClassActive();
-                });
-            // }
+            $('.slick-reviews-next').click(function () {
+                $('.reviews_slider').find('.owl-stage').css('left', '16vw');
+                $('.review_active').removeClass('review_active');
+                addClassActive();
+            });
+            $('.slick-reviews-prev').click(function () {
+                $('.reviews_slider').find('.owl-stage').css('left', '-16vw');
+                $('.review_active').removeClass('review_active');
+                addClassActive();
+            });
+            // };
         })();
         // pop-up-calc
         (function () {
@@ -255,13 +261,13 @@ $(document).ready(
         })();
         //input range on pop-up-calc
         (function () {
-            $('#quantity').on('input', range);
+            $('#quantity-persons').on('input', range);
 
             function range() {
-                let maxValue = $('#quantity').attr('max');
-                let value = $('#quantity').val();
+                let maxValue = $('#quantity-persons').attr('max');
+                let value = $('#quantity-persons').val();
                 let val = (value / maxValue * 100);
-                $('#quantity').css('background', '-webkit-linear-gradient(left,#00A651 0%,#00A651 ' + val + '%,#EBEBEB  ' + val + '%, #EBEBEB 100% )');
+                $('#quantity-persons').css('background', '-webkit-linear-gradient(left,#00A651 0%,#00A651 ' + val + '%,#EBEBEB  ' + val + '%, #EBEBEB 100% )');
                 $('.calc_quantity_check_number').html('<p>' + value + '/<span>' + maxValue + '</span></p>')
             }
         })();
@@ -277,6 +283,15 @@ $(document).ready(
             $('.full-price-return-js').click(function () {
                 $('.wrapper_calc_form').css('right', '-100%')
             })
-        })()
-    })()
-);
+        })();
+        // Calc Sum Product
+        (function () {
+            $('#quantity').on('blur',function () {
+                let quantityProduct = $('#quantity').val();
+                let priceProduct = 570;
+                let sumPriseProduct = Number(quantityProduct) * Number(priceProduct);
+                $('.price-product-js').html('x' +quantityProduct+'');
+                $('.sum-product-js').html('-' +sumPriseProduct+ '<p>грн</p>')
+            });
+        })();
+    }));

@@ -1484,6 +1484,7 @@ header {
   outline: none;
 }
 .reviews .owl-stage-outer {
+  width: calc(75vw + 30px);
   height: 30vh;
   overflow: hidden;
   position: relative;
@@ -4723,6 +4724,7 @@ header {
   .form_buy_title {
     font-size: 8.33rem;
     font-weight: 500;
+    margin-bottom: 10rem;
   }
 }
 @media screen and (min-width: 767px) and (min-width: 960px) {
