@@ -204,7 +204,8 @@ $(document).ready(
                 });
             }
             if ($(window).width() > '767') {
-                $('.reviews_slider').owlCarousel({
+                const sliderReviews = $('.reviews_slider');
+                sliderReviews.owlCarousel({
                         nav: true,
                         margin: 10,
                         items: 4,
@@ -215,7 +216,7 @@ $(document).ready(
                             "<button class=\"review_change slick-next slick-reviews-next\"><img src=\"assest/img/svg/Symbol15–7.svg\" alt=\"\"></button>"
                         ],
                     }
-                )
+                );
             }
         })();
         //Select Active class in Reviews Slider
@@ -230,12 +231,12 @@ $(document).ready(
             // owl.owlCarousel({onInitialized: carouselInitialized});
             // function carouselInitialized(event) {
             $('.slick-reviews-next').click(function () {
-                $('.reviews_slider').find('.owl-stage').css('left', '16vw');
+                $('.reviews_slider').find('.owl-stage').addClass('reviews_slider_next');
                 $('.review_active').removeClass('review_active');
                 addClassActive();
             });
             $('.slick-reviews-prev').click(function () {
-                $('.reviews_slider').find('.owl-stage').css('left', '-16vw');
+                $('.reviews_slider').find('.owl-stage').addClass('reviews_slider_prev');
                 $('.review_active').removeClass('review_active');
                 addClassActive();
             });
@@ -286,10 +287,11 @@ $(document).ready(
         })();
         // Calc Sum Product
         (function () {
-            $('#quantity').on('blur',function () {
+            $('#quantity').change( function () {
                 let quantityProduct = $('#quantity').val();
-                let priceProduct = 570;
-                let sumPriseProduct = Number(quantityProduct) * Number(priceProduct);
+                let priceProduct = $('.buy_product_info_price').text();
+                let priceProductNumber=parseInt(priceProduct);
+                let sumPriseProduct = Number(quantityProduct) * Number(priceProductNumber);
                 $('.price-product-js').html('x' +quantityProduct+'');
                 $('.sum-product-js').html('-' +sumPriseProduct+ '<p>грн</p>')
             });
