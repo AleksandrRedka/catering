@@ -1,0 +1,582 @@
+.portfolio_article_main
+  padding: 0 6rem
+  padding-top: 16rem
+  @media screen and (min-width: $mobile)
+    padding: 0 13.33rem
+    padding-top: 13rem
+    overflow: hidden
+    position: relative
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-top: 10rem
+      margin-bottom: 2rem
+      padding-bottom: 10rem
+  &_img
+    position: relative
+    overflow: hidden
+    height: 30vh
+    margin: 0 calc(-6rem - 15px)
+    margin-bottom: 4rem
+    @media screen and (min-width: $mobile)
+      width: calc(20vw + 13rem)
+      padding-top: calc(80vh - 13rem)
+      margin: 0
+      position: absolute
+      top: 0
+      left: -15rem
+      @media screen and (min-width: $tablet)
+        width: calc(100% + 10rem)
+        left: -10rem
+        padding-top: calc(100vh - 10rem)
+    img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 100%
+      height: auto
+      z-index: 1
+      @media screen and (min-width: $mobile)
+        width: auto
+        height: 100%
+    &_second
+      position: absolute
+      right: -35%
+      top: -15%
+      padding-top: 35vh
+      width: 30vw
+      overflow: hidden
+      @media screen and (min-width: $tablet)
+        right: -85%
+        top: -15%
+        padding-top: 50vh
+
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: auto
+        height: 100%
+  &_title
+    width: 100%
+    position: absolute
+    top: -11rem
+    left: 0
+    padding: 1.5rem 2rem
+    background-color: $white
+    font-size: 3.66rem
+    line-height: 5rem
+    font-family: $fontFt
+    color: $black
+    text-align: center
+    z-index: 2
+    font-weight: 600
+    @media screen and (min-width: $mobile)
+      padding: 0
+      padding-top: 30vh
+      position: static
+      text-align: left
+      font-size: 7rem
+      line-height: 10rem
+      @media screen and (min-width: 1030px)
+        padding-top: 20vh
+        font-size: 4.8rem
+        line-height: 6rem
+        margin-bottom: 3rem
+
+
+  &_text
+    p
+      font-size: 2.66rem
+      font-family: $fontFt
+      font-weight: 400
+      line-height: 3.33rem
+      color: $black
+      margin-bottom: 1.5rem
+      @media screen and (min-width: 1030px)
+        font-size: 1.6rem
+        line-height: 2.1rem
+        font-weight: 300
+        margin-bottom: 3.5rem
+      &:last-child
+        margin-bottom: 5rem
+        @media screen and (min-width: $mobile)
+          margin-bottom: 20rem
+          @media screen and (min-width: $tablet)
+            margin-bottom: 5rem
+
+  &_button
+    @media screen and (min-width: $mobile)
+    button
+      width: 100%
+      font-size: 3rem
+      font-family: $fontFt
+      font-weight: 400
+      color: $white
+      margin-bottom: 10rem
+      @media screen and (min-width: $mobile)
+        width: 70%
+        margin-bottom: 14.5rem
+        @media screen and (min-width: 1030px)
+          font-size: 1.8rem
+          line-height: 2.4rem
+    &_logo
+      position: absolute
+      bottom: 8rem
+      left: -3rem
+      width: 20%
+      height: 5rem
+      @media screen and (min-width: $mobile)
+        left: 2rem
+        @media screen and (min-width: $tablet)
+          left: -5rem
+          bottom: 1rem
+      img
+        width: 100%
+        height: auto
+
+.portfolio_article_question
+  padding: 0 6rem
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    overflow: hidden
+    position: relative
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-bottom: 8rem
+  &_title
+    font-family: $fontFt
+    font-size: 4rem
+    line-height: 5rem
+    color: $black
+    font-weight: 600
+    margin-bottom: 8rem
+    @media screen and (min-width: $mobile)
+      margin-top: 13rem
+      margin-bottom: 8rem
+      font-size: 7rem
+      line-height: 8rem
+      @media screen and (min-width: $tablet)
+        text-align: center
+        @media screen and (min-width: 1030px)
+          font-size: 4.8rem
+          line-height: 6rem
+          font-weight: 400
+          margin-top: 12rem
+  &_img
+    position: relative
+    overflow: hidden
+    height: 25vh
+    margin-bottom: 3rem
+    @media screen and (min-width: $mobile)
+      height: 35vh
+      @media screen and (min-width: $tablet)
+        height: 25vh
+        @media screen and (min-width: 1030px)
+          height: 35vh
+    img
+      position: absolute
+      width: 100%
+      height: auto
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      @media screen and (width: 1024px)
+        width: auto
+        height: 100%
+.portfolio_info
+  &_title
+    font-family: $fontUb
+    font-weight: 700
+    font-size: 3rem
+    line-height: 3.66rem
+    color: #555555
+    margin-bottom: 1.5rem
+    @media screen and (min-width: 1030px)
+      //margin-top: 5rem
+      font-size: 1.8rem
+      line-height: 2.4rem
+  &_text
+    p
+      font-family: $fontUb
+      font-size: 2.66rem
+      line-height: 3.33rem
+      color: #555555
+      margin-bottom: 1.5rem
+      @media screen and (min-width: 1030px)
+        font-size: 1.6rem
+        line-height: 2.1rem
+        margin-bottom: 3rem
+      &:last-child
+        margin-bottom: 8.33rem
+        @media screen and (min-width: $tablet)
+          margin-bottom: 3rem
+
+
+.wrapper_gallery_slider
+  padding: 0 6rem
+  margin-bottom: 13.33rem
+  overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 13.33rem
+    margin-bottom: 20rem
+    @media screen and (min-width: $tablet)
+      padding: 0 10rem
+.gallery_title
+  text-align: center
+  margin-bottom: 5rem
+
+.portfolio_slider
+  margin: 0 -6rem
+  height: 35vh
+  @media screen and (max-height: 420px)
+    height: 60vh
+  @media screen and (min-width: $mobile)
+    margin: 0 -13rem
+    height: 45vh
+    @media screen and (min-width: $tablet)
+      position: relative
+      margin: 0 -15px
+      min-height: 20vh
+      max-height: 20vh
+      @media screen and (min-width: 1030px)
+        min-height: 50vh
+        max-height: 50vh
+  &_wrapper_img
+    height: 25vh
+    margin: 0 1rem
+    position: relative
+    overflow: hidden
+    transition: height 500ms
+    @media screen and (min-width: $mobile)
+      height: 35vh
+      @media screen and (min-width: $tablet)
+        height: 15vh
+        min-height: 15vh
+        margin: 0
+        transition: min-height 500ms
+        @media screen and (min-width: 1030px)
+          height: 35vh
+    @media screen and (max-height: 420px)
+      height: 50vh
+
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: #ffffff
+      opacity: 0.5
+      transition: opacity 500ms 500ms
+    &>img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: auto
+      height: 100%
+      min-height: 80%
+      transition: height 500ms
+      @media screen and (max-height: 420px)
+        width: 100%
+        height: auto
+  .slick-track
+    min-height: 35vh
+    @media screen and (min-width: $mobile)
+      max-height: 50vh
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+  .slick-active
+    @media screen and (min-width: $tablet)
+      max-width: 16vw
+      min-width: 16vw
+      transition: min-width 500ms
+    .portfolio_slider_wrapper_img
+      height: 50vh
+
+
+  .slick-current
+    @media screen and (min-width: $tablet)
+      min-width: 37vw
+    .portfolio_slider_wrapper_img
+      height: 35vh
+      transition: height 500ms
+      @media screen and (min-width: $mobile)
+        height: 45vh
+        @media screen and (min-width: $tablet)
+          height: 50vh
+      @media screen and (max-height: 420px)
+        height: 60vh
+      img
+        width: auto
+        height: 100%
+      &:after
+        opacity: 0
+        transition: 100ms
+  .owl-stage-outer
+    @media screen and (min-width: $tablet)
+      height: 20vh
+      overflow: hidden
+      @media screen and (min-width: 1030px)
+        height: 50vh
+      .owl-stage
+        position: relative
+        width: 100%
+        min-width: 100%
+        height: 20vh
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        @media screen and (min-width: 1030px)
+          height: 50vh
+      .active
+        .portfolio_slider_item
+          width: 15vw
+          transition: width 500ms
+      .portfolio_img_first
+        .portfolio_slider_item
+          width: 35vw
+          .portfolio_slider_wrapper_img
+            min-height: 20vh
+            @media screen and (min-width: 1030px)
+              min-height: 50vh
+            &:after
+              background-color: transparent
+      .portfolio_img_second
+        height: 20vh
+        @media screen and (min-width: 1030px)
+          height: 50vh
+        .portfolio_slider_wrapper_img
+          height: 20vh
+          @media screen and (min-width: 1030px)
+            height: 50vh
+  .owl-nav
+    .owl-prev
+      outline: none
+      padding: 15px
+      position: absolute
+      border: none
+      background-color: $black
+      @media screen and (min-width: $tablet)
+        padding: 0
+        width: 10rem
+        height: 11rem
+        bottom: 0
+        right: calc(15vw + 4px  - 11rem)
+        @media screen and (min-width: 1030px)
+          padding: 0
+          width: 5vw
+          height: 12vh
+          right: calc(13vw - 4.5vw)
+          @media screen and (min-width: 1500px)
+            width: 7vw
+    .owl-next
+      outline: none
+      position: absolute
+      border: none
+      background-color: $black
+      padding: 15px
+      @media screen and (min-width: $tablet)
+        padding: 0
+        width: 10rem
+        height: 11rem
+        bottom: 0
+        right: 0
+        @media screen and (min-width: 1030px)
+          padding: 0
+          width: 5vw
+          height: 12vh
+          right: 0
+          @media screen and (min-width: 1500px)
+            width: 7vw
+
+.slick_main_portfolio_prev
+  position: absolute
+  bottom: 0
+  left: calc(11rem - 8vh)
+  transform: rotate(180deg)
+  width: 8vh
+  background-color: $black
+  height: 9vh
+  z-index: 50
+  outline: none
+  border: none
+  padding: 10px
+  @media screen and (min-width: $mobile)
+    left: calc(22vw - 8vh - 1rem)
+    @media screen and (min-width: $tablet)
+      position: static
+      width: 100%
+      height: 100%
+  img
+    width: auto
+    height: 100%
+    transform: rotate(180deg)
+.slick_main_portfolio_next
+  position: absolute
+  bottom: 0
+  right: calc(11rem - 8vh)
+  width: 8vh
+  height: 9vh
+  background-color: $black
+  z-index: 50
+  outline: none
+  border: none
+  padding: 10px
+  @media screen and (min-width: $mobile)
+    right: calc(22vw - 8vh - 1rem)
+    @media screen and (min-width: $tablet)
+      position: static
+      width: 100%
+      height: 100%
+  img
+    width: auto
+    height: 100%
+
+.portfolio_slider_next
+  left: 13px
+  width: 100%
+  img
+    width: auto
+    height: 100%
+.portfolio_slider_prev
+  left: -16.6vw
+  width: 100%
+  img
+    width: auto
+    height: 100%
+
+
+  //Gallery Slider
+.wrapper_gallery_slider
+  padding: 0 6rem
+  margin-bottom: 13.33rem
+  overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 13.33rem
+    margin-bottom: 20rem
+    @media screen and (min-width: $tablet)
+      padding: 0 10rem
+.gallery_title
+  text-align: center
+  margin-bottom: 5rem
+.gallery_slider
+  margin: 0 -6rem
+  height: 35vh
+  @media screen and (max-height: 420px)
+    height: 60vh
+  @media screen and (min-width: $mobile)
+    margin: 0 -13rem
+    height: 45vh
+    @media screen and (min-width: $tablet)
+      height: 20vh
+      margin: 0
+      position: relative
+      overflow: hidden
+    @media screen and (min-width: 1030px)
+      margin: 0
+      position: relative
+      overflow: hidden
+  //Stage
+  .owl-stage
+    height: 45vh
+    min-width: 100%
+    display: flex
+    flex-direction: row
+    .owl-item
+      overflow: hidden
+      position: relative
+      max-width: 12.5vw
+      min-width: 12.5vw
+      &:before
+        z-index: 2
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: rgba(255,255,255,0.6)
+    .gallery_slider_item
+      height: 100%
+      .gallery_slider_wrapper_img
+          height: 100%
+          position: relative
+          img
+            width: auto
+            height: 100%
+
+
+    //Active class
+    .gallery_img_first
+      min-width: 39.5vw
+      margin-left: 30px
+      &:before
+        background-color: transparent
+      .gallery_slider_item
+        .gallery_slider_wrapper_img
+          img
+            width: 100%
+            height: auto
+  //Nav
+  .owl-prev
+    outline: none
+    padding: 15px
+    position: absolute
+    border: none
+    background-color: $black
+    @media screen and (min-width: $tablet)
+      padding: 0
+      width: 10rem
+      height: 11rem
+      bottom: 0
+      right: calc(12vw + 4px  - 11rem)
+      @media screen and (min-width: 1030px)
+        padding: 0
+        width: 5vw
+        height: 12vh
+        right: 7vw
+        @media screen and (min-width: 1500px)
+          width: 7vw
+          right: 10vw
+  .owl-next
+    outline: none
+    position: absolute
+    border: none
+    background-color: $black
+    padding: 15px
+    @media screen and (min-width: $tablet)
+      padding: 0
+      width: 10rem
+      height: 11rem
+      bottom: 0
+      right: 0
+      @media screen and (min-width: 1030px)
+        padding: 0
+        width: 5vw
+        height: 12vh
+        right: 0
+        @media screen and (min-width: 1500px)
+          width: 7vw
+
+
+
+
+
+
+  .nav-gallery
+    @media screen and (min-width: $tablet)
+      position: static
+      width: 100%
+      height: 100%
+      padding: 15px
+      img
+        width: auto
+        height: 100%
+    &_prev
+      img
+        transform: rotate(180deg)

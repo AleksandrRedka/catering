@@ -1,0 +1,223 @@
+.main_section
+  margin-top: 14vh
+  margin-bottom: 10rem
+  @media screen and (max-height: 420px)
+    margin-top: 20vh
+  @media screen and (min-width: $mobile)
+    padding-left: 13.33rem
+    position: relative
+    @media screen and (min-width: $tablet)
+      padding: 0 10rem
+      margin-top: 10rem
+.slider_img_item
+  width: 100%
+  padding-top: 32vh
+  overflow: hidden
+  position: relative
+  @media screen and (min-width: $mobile)
+    height: 70vh
+    @media screen and (min-width: $tablet)
+      height: calc(100vh - 10rem)
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: auto
+    @media screen and (min-width: $mobile)
+      width: auto
+      height: 100%
+      @media screen and (height: 1024px)
+        width: auto
+        height: 100%
+      @media screen and (min-width: 1030px)
+        width: 100%
+        height: auto
+
+
+
+.main_section_slider_text_wrapper
+  position: relative
+  min-height: 40vh
+  @media screen and (max-width: 350px)
+    height: 45vh
+  @media screen and (min-width: $mobile)
+    position: absolute
+    width: 75vw
+    top: 20vh
+    left: 0
+    @media screen and (width: 1024px)
+      min-height: 30vh
+      height: 30vh
+      top: 35vh
+    @media screen and (min-width: 1030px)
+      width: calc(50vw + 10rem)
+      height: 50vh
+.main_section_slider_text
+  height: 100%
+.slider_text_item
+  min-height: 40vh
+  display: flex
+  flex-direction: column
+  padding: 0 6rem
+  @media screen and (max-width: 350px)
+    height: 45vh
+  @media screen and (min-width: $mobile)
+    padding: 2.5rem 13.33rem 5rem
+    background-color: $white
+    min-height: 35vh
+    @media screen and (width: 1024px)
+      min-height: 30vh
+    @media screen and (min-width: 1030px)
+      min-height: 50vh
+      padding: 2rem 5rem 3rem 10rem
+  &_head
+    font-family: $fontFt
+    font-weight: 600
+    font-size: 3rem
+    line-height: 3.33rem
+    color: $black
+    padding: 2rem 0
+    display: flex
+    align-items: center
+    max-height: 12rem
+    @media screen and (min-width: $mobile)
+      font-size: 4rem
+      line-height: 5rem
+      max-height: 20rem
+      @media screen and (min-width: 1030px)
+        font-size: 2.8rem
+        line-height: 3.5rem
+        margin-bottom: 3rem
+
+  &_desc
+    p
+      font-family: $fontUb
+      font-size: 2.66rem
+      line-height: 3.33rem
+      font-weight: 400
+      color: #818181
+      margin-bottom: 5.66rem
+      overflow: hidden
+      max-height: 19rem
+      @media screen and (min-width: $mobile)
+        line-height: 4rem
+        @media screen and (min-width: 1030px)
+          font-size: 1.8rem
+          line-height: 2.7rem
+          max-height: 11rem
+
+  &_button
+    position: absolute
+    bottom: 0
+    right: 6rem
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    @media screen and (min-width: $mobile)
+      right: 13.33rem
+      bottom: 3rem
+    a
+      width: 40vw
+      font-size: 3rem
+      font-weight: 400
+      line-height: 3.33rem
+      color: $white
+      @media screen and (min-width: $mobile)
+        width: 30vw
+        @media screen and (min-width: $tablet)
+          width: 20vw
+          font-size: 1.8rem
+          line-height: 2.4rem
+.slick-main-prev
+  position: absolute
+  bottom: 0
+  left: 8rem
+  z-index: 2
+  transform: translate(-50%,-50%)
+  width: 3rem
+  height: 3rem
+  background-color: transparent
+  border: none
+  padding: 0
+  outline: none
+  @media screen and (min-width: $mobile)
+    bottom: 3.5rem
+    left: 15rem
+    @media screen and (min-width: $tablet)
+      width: 5rem
+      height: 5rem
+      bottom: 3rem
+      left: 10rem
+      transform: none
+      @media screen and (min-width: 1030px)
+        width: 3rem
+        height: 3rem
+
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: auto
+.slick-main-next
+  position: absolute
+  bottom: 0
+  left: calc(6rem + 20vw)
+  transform: translate(-50%,-50%)
+  z-index: 2
+  width: 3rem
+  height: 3rem
+  background-color: transparent
+  border: none
+  padding: 0
+  outline: none
+  @media screen and (min-width: $mobile)
+    bottom: 3.5rem
+    left: calc(6rem + 20vw)
+    @media screen and (min-width: $tablet)
+      width: 5rem
+      height: 5rem
+      transform: none
+      @media screen and (min-width: 1030px)
+        width: 3rem
+        height: 3rem
+        bottom: 3rem
+        left: calc(10rem + 5vw)
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%) rotate(-180deg)
+    width: 100%
+    height: auto
+
+.main_section_icons
+  position: absolute
+  left: 7rem
+  top: 35vh
+  @media screen and (min-width: $tablet)
+    transform: translate(-50%,-50%)
+    left: 5rem
+    top: calc((100vh - 10rem) / 2)
+.main_section_icon
+  display: block
+  width: 3rem
+  height: 3rem
+  margin-bottom: 5rem
+  &:last-child
+    margin-bottom: 0
+  @media screen and (min-width: $tablet)
+    width: 4rem
+    height: 4rem
+    @media screen and (min-width: 1030px)
+      width: 2rem
+      height: 2rem
+
+  img
+    width: 100%
+    height: auto
+
+

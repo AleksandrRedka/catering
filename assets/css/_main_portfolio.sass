@@ -1,0 +1,145 @@
+.portfolio
+  padding: 0 3.5rem
+  width: 100vw
+  padding-bottom: 13.3rem
+  overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-bottom: 20rem
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-bottom: 12rem
+  &_title
+    text-align: center
+    margin-bottom: 6rem
+    @media screen and (min-width: $tablet)
+      text-align: left
+      @media screen and (min-width: 1030px)
+        margin-bottom: 3rem
+
+  &_category
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    overflow: hidden
+    margin: 0rem -6rem
+    padding-left: 6rem
+    margin-bottom: 8.33rem
+    @media screen and (min-width: $mobile)
+      padding-left: 0
+      @media screen and (min-width: $tablet)
+        flex-direction: column
+        margin: 0
+    @media screen and (max-height: 420px)
+      margin-bottom: 5vh
+    &_item
+      padding: 0 3rem
+      padding-bottom: 2rem
+      font-family: $fontUb
+      font-size: 2rem
+      line-height: 3.66rem
+      white-space: nowrap
+      @media screen and (min-width: $tablet)
+        position: relative
+        padding: 0
+        font-size: 3rem
+        line-height: 4.5rem
+        @media screen and (min-width: 1030px)
+          font-size: 2rem
+          line-height: 3.66rem
+          position: relative
+          padding: 0
+      &:first-child
+        margin-left: 0
+      &_active
+        border-bottom: 2px solid $black
+        @media screen and (min-width: $tablet)
+          border: none
+          &:after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translate(-50%,-50%)
+            height: 1px
+            width: 10vw
+            background-color: $black
+            @media screen and (min-width: $tablet)
+              width: 2vw
+
+  &_wrapper_img
+    height: 25vh
+    margin: 0 1rem
+    position: relative
+    overflow: hidden
+    transition: height 500ms
+    @media screen and (min-width: $mobile)
+      height: 35vh
+    @media screen and (max-height: 420px)
+      height: 50vh
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: #ffffff
+      opacity: 0.5
+      transition: opacity 500ms 500ms
+      @media screen and (min-width: $tablet)
+        background-color: transparent
+    &>img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: auto
+      height: 100%
+      min-height: 80%
+      transition: height 500ms
+      @media screen and (max-height: 420px)
+        width: 100%
+        height: auto
+  .slick-center
+    .gallery_slider_wrapper_img
+        height: 35vh
+        transition: height 500ms
+        @media screen and (min-width: $mobile)
+          height: 45vh
+        @media screen and (max-height: 420px)
+          height: 60vh
+        &:after
+          opacity: 0
+          transition: 100ms
+  .slick-track
+    min-height: 35vh
+
+
+  .slick_main_gallery_prev
+    position: absolute
+    bottom: 0
+    left: calc(11rem - 8vh)
+    transform: rotate(180deg)
+    width: 8vh
+    height: 9vh
+    background-color: $black
+    z-index: 50
+    outline: none
+    border: none
+    @media screen and (min-width: $mobile)
+      left: calc(22vw - 8vh - 1rem)
+  .slick_main_gallery_next
+    position: absolute
+    bottom: 0
+    right: calc(11rem - 8vh)
+    width: 8vh
+    height: 9vh
+    background-color: $black
+    z-index: 50
+    outline: none
+    border: none
+    @media screen and (min-width: $mobile)
+      right: calc(22vw - 8vh - 1rem)
+.portfolio_data
+  display: none

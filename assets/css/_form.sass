@@ -1,0 +1,139 @@
+.wrapper_form
+  overflow: hidden
+  padding: 6rem
+  width: auto
+  height: 100%
+  position: relative
+  z-index: 1
+  @media screen and (min-width: $mobile)
+    padding: 8rem  13.33rem
+    padding-bottom: 20rem
+    @media screen and (min-width: $tablet)
+      padding: 5rem 10rem 13rem
+
+.form_bg
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    width: 100%
+    height: 100%
+    background-color: rgba(255,255,255,0.8)
+  img
+    width: auto
+    height: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: -1
+    @media screen and (min-width: $tablet)
+        width: 100%
+        height: auto
+
+.form
+  position: relative
+  z-index: 2
+  @media screen and (min-width: $mobile)
+    width: 70%
+    margin: auto
+    @media screen and (min-width: $tablet)
+      width: 40%
+  &_title
+    position: relative
+    z-index: 2
+    font-family: $fontUb
+    font-size: 4rem
+    line-height: 5rem
+    color: $green
+    padding-bottom: 3.33rem
+    text-align: center
+    margin-bottom: 8rem
+    @media screen and (min-width: $mobile)
+      font-size: 8rem
+      line-height: 10rem
+      @media screen and (min-width: $tablet)
+        font-size: 4.8rem
+        line-height: 6rem
+    &:after
+      content: ''
+      background-color: $green
+      width: 50%
+      height: 2px
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translate(-50%,-50%)
+      @media screen and (min-width: $mobile)
+        width: 25%
+        @media screen and (min-width: $tablet)
+          width: 15%
+  &_input
+    width: 100%
+    margin-bottom: 5vh
+    position: relative
+    @media screen and (min-width: $tablet)
+      margin-bottom: 4vh
+    input
+      width: 100%
+      background-color: transparent
+      border: none
+      border-bottom: 1px solid #000
+      outline: none
+      font-family: $fontUb
+      font-weight: 400
+      font-size: 3rem
+      line-height: 5rem
+      color: $black
+      text-indent: 5rem
+      @media screen and (min-width: 1030px)
+        font-size: 1.8rem
+        line-height: 2.7rem
+        text-indent: 2rem
+      //&:placeholder-shown + label
+      //  opacity: 0
+      //&:invalid
+      //  border-bottom: 1px solid #E20047
+      //&:valid+.form_input_property
+      //    opacity: 1
+    label
+      position: absolute
+      top: -3rem
+      left: 0
+      font-family: $fontUb
+      font-weight: 300
+      font-size: 3.33rem
+      line-height: 3.33rem
+      color: $black
+      pointer-events: none
+      @media screen and (min-width: 1030px)
+        top: -2rem
+        font-size: 1.8rem
+        line-height: 2.7rem
+    &_property
+      opacity: 0
+      height: 80%
+      width: 5%
+      position: absolute
+      top: 45%
+      right: 3%
+      transform: translate(-50%,-50%)
+      img
+        width: auto
+        height: 100%
+.btn_form
+  width: 100%
+  font-size: 3rem
+  line-height: 3.5rem
+  color: $white
+  @media screen and (min-width: 1030px)
+    font-size: 1.8rem
+    line-height: 2.4rem
+

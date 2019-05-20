@@ -1,0 +1,119 @@
+.page_portfolio
+  &_title
+    text-align: center
+    position: relative
+    margin-bottom: 5rem
+    @media screen and (min-width: $mobile)
+      text-align: left
+
+  &_bg_title
+    @media screen and (min-width: $mobile)
+      left: -11rem
+      top: -11rem
+      @media screen and (min-width: $tablet)
+        top: 0
+        left: -10rem
+  &_list
+    margin-bottom: 8.33rem
+    position: relative
+    &_item
+      font-family: $fontUb
+      font-size: 3rem
+      line-height: 3.66rem
+      color: $black
+      margin-bottom: 2vh
+      position: relative
+      @media screen and (min-width: $mobile)
+        font-size: 4rem
+        line-height: 5rem
+        margin-bottom: 1.66rem
+        overflow: hidden
+        @media screen and (min-width: 1030px)
+          font-size: 2.4rem
+          line-height: 3rem
+          margin-bottom: 1.2rem
+      &:last-child
+        margin-bottom: 0
+      &_active
+        &:after
+          content: ''
+          width: 15rem
+          height: 1px
+          background-color: $black
+          position: absolute
+          right: -10%
+          top: 50%
+          transform: translate(0%,-50%)
+          @media screen and (min-width: $mobile)
+            right: 25%
+            width: 50%
+    &_icon
+      position: absolute
+      left: -10rem
+      bottom: -5rem
+      width: 10vw
+      height: auto
+      @media screen and (min-width: 1030px)
+        left: -6rem
+        bottom: -3rem
+        width: 7vw
+      img
+        width: 100%
+        height: auto
+
+
+.categories
+  padding: 0 3.5rem
+  position: relative
+  overflow: hidden
+  padding-top: 16rem
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-top: 30rem
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-top: 19rem
+  &_item
+    display: block
+    position: relative
+    margin-bottom: 8.33rem
+    @media screen and (min-width: $mobile)
+      margin-bottom: 10rem
+    &_img
+      padding-top: 100%
+      width: 100%
+      position: relative
+      overflow: hidden
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: auto
+        height: 100%
+        z-index: 1
+    &_title
+      padding: 1rem 3rem
+      position: absolute
+      //top: 0
+      bottom: 0
+      left: 0
+      background-color: $white
+      width: 70%
+      height: 5rem
+      font-family: $fontUb
+      font-size: 2.66rem
+      line-height: 3.33rem
+      display: flex
+      align-items: center
+      z-index: 2
+
+.top-md-padding
+  @media screen and (min-width: $mobile)
+    padding-top: 25rem
+    @media screen and (min-width: $tablet)
+      padding-top: 15rem
+
+
+
+

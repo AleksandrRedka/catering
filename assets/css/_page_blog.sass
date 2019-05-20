@@ -1,0 +1,111 @@
+.blog
+  padding: 0 3.5rem
+  padding-top: 16rem
+  position: relative
+  overflow: hidden
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-top: 19rem
+    margin-bottom: 11.66rem
+    @media screen and (min-width: $tablet)
+      padding: 15rem 10rem
+      margin: 0
+  &_title
+    margin-bottom: 5rem
+  &_list_item
+    &_img
+      margin-bottom: 1.5rem
+      position: relative
+      overflow: hidden
+      padding-top: 60%
+      @media screen and (min-width: $mobile)
+        padding-top: 30%
+        margin-bottom: 4rem
+        @media screen and (min-width: $tablet)
+          padding-top: 55%
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 100%
+        height: auto
+        @media screen and (min-width: $tablet)
+
+    &_info
+      margin-bottom: 9.33rem
+      @media screen and (min-width: $mobile)
+        margin-bottom: 8.33rem
+    &_title
+      margin-bottom: 1.5rem
+      font-size: 2.66rem
+      line-height: 3.33rem
+      color: $black
+      font-weight: 600
+      @media screen and (min-width: $mobile)
+        font-size: 3rem
+        line-height: 4rem
+        width: 35%
+        margin-right: 5rem
+        @media screen and (min-width: $tablet)
+          width: 100%
+          font-size: 3.66rem
+          @media screen and (min-width: 1030px)
+            margin-top: 4rem
+            margin-bottom: 1rem
+            font-size: 1.8rem
+            line-height: 2.4rem
+    &_text
+      @media screen and (min-width: $mobile)
+        width: 60%
+        @media screen and (min-width: $tablet)
+          width: 100%
+      p
+        font-size: 2.66rem
+        line-height: 3.33rem
+        font-weight: 300
+        font-family: $fontUb
+        margin-bottom: 3.33rem
+        @media screen and (min-width: $mobile)
+          font-size: 3rem
+          line-height: 4rem
+          margin-bottom: 5rem
+          max-height: 16rem
+          overflow: hidden
+          @media screen and (min-width: 1030px)
+            margin-bottom: 5rem
+            font-size: 1.6rem
+            line-height: 2.4rem
+    &_read
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+      p
+        font-family: $fontUb
+        line-height: 2.66rem
+        font-size: 2.33rem
+        font-weight: 500
+        margin-bottom: 0
+        @media screen and (min-width: 1030px)
+          font-size: 1.4rem
+          line-height: 2rem
+      &_icon
+        height: 100%
+        width: 20%
+        margin-left: 3rem
+        @media screen and (min-width: 1030px)
+          width: auto
+        img
+          width: auto
+          height: 100%
+  .row-lg-even-reverse
+    &:nth-child(odd)
+      flex-direction: row
+      @media screen and (min-width: $tablet)
+        flex-direction: row-reverse
+
+
+
+
+

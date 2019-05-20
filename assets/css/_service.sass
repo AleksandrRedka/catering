@@ -1,0 +1,644 @@
+.service_main
+  position: relative
+  margin-top: 16rem
+  margin-bottom: 10rem
+  height: calc(100vh - 16rem)
+  overflow: hidden
+  @media screen and (min-width: $mobile)
+    margin-bottom: 18rem
+    @media screen and (min-width: $tablet)
+      margin-top: 10rem
+      height: calc(100vh - 10rem)
+      margin-bottom: 10rem
+
+  &_img
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    top: 0
+    left: 0
+    img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: auto
+      height: 100%
+      @media screen and (min-width: $tablet)
+        width: 100%
+        height: auto
+        @media screen and (min-width: $tablet) and (min-height: 1024px )
+          width: auto
+          height: 100%
+  &_title
+    margin: 0 -15px
+    margin-top: 30vh
+    position: relative
+    z-index: 2
+    @media screen and (min-width: $mobile)
+      background-color: $white
+      @media screen and (min-width: $tablet)
+        margin-top: 35vh
+        background-color: transparent
+        @media screen and (min-width: 1030px)
+          margin-top: 30vh
+    p
+      max-width: 100vw
+      padding: 1rem  6rem
+      display: inline-block
+      font-family: $fontFt
+      font-size: 4rem
+      line-height: 5rem
+      color: $black
+      background-color: $white
+      @media screen and (min-width: $mobile)
+        font-size: 12rem
+        line-height: 15rem
+        padding: 2.5rem  13.33rem
+        @media screen and (min-width: 1030px)
+          font-size: 7.2rem
+          line-height: 8.4rem
+          width: 33vw
+          padding: 1rem 10rem
+
+
+
+
+  &_subtitle
+    position: relative
+    z-index: 2
+    background-color: $white
+    max-width: 100vw
+    display: inline-block
+    width: 100%
+    margin: 0 -15px
+    p
+      max-width: 100%
+      padding: 1rem 6rem
+      font-weight: 300
+      font-family: $fontUb
+      font-size: 2.66rem
+      line-height: 4rem
+      color: $black
+      @media screen and (min-width: $mobile)
+        padding: 2.5rem 13.33rem
+        padding-right: 8rem
+        min-height: 12rem
+        height: 8vh
+        font-size: 3rem
+        line-height: 4rem
+        @media screen and (min-width: $tablet)
+          font-size: 2.66rem
+          font-weight: 400
+          line-height: 3rem
+          padding: 1rem 10rem
+          display: flex
+          align-items: center
+          @media screen and (min-width: 1030px)
+            min-height: 8rem
+            height: 8vh
+            font-size: 1.8rem
+            line-height: 2.1rem
+
+  &_order
+    position: relative
+    cursor: pointer
+    padding: 1rem 6rem
+    z-index: 2
+    background-color: $white
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin: 0 -15px
+    @media screen and (min-width: $mobile)
+      min-height: 12rem
+      height: 8vh
+      @media screen and (min-width: $tablet)
+        min-height: 8rem
+
+    &:before
+      content: ''
+      position: absolute
+      width: 2px
+      height: 80%
+      top: 50%
+      left: 3rem
+      transform: translate(-50%,-50%)
+      background-color: $green
+      @media screen and (min-width: $mobile)
+        height: 40%
+        left: 0
+
+    p
+      display: inline-block
+      font-family: $fontUb
+      font-size: 3rem
+      line-height: 4rem
+      font-weight: 500
+      color: $black
+      margin-right: 10vw
+      @media screen and (min-width: $tablet)
+        margin-right: 3rem
+        @media screen and (min-width: 1030px)
+          font-size: 1.4rem
+          line-height: 2.1rem
+    &_icon
+      display: inline-block
+      img
+        width: auto
+        height: 100%
+
+.catering
+  padding: 0 3.5rem
+  position: relative
+  padding-bottom: 13rem
+  @media screen and (min-width: $mobile)
+    overflow: hidden
+    padding: 0 11rem
+    padding-bottom: 20rem
+    @media screen and (min-width: $tablet)
+      padding: 0 8.5rem
+      padding-top: 5rem
+      padding-bottom: 18rem
+      margin-bottom: 12rem
+  &_left_text
+    position: absolute
+    top: 20rem
+    left: 3rem
+    transform: translate(-50%,-50%) rotate(-90deg)
+    @media screen and (min-width: $mobile)
+      top: 50rem
+      left: 7rem
+      @media screen and (min-width: 1030px)
+        top: 31rem
+        left: 12rem
+    p
+      color: #D9D9D9
+      font-size: 5rem
+      line-height: 6rem
+      font-family: $fontUb
+      font-weight: 400
+      @media screen and (min-width: $mobile)
+        font-size: 13.33rem
+        line-height: 16rem
+        @media screen and (min-width: 1030px)
+          font-size: 8rem
+          line-height: 10rem
+  &_title
+    width: 80%
+    color: $black
+    font-family: $fontUb
+    font-size: 4rem
+    line-height: 5rem
+    margin-bottom: 3rem
+    @media screen and (min-width: $mobile)
+      margin-top: 13rem
+      font-size: 10rem
+      line-height: 12rem
+      width: 100%
+      @media screen and (min-width: 1030px)
+        margin-top: 5rem
+        font-size: 6rem
+        line-height: 7rem
+  &_text
+    font-size: 3rem
+    line-height: 4rem
+    font-family: $fontUb
+    color: $black
+    @media screen and (min-width: 1030px)
+      font-size: 1.6rem
+      line-height: 2.4rem
+    &:last-child
+      margin-bottom: 0
+      @media screen and (min-width: 1030px)
+        margin-bottom: 3rem
+  &_img
+    margin: 5rem 0
+    margin-right: calc(-6rem - 15px)
+    position: relative
+    overflow: hidden
+    padding-top: 50vh
+    width: calc(100vw - 6rem )
+    @media screen and (min-width: $mobile)
+      padding-top: 30vh
+      margin: 0
+      margin-bottom: 5rem
+      @media screen and (min-width: 1030px)
+        width: 100%
+        padding-top: 40vh
+        margin-bottom: 3rem
+    img
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: auto
+      @media screen and (min-width: 1030px)
+        width: 100%
+        height: auto
+  &_icon
+    width: 20vw
+    position: absolute
+    transform: translate(-50%,-50%)
+    bottom: 0
+    left: 50%
+    @media screen and (min-width: $mobile)
+      width: 15vw
+      @media screen and (min-width: $tablet)
+        width: 10vw
+    img
+      width: 100%
+      height: auto
+  &_calc
+    padding-top: 5rem
+    cursor: pointer
+    @media screen and (min-width: $mobile)
+      background-color: #f5f9fd
+      position: absolute
+      bottom: 0
+      left: 15px
+      padding: 1rem 12rem
+      @media screen and (min-width: $tablet)
+        padding: 1rem 2rem
+        @media screen and (min-width: 1030px)
+          padding: 0
+          background-color: transparent
+    p
+      position: relative
+      display: inline-block
+      font-size: 3rem
+      line-height: 4rem
+      color: $black
+      font-family: $fontUb
+      margin-right: 5rem
+      @media screen and (min-width: 1030px)
+        font-size: 1.8rem
+        line-height: 2.7rem
+        display: flex
+        align-items: center
+      &:after
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: $green
+        position: absolute
+        bottom: 0
+        left: 0
+    &_icon
+      width: 6rem
+      height: 6rem
+      border: 1px solid $black
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        height: 1px
+        width: 45%
+        transform: translate(-50%,-50%)  rotate(45deg)
+        top: 35%
+        left: 50%
+        background-color: $black
+      &:after
+        content: ''
+        position: absolute
+        height: 1px
+        width: 45%
+        transform: translate(-50%,-50%) rotate(-45deg)
+        top: 65%
+        left: 50%
+        background-color: $black
+.why_we
+  padding: 5rem 3.5rem
+  position: relative
+  background-color: rgba( 0,166,81,0.1)
+  @media screen and (min-width: $mobile)
+    padding: 5rem 11rem
+    @media screen and (min-width: 1030px)
+      padding: 5rem 8.5rem
+  &_title
+    text-align: center
+    margin-bottom: 5rem
+    @media screen and (min-width: $mobile)
+      text-align: left
+      @media screen and (min-width: 1030px)
+        margin-bottom: 3rem
+  &_text
+    font-size: 3rem
+    line-height: 4rem
+    color: #555555
+    font-family: $fontUb
+    margin-bottom: 8.33rem
+    @media screen and (min-width: $mobile)
+      margin-bottom: 6.44rem
+      @media screen and (min-width: 1030px)
+        font-size: 1.8rem
+        line-height: 2.7rem
+        margin-bottom: 5rem
+  &_img
+    position: relative
+    overflow: hidden
+    padding-top: 25vh
+    margin-bottom: 3.33rem
+    @media screen and (min-width: $mobile)
+      margin-bottom: 0
+      padding-top: 20vh
+      @media screen and (min-width: 1030px)
+        padding-top: 40vh
+
+    img
+      width: 100%
+      transform: translate(-50%,-50%)
+      position: absolute
+      top: 50%
+      left: 50%
+      @media screen and (min-width: $mobile)
+        width: auto
+        height: 100%
+        @media screen and (min-width: 1030px)
+          width: 100%
+          height: auto
+  &_list
+    @media screen and (min-width: 1030px)
+      padding-top: 10rem
+    &_item
+      margin-bottom: 3rem
+      @media screen and (min-width: 1030px)
+        margin-bottom: 5rem
+      &:last-child
+        margin-bottom: 0
+      &_title
+        position: relative
+        font-size: 3rem
+        line-height: 4rem
+        color: #222222
+        font-family: $fontUb
+        margin-bottom: 1.5rem
+        font-weight: 600
+        @media screen and (min-width: $tablet)
+          font-size: 1.8rem
+          line-height: 2.7rem
+        &:before
+          content: ''
+          position: absolute
+          width: 36px
+          height: 36px
+          top: 0
+          left: -9rem
+          background-color: rgba( 0,166,81,0.2)
+          @media screen and (min-width: 1030px)
+            width: 48px
+            height: 48px
+            left: -7rem
+
+      &_text
+        font-size: 2.66rem
+        color: #555555
+        line-height: 4rem
+        font-family: $fontUb
+        @media screen and (min-width: $mobile)
+          font-size: 3rem
+          line-height: 4rem
+          @media screen and (min-width: 1030px)
+            font-size: 1.8rem
+            line-height: 2.7rem
+            font-weight: 300
+
+.service_advantages
+  padding: 0 3.5rem
+  position: relative
+  width: 100%
+  margin-top: 13rem
+  margin-bottom: 5rem
+  @media screen and (min-width: $mobile)
+    margin: 0
+    padding: 20rem 11rem
+    @media screen and (min-width: 1030px)
+      padding: 15rem 8.5rem
+  &_title
+    margin-bottom: 5rem
+    font-family: $fontUb
+    @media screen and (min-width: $mobile)
+      width: 80%
+      text-align: left
+      font-weight: 600
+      margin-bottom: 8.33rem
+      @media screen and (min-width: 1030px)
+        font-weight: 400
+        font-size: 4.8rem
+        line-height: 6rem
+        margin-bottom: 5rem
+.advantages
+  &_img
+    width: 100%
+    position: relative
+    z-index: 2
+    overflow: hidden
+    padding-top: 25vh
+    @media screen and (min-width: $mobile)
+      padding-top: 35vh
+      @media screen and (min-width: 1030px)
+        padding-top: 40vh
+    img
+      width: 100%
+      height: auto
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      @media screen and (width: 1024px)
+        width: auto
+        height: 100%
+  &_info
+    position: relative
+    &_title
+      position: relative
+      padding-top: 4rem
+      padding-bottom: 1rem
+      @media screen and (min-width: $mobile)
+        padding-top: 17rem
+        padding-bottom: 3rem
+        @media screen and (min-width: 1030px)
+          padding-top: 14rem
+          padding-bottom: 2rem
+      p
+        position: relative
+        z-index: 2
+        font-family: $fontUb
+        color: $black
+        font-size: 3rem
+        line-height: 4rem
+        @media screen and (min-width: 1030px)
+          font-size: 1.8rem
+          line-height: 2.7rem
+    &_num
+      position: absolute
+      font-size: 16.66rem
+      line-height: 16.66rem
+      transform: translate(-50%,-50%)
+      top: 64%
+      left: 20%
+      font-family: $fontFt
+      color: #E5E5E5
+      z-index: 1
+      @media screen and (min-width: $mobile)
+        font-size: 30rem
+        line-height: 30rem
+        transform: none
+        top: 3rem
+        left: 0
+        @media screen and (min-width: 1030px)
+          font-size: 18rem
+          line-height: 18rem
+          top: 5rem
+    &_text
+      position: relative
+      z-index: 2
+      font-size: 2.66rem
+      line-height: 3.33rem
+      font-family: $fontUb
+      font-weight: 300
+      color: #555555
+      margin-bottom: 8.33rem
+      @media screen and (min-width: 1030px)
+        font-size: 1.6rem
+        line-height: 2.4rem
+
+
+.service_organization
+  padding: 0 3.5rem
+  padding-bottom: 13.33rem
+  position: relative
+  @media screen and (min-width: $mobile)
+    padding: 0 11rem
+    padding-bottom: 16.66rem
+    @media screen and (min-width: 1030px)
+      padding: 0 8.5rem
+      padding-bottom: 12rem
+  &_title
+    text-align: center
+    margin-bottom: 5rem
+    @media screen and (min-width: $mobile)
+      margin-bottom: 8.33rem
+
+
+.organization_info
+  &_img
+    width: 100%
+    position: relative
+    overflow: hidden
+    padding-top: 30vh
+    margin-bottom: 3rem
+    @media screen and (min-width: 1030px)
+      padding-top: 40vh
+    img
+      position: absolute
+      width: 100%
+      height: auto
+      transform: translate(-50%,-50%)
+      top: 50%
+      left: 50%
+      @media screen and (min-width: $tablet)
+        width: auto
+        height: 100%
+        @media screen and (min-width: 1030px)
+          width: 100%
+          height: auto
+  &_title
+    font-family: $fontUb
+    padding-left: 30%
+    font-size: 3rem
+    line-height: 4rem
+    font-weight: 500
+    position: relative
+    @media screen and (min-width: $tablet)
+      padding-left: 0
+
+      @media screen and (min-width: 1030px)
+        font-size: 1.8rem
+        line-height: 2.4rem
+        padding-left: 0
+        margin-bottom: 2rem
+    &:before
+      content: ''
+      width: 20vw
+      position: absolute
+      height: 1px
+      top: 2rem
+      left: 0
+      background-color: $black
+      @media screen and (min-width: $tablet)
+        left: -25vw
+        @media screen and (min-width: 1030px)
+          left: -40vh
+          top: 1rem
+          width: 15vw
+
+  &_text
+    @media screen and (min-width: $mobile)
+      margin-bottom: 16.66rem
+      @media screen and (min-width: 1030px)
+        margin-bottom: 12rem
+    p
+      font-size: 3rem
+      line-height: 4rem
+      color: #464646
+      font-family: $fontUb
+      font-weight: 300
+      margin-bottom: 1.5rem
+      @media screen and (min-width: $mobile)
+        padding-left: 30%
+        @media screen and (min-width: $tablet)
+          padding-left: 0
+          @media screen and (min-width: 1030px)
+            font-size: 1.8rem
+            line-height: 2.4rem
+
+
+  &_second
+    @media screen and (min-width: $mobile)
+      .organization_info_text
+        p
+          padding: 0
+          width: 90%
+
+
+
+.service_reviews_title
+  h2
+    padding-left: 9rem
+    margin-bottom: 3rem
+
+.service_reviews_title_logo
+  left: 5%
+  width: 20vw
+  @media screen and (max-height: 420px)
+    width: 13vw
+  @media screen and (min-width: $tablet)
+    width: 10vw
+    left: 10%
+    top: 10%
+.service_reviews_subtitle
+  font-size: 2.66rem
+  font-family: $fontUb
+  line-height: 3.33rem
+  padding-bottom: 3rem
+  color: $black
+  position: relative
+  @media screen and (min-width: $tablet)
+    font-size: 1.6rem
+    line-height: 2.4rem
+    width: 50%
+    margin: auto
+  &:after
+    position: absolute
+    content: ''
+    bottom: 0
+    left: 50%
+    background-color: $green
+    width: 50%
+    height: 2px
+    transform: translate(-50%,-50%)
+
+
+

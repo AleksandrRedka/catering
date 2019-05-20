@@ -1,0 +1,1013 @@
+.wrapper_pop_up_product
+  display: none
+  position: fixed
+  overflow: scroll
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+  @media screen and (min-width: $mobile)
+    justify-content: center
+    align-items: center
+    background-color: rgba(255,255,255,0.9)
+    padding: 5vh 0
+    @media screen and (min-width: $tablet)
+      width: 100%
+      height: 100%
+  &_open
+    display: block
+.pop_up_close
+  cursor: pointer
+  position: absolute
+  top: 1.5rem
+  right: 1.5rem
+  width: 4rem
+  height: 4rem
+  z-index: 201
+  @media screen and (min-width: $mobile)
+    top: 3.33rem
+    right: 3.33rem
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: $black
+    width: 120%
+    height: 1px
+    transform: translate(-50%,-50%) rotate(-45deg)
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: $black
+    width: 120%
+    height: 1px
+    transform: translate(-50%,-50%) rotate(45deg)
+.pop_up_buy
+  width: 100%
+  @media screen and (min-width: $mobile)
+    margin: auto
+    width: 80%
+    position: relative
+    overflow: scroll
+    box-shadow: 5px 10px 30px 0 rgba(0,0,0,0.15)
+    @media screen and (min-width: $tablet)
+      overflow: auto
+      width: 90%
+      display: flex
+      justify-content: space-between
+.buy_product
+  width: 100%
+  height: auto
+  padding: 5rem 6rem
+  background-color: $white
+  @media screen and (min-width: $mobile)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    @media screen and (min-width: $tablet)
+      width: 60%
+      padding-left: 2rem
+  &_slider
+    margin-bottom: 5rem
+    width: 100%
+    @media screen and (min-width: $mobile)
+      margin-bottom: 0
+      width: 40%
+      @media screen and (min-width: $tablet)
+        margin-right: 3rem
+  &_info
+    width: 100%
+    @media screen and (min-width: $mobile)
+      width: 60%
+    &_name
+      font-size: 6.66rem
+      font-family: $fontUb
+      line-height: 8rem
+      color: $black
+      margin-bottom: 5rem
+      position: relative
+      @media screen and (min-width: $mobile)
+        padding-top: 8.33rem
+        @media screen and (min-width: $tablet)
+          padding-top: 0
+          font-size: 4rem
+          line-height: 4.8rem
+      &:after
+        content: ''
+        height: 1px
+        width: 70%
+        max-width: 100%
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $green
+    &_price
+      font-size: 9rem
+      line-height: 11rem
+      color: $green
+      font-family: $fontUb
+      margin-bottom: 8rem
+      @media screen and (min-width: $mobile)
+        margin-bottom: 6rem
+        @media screen and (min-width: $tablet)
+          font-size: 5.4rem
+          line-height: 6rem
+          margin-bottom: 3.6rem
+      span
+        font-size: 5.33rem
+        line-height: 7.66rem
+        color: #818181
+        @media screen and (min-width: $tablet)
+          font-size: 3.2rem
+          line-height: 4.6rem
+    &_title
+      font-size: 2.66rem
+      font-family: $fontUb
+      color: #818181
+      line-height: 4rem
+      margin-bottom: 1.5rem
+      width: 100%
+      @media screen and (min-width: $mobile)
+        width: auto
+        @media screen and (min-width: $tablet)
+          font-size: 1.6rem
+          line-height: 2.1rem
+          margin-bottom: 1rem
+    &_size
+      margin-bottom: 5rem
+      @media screen and (min-width: $tablet)
+        margin-bottom: 3rem
+    &_full_price
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      align-items: flex-end
+      @media screen and (min-width: $mobile)
+        justify-content: space-between
+.buy_product_slider
+  width: 100%
+  height: 50vh
+  position: relative
+  @media screen and (min-width: $tablet)
+    height: 40vh
+    @media screen and (min-width: 1030px)
+      height: 100%
+.buy_product_slider_view
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+.buy_product_slider_track
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: row
+  width: 200%
+  height: 100%
+  transition: left 500ms
+  @media screen and (min-width: $mobile)
+    flex-direction: column
+    width: 100%
+.product_photo
+  width: 100%
+  height: auto
+  @media screen and (min-width: $mobile)
+    height: 50%
+  img
+    width: 100%
+    height: auto
+    @media screen and (min-width: $mobile)
+      width: auto
+      height: 100%
+      @media screen and (min-width: $tablet)
+        width: 100%
+        height: auto
+        @media screen and (min-width: 1030px)
+          width: auto
+          height: 100%
+
+.product_slider_btn
+  position: absolute
+  width: 2rem
+  height: 6vh
+  transform: translate(-50%,-50%)
+  border: none
+  outline: none
+  background-color: transparent
+  &_prev
+    top: 50%
+    left: -5%
+    display: none
+  &_next
+    top: 50%
+    left: 105%
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    width: auto
+    height: 100%
+    transform: translate(-50%,-50%)
+.check_size
+  width: 7.5rem
+  height: 7.5rem
+  position: relative
+  margin-right: 3rem
+  @media screen and (min-width: $mobile)
+    flex-grow: 1
+    @media screen and (min-width: $tablet)
+      height: 4rem
+  input
+    display: none
+    &:checked + label
+      background: #E4F5EC
+      //border: 1px solid rgba(0,166,81,0.2)
+      box-shadow: 5px 0 6px 0 rgba(0,166,81,0.2)
+  label
+    position: relative
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2.44rem
+    line-height: 4rem
+    font-family: $fontUb
+    font-weight: 600
+    border-radius: 10px
+    box-shadow: 5px 0 6px 0 rgba(0,0,0,0.11)
+    @media screen and (min-width: $tablet)
+      font-size: 1.4rem
+      line-height: 2.1rem
+.buy_product_info_quantity
+  margin-bottom: 5rem
+  @media screen and (min-width: $tablet)
+    margin-bottom: 3rem
+  input
+    outline: none
+    width: 11rem
+    height: 6.66rem
+    border: none
+    border-radius: 10px
+    box-shadow: 5px 0 6px 0 rgba(0,0,0,0.11)
+    font-size: 2.44rem
+    line-height: 4rem
+    font-family: $fontUb
+    font-weight: 600
+    text-align: center
+    @media screen and (min-width: $tablet)
+      width: 7rem
+      height: 4rem
+.buy_full_price
+  &_title
+    font-size: 2.66rem
+    color: #818181
+    line-height: 4rem
+    margin-bottom: 1.5rem
+    width: 100%
+    font-family: $fontUb
+    @media screen and (min-width: $mobile)
+      width: auto
+      margin-bottom: 0
+      flex-grow: 1
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
+  &_quantity
+    font-size: 2.44rem
+    line-height: 4rem
+    font-family: $fontUb
+    font-weight: 600
+    margin-right: 2rem
+  &_sum
+    font-size: 4rem
+    line-height: 5rem
+    font-family: $fontUb
+    font-weight: 500
+    @media screen and (min-width: $tablet)
+      font-size: 3.6rem
+      line-height: 4.4rem
+    p
+      display: inline-block
+      font-size: 2.66rem
+      line-height: 3rem
+      color: #818181
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
+
+.wrapper_form_buy
+  background-color: $white
+  z-index: 200
+  position: relative
+  padding: 5rem 6rem
+  @media screen and (min-width: $tablet)
+    width: 40%
+
+  &:before
+    content: ''
+    z-index: 201
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(0,166,81,0.1)
+.form_buy
+  position: relative
+  z-index: 203
+  @media screen and (min-width: $mobile)
+    width: 80%
+    margin: auto
+  &_title
+    text-align: center
+    font-family: $fontUb
+    font-size: 5.33rem
+    color: $black
+    font-weight: 400
+    line-height: 6rem
+    margin-bottom: 5rem
+    @media screen and (min-width: $mobile)
+      font-size: 8.33rem
+      font-weight: 500
+      margin-bottom: 10rem
+      @media screen and (min-width: $tablet)
+        font-size: 5rem
+        line-height: 6rem
+        margin-bottom: 4rem
+  &_input
+    z-index: 203
+    @media screen and (min-width: $tablet)
+      margin-bottom: 6rem
+  &_btn
+    width: 100%
+    font-size: 3rem
+    line-height: 4rem
+    color: $white
+    font-family: $fontUb
+    @media screen and (min-width: $tablet)
+      font-size: 1.8rem
+      line-height: 2.7rem
+.pop_up_thanks
+  display: none
+  width: 100%
+  height: 100%
+  background-color: $white
+  z-index: 200
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  &_open
+    display: flex
+    justify-content: center
+    align-items: center
+  &_text
+    position: relative
+    p
+      font-size: 6rem
+      line-height: 8rem
+      font-family: $fontUb
+      color: $black
+  &_icon
+    position: absolute
+    top: 2rem
+    left: -15vw
+    width: 30vw
+    img
+      width: 100%
+      height: auto
+
+//POP_UP_CALL
+.wrapper_pop_up_call
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+  background-color: rgba(255,255,255,0.95)
+  &_open
+    display: flex
+.pop_up_call
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+  display: flex
+  align-items: center
+  @media screen and (min-width: $tablet)
+    width: 80%
+    height: 90%
+.call_form
+  width: 100%
+.form_thanks
+  display: none
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  color: $green
+  font-size: 4.8rem
+  line-height: 6rem
+  font-family: $fontUb
+  font-weight: 600
+  z-index: 2
+  &_open
+    display: flex
+
+
+
+//POP UP CALC
+
+
+
+.wrapper_pop_up_calc
+  position: fixed
+  top: 0
+  left: 0
+  overflow: scroll
+  display: none
+  width: 100%
+  height: 100%
+  z-index: 200
+  @media screen and (min-width: $mobile)
+    background-color: rgba(255,255,255,0.9)
+
+  &_open
+    display: block
+    @media screen and (min-width: $mobile)
+      display: flex
+      align-items: center
+.pop_up_calc
+  z-index: 200
+  position: relative
+  overflow: hidden
+  @media screen and (min-width: $mobile)
+    width: 85%
+    margin: auto
+    overflow: scroll
+    box-shadow: 5px 10px 30px 0 rgba(0,0,0,0.15)
+    @media screen and (min-width: $tablet)
+      width: 75%
+      display: flex
+      overflow: hidden
+      flex-direction: row
+      padding-top: 5.4rem
+.choice_box
+  padding: 5rem 6rem
+  background-color: $white
+  @media screen and (min-width: $mobile)
+    padding: 5rem 8.33rem 3.5rem
+    @media screen and (min-width: $tablet)
+      width: 60%
+      padding: 3rem 5rem
+.calc_header
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  @media screen and (min-width: $mobile)
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+.choice_event
+  width: calc(50% - 1rem)
+  margin-bottom: 1.5rem
+  @media screen and (min-width: $mobile)
+    width: 33%
+    margin-bottom: 0
+  input
+    display: none
+    &:checked + label
+      background-color: #E4F5EC
+      //border: 1px solid rgba(0,166,81,0.2)
+      box-shadow: 5px 0 6px 0 rgba(0,166,81,0.2)
+  label
+    padding: 2rem 3rem
+    position: relative
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 2.33rem
+    line-height: 3.5rem
+    font-family: $fontUb
+    color: $black
+    font-weight: 600
+    border-radius: 10px
+    box-shadow: 5px 0 6px 0 rgba(0,0,0,0.11)
+    background-color: $white
+    @media screen and (min-width: $mobile)
+      font-size: 2.66rem
+      line-height: 4rem
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
+        padding: 1.5rem 3rem
+        border-radius: 10px 10px 0px 0px
+  &:last-child
+    width: 100%
+    margin-bottom: 0
+    @media screen and (min-width: $mobile)
+      width: 33%
+.calc_title
+  padding: 0 9rem
+  margin-top: 8.33rem
+  margin-bottom: 15rem
+  display: flex
+  flex-direction: column
+  width: 100%
+  align-items: center
+  @media screen and (min-width: $tablet)
+    margin-top: 0
+    margin-bottom: 5.5rem
+  h3
+    font-family: $fontUb
+    font-size: 4rem
+    line-height: 5rem
+    color: $black
+    padding-left: 25%
+    position: relative
+    font-weight: 600
+    @media screen and (min-width: $mobile)
+      padding-left: 9%
+      @media screen and (min-width: $tablet)
+        font-size: 2.4rem
+        line-height: 3rem
+        padding-left: 15%
+    &:before
+      content: ''
+      width: 20%
+      height: 1px
+      background-color: $green
+      position: absolute
+      top: 50%
+      left: 10%
+      transform: translate(-50%,-50%)
+.calc_subtitle
+  font-size: 3rem
+  line-height: 2.7rem
+  font-family: $fontUb
+  color: $black
+  @media screen and (min-width: $tablet)
+    font-size: 1.8rem
+    line-height: 2.7rem
+.calc_quantity
+  margin-bottom: 8.33rem
+  @media screen and (min-width: $tablet)
+    margin-bottom: 5rem
+  &_title
+    font-size: 2.66rem
+    font-weight: 400
+    line-height: 2.4rem
+    color: $black
+    font-family: $fontUb
+    margin-bottom: 3.33rem
+    @media screen and (min-width: $mobile)
+      font-size: 3rem
+      line-height: 4.5rem
+      @media screen and (min-width: $tablet)
+        font-size: 1.8rem
+        line-height: 2.7rem
+        margin-bottom: 2.5rem
+  &_check
+    position: relative
+    &_number
+      padding: 1rem 2rem
+      border-radius: 10px
+      border: 1px solid #EBEBEB
+      position: absolute
+      top: -8rem
+      right: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      @media screen and (min-width: $tablet)
+        padding: 0.5rem 1rem
+        top: -5.5rem
+      p
+        font-family: $fontUb
+        font-size: 2.66rem
+        line-height: 3rem
+        color: #818181
+        @media screen and (min-width: $tablet)
+          font-size: 1.6rem
+          line-height: 2.4rem
+        span
+          font-family: $fontUb
+          font-size: 2.33rem
+          color: #818181
+          @media screen and (min-width: $tablet)
+            font-size: 1.2rem
+            line-height: 2rem
+    input[type='range']
+      -webkit-appearance: none
+      width: 100%
+      outline: none
+      background: -webkit-linear-gradient(left,#00A651 0%,#00A651 20%,#EBEBEB 20%, #EBEBEB 100%)
+    input[type='range']::-webkit-slider-thumb
+      -webkit-appearance: none
+      height: 4.5rem
+      width: 4.5rem
+      border: none
+      margin-top: -2rem
+      border-radius: 4.5rem
+      background: #818181
+      cursor: pointer
+      @media screen and (min-width: $tablet)
+        height: 2.5rem
+        width: 2.5rem
+        margin-top: -1.2rem
+    input[type='range']::-moz-range-thumb
+      -moz-appearance: none
+      height: 4.5rem
+      width: 4.5rem
+      margin-top: -2rem
+      border: none
+      border-radius: 4.5rem
+      background: #818181
+      cursor: pointer
+      @media screen and (min-width: $tablet)
+        height: 2.5rem
+        width: 2.5rem
+        margin-top: -1.2rem
+    input[type=range]:focus
+      outline: none
+      border: none
+    //input[type=range]::-ms-track
+    //  outline: none
+    //  width: 100%
+    //  cursor: pointer
+    //  background: transparent
+    //  border-color: transparent
+    //  color: transparent
+    //  height: 2px
+    //  background: -ms-linear-gradient(left,#00A651 0%,#00A651 20%, #EBEBEB 20%, #EBEBEB 100% )
+    input[type=range]::-webkit-slider-runnable-track
+      width: 100%
+      height: 2px
+      //background: -webkit-linear-gradient(left, #00A651 0%,#00A651 20%,#EBEBEB 20%, #EBEBEB 100% )
+      cursor: pointer
+      outline: none
+    input[type=range]::-moz-range-track
+      outline: none
+      width: 100%
+      height: 2px
+      background: -moz-linear-gradient(left,#00A651 0%,#00A651 20%,#EBEBEB  20%, #EBEBEB 100% )
+      cursor: pointer
+
+
+.calc_extra
+  &_title
+    font-size: 2.66rem
+    font-weight: 400
+    line-height: 2.4rem
+    color: $black
+    font-family: $fontUb
+    margin-bottom: 3.33rem
+    @media screen and (min-width: $mobile)
+      font-size: 3rem
+      line-height: 4.5rem
+      @media screen and (min-width: $tablet)
+        font-size: 1.8rem
+        line-height: 2.7rem
+.choice_extra_services
+  margin-bottom: 8.33rem
+  @media screen and (min-width: $mobile)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  .choice_extra
+    margin-bottom: 1.5rem
+    @media screen and (min-width: $mobile)
+      width: calc(50% - 2.5rem)
+      margin-bottom: 0
+    &:last-child
+      margin-bottom: 0
+    input
+      display: none
+      &:checked + label
+        border: 1px solid $green
+    label
+      padding: 2rem 3rem
+      position: relative
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      font-size: 2.66rem
+      line-height: 4rem
+      font-family: $fontUb
+      color: #818181
+      font-weight: 400
+      border-radius: 10px
+      background-color: $white
+      border: 1px solid #EBEBEB
+      @media screen and (min-width: $mobile)
+        padding: 3.33rem 1.5rem
+        @media screen and (min-width: $tablet)
+          padding: 1rem 2rem
+          font-size: 1.8rem
+          line-height: 2.7rem
+.full_price
+  position: relative
+  padding: 5rem 6rem
+  background-color: rgb(229,246,238)
+  @media screen and (min-width: $mobile)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 5rem 8.33rem
+    @media screen and (min-width: $tablet)
+      padding: 3rem 5rem
+      flex-direction: column
+  &:before
+    position: absolute
+    content: ""
+    width: calc(100% - 12rem)
+    height: 1px
+    top: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $green
+    @media screen and (min-width: $tablet)
+      width: 1px
+      height: 70%
+      left: 0
+      top: 50%
+  &_title
+    font-size: 3rem
+    line-height: 4.5rem
+    font-family: $fontUb
+    color: $black
+    font-weight: 600
+    margin-bottom: 3.33rem
+    @media screen and (min-width: $mobile)
+      width: 100%
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
+        margin-bottom: 2rem
+.price_person
+  width: 100%
+  padding: 5rem 0
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  background: rgb(168,255,120)
+  background: -moz-linear-gradient(left, rgb(168,255,120) 0%, rgb(120,255,214) 100%)
+  background: -webkit-linear-gradient(left, rgb(168,255,120) 0%, rgb(120,255,214) 100%)
+  background: linear-gradient(to right, rgb(168,255,120) 0%, rgb(120,255,214) 100%)
+  border-radius: 10px
+  font-family: $fontUb
+  font-weight: 400
+  color: $white
+  font-size: 3rem
+  line-height: 3rem
+  margin-bottom: 8.33rem
+  @media screen and (min-width: $mobile)
+    width: calc(50% - 1.5rem)
+    margin-bottom: 0
+    padding: 4.5rem 3.33rem
+    height: 18rem
+    @media screen and (min-width: $tablet)
+      width: 100%
+      height: 10rem
+      padding: 2rem 0
+      font-size: 2.4rem
+      line-height: 2.4rem
+      margin-bottom: 5rem
+
+  &_value
+    font-family: $fontUb
+    font-weight: 400
+    color: $white
+    font-size: 8.33rem
+    line-height: 8rem
+    margin-right: 1.5rem
+    @media screen and (min-width: $tablet)
+      font-size: 5rem
+      line-height: 5rem
+
+.full_price_option
+  margin-bottom: 8.33rem
+  @media screen and (min-width: $mobile)
+    margin-bottom: 0
+    width: calc(50% - 1.5rem)
+    @media screen and (min-width: $tablet)
+      width: 100%
+  .option
+    margin-bottom: 4rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    @media screen and (min-width: $mobile)
+      margin-bottom: 3rem
+      @media screen and (min-width: $tablet)
+        margin-bottom: 2rem
+      &:nth-last-child(2)
+        margin-bottom: 10rem
+        @media screen and (min-width: $tablet)
+          margin-bottom: 5vh
+    &_title
+      font-size: 2.33rem
+      font-family: $fontUb
+      line-height: 4rem
+      color: #818181
+      @media screen and (min-width: $mobile)
+        font-size: 2.66rem
+        line-height: 4rem
+        @media screen and (min-width: $tablet)
+          font-size: 1.6rem
+          line-height: 2.4rem
+    &_value
+      display: flex
+      text-align: center
+      justify-content: center
+      font-size: 2.66rem
+      line-height: 4rem
+      color: $black
+      font-family: $fontUb
+      font-weight: 500
+      @media screen and (min-width: $tablet)
+        font-size: 1.6rem
+        line-height: 2.4rem
+      span
+        font-weight: 400
+        margin-left: 1rem
+    &_sum
+      @media screen and (min-width: $mobile)
+        margin-bottom: 1rem
+      &_title
+        font-family: $fontUb
+        font-weight: 400
+        font-size: 3rem
+        line-height: 4.5rem
+        color: #818181
+        @media screen and (min-width: $tablet)
+          font-size: 1.8rem
+          line-height: 2.7rem
+      &_value
+        display: flex
+        text-align: center
+        justify-content: center
+        font-size: 3rem
+        line-height: 4.5rem
+        color: $black
+        font-family: $fontUb
+        font-weight: 500
+        @media screen and (min-width: $tablet)
+          font-size: 1.8rem
+          line-height: 2.7rem
+        span
+          font-weight: 400
+          margin-left: 1rem
+.full_price_btn
+  @media screen and (min-width: $mobile)
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 5rem
+    padding: 0 8.33rem
+    @media screen and (min-width: $tablet)
+      position: static
+      padding: 0
+  button
+    width: 100%
+    color: $white
+    font-size: 3rem
+    line-height: 4.5rem
+    @media screen and (min-width: $mobile)
+      width: calc(50% - 1.5rem)
+      @media screen and (min-width: $tablet)
+        width: 100%
+        font-size: 1.8rem
+        line-height: 2.7rem
+
+
+.wrapper_full_price
+  position: relative
+  overflow: hidden
+  @media screen and (min-width: $tablet)
+    width: 40%
+.wrapper_calc_form
+  background-color: #e5f6ee
+  padding: 5rem 6rem
+  position: absolute
+  top: 0
+  right: -100%
+  transition: right 500ms
+  width: 100%
+  height: 100%
+  @media screen and (min-width: $mobile)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    @media screen and (min-width: $tablet)
+      padding: 3rem 5rem
+      flex-direction: column
+      justify-content: space-between
+.calc_form
+  @media screen and (min-width: $mobile)
+    width: calc(50% - 1.5rem)
+    margin: 0
+    position: relative
+    @media screen and (min-width: $tablet)
+      width: 100%
+  &_title
+    margin-bottom: 10vh
+    @media screen and (min-width: $mobile)
+      width: 100%
+      margin-bottom: 5rem
+      font-size: 5rem
+      line-height: 5rem
+      @media screen and (min-width: $tablet)
+        font-size: 2.4rem
+        line-height: 3rem
+        margin-bottom: 3rem
+        padding-bottom: 1rem
+  &_input
+    margin-bottom: 5vh
+    @media screen and (min-width: $mobile)
+      margin-bottom: 5rem
+      @media screen and (min-width: $tablet)
+        margin-bottom: 3rem
+      input
+        text-indent: 15rem
+        @media screen and (min-width: $tablet)
+          text-indent: 9rem
+      label
+        top: 0
+        font-size: 2.66rem
+        @media screen and (min-width: $tablet)
+          font-size: 1.8rem
+          line-height: 2.7rem
+
+
+    &:nth-child(3)
+      margin-bottom: 10vh
+      @media screen and (min-width: $mobile)
+        margin-bottom: 0
+        @media screen and (min-width: $tablet)
+          margin-bottom: 7rem
+  &_btn
+    @media screen and (min-width: $mobile)
+      position: absolute
+      top: 9rem
+      right: calc(-100% - 3rem )
+      @media screen and (min-width: $tablet)
+        width: 100%
+        position: static
+.wrapper_calc_btn_return
+  @media screen and (min-width: $mobile)
+    padding: 0 6rem
+    width: 100%
+    position: absolute
+    bottom: 5rem
+    left: 0
+    display: flex
+    justify-content: flex-end
+    @media screen and (min-width: $tablet)
+      position: static
+      padding: 0
+.calc_btn_return
+  margin-top: 5rem
+  background-color: $white
+  border: 1px solid $green
+  width: 100%
+  font-family: $fontUb
+  font-size: 3rem
+  color: $green
+  @media screen and (min-width: $mobile)
+    width: calc(50% - 1.5rem)
+    @media screen and (min-width: $tablet)
+      width: 100%
+      margin-top: 0
+      font-size: 1.8rem
+      line-height: 2.7rem
+      &:hover
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15)
+
+
+.pop_up_close_calc
+  @media screen and (min-width: $mobile)
+    top: 12rem
+    @media screen and (min-width: $tablet)
+      top: 7rem
+      right: 1rem
+
+
+
+
+

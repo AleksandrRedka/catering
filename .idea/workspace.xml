@@ -2,16 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac689dcc-ceb6-427a-9363-4af119cba24b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/_main_about_us.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_main_about_us.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/_main_portfolio.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_main_portfolio.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/_pop_up.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_pop_up.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/_portfolio_article.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_portfolio_article.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/_reviews.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_reviews.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/_service.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/_service.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assest/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assest/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assest/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_blog_article.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_blog_article.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_form.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_form.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_main_about_us.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main_about_us.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_main_portfolio.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main_portfolio.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_main_services.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main_services.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_main_slider.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_main_slider.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_merch.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_merch.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_page_blog.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_page_blog.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_page_contacts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_page_contacts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_page_portfolio.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_page_portfolio.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_page_services.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_page_services.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_pop_up.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_pop_up.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_portfolio_article.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_portfolio_article.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_reviews.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_reviews.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/_service.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_service.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/Palatino Linotype.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/Palatino Linotype.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/pala.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/pala.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/palab.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/palab.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/palabi.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/palabi.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/palai.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/palai.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/palatino.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/palatino.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-300.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-300.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-300.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-300.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-300italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-300italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-300italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-300italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-500.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-500.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-500.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-500.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-500italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-500italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-500italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-500italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-700.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-700.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-700.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-700.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-700italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-700italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-700italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-700italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-italic.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu-v13-latin-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu-v13-latin-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/fonts/ubuntu.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fonts/ubuntu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/2W9B9742.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/2W9B9742.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/about 2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/about 2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/about.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/footer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/footer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/header 2  portfolio 5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/header 2  portfolio 5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/photo_2019-02-12_15-12-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/photo_2019-02-12_15-12-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/portholio 1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portholio 1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/portholio 2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portholio 2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/portholio 3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portholio 3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/portholio 4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/portholio 4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/Screen Shot 2018-11-21 at 8.20.11 AM-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/Screen Shot 2018-11-21 at 8.20.11 AM.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/Screen Shot 2018-11-21 at 8.20.11 AM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/Screen Shot 2018-11-21 at 8.20.11 AM@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/Screen Shot 2018-11-21 at 8.20.11 AM@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/hoodie_b_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/hoodie_b_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/hoodie_b_2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/hoodie_b_2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/hoodie_w_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/hoodie_w_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/hoodie_w_2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/hoodie_w_2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/notepad_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/notepad_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/notepad_1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/notepad_1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/notepad_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/notepad_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/notepad_2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/notepad_2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/notepad_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/notepad_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/notepad_3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/notepad_3@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/socks_b_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/socks_b_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/socks_b_1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/socks_b_1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/socks_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/socks_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/socks_back@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/socks_back@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/tshirt_w_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/tshirt_w_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/tshirt_w_1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/tshirt_w_1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/tshirt_w_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/tshirt_w_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/product/tshirt_w_2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/product/tshirt_w_2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle39.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle39.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle39@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle39@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle40.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle41.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle41.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle41@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle41@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle42.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle42@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle42@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle43.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle43.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/reviews/Rectangle43@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/reviews/Rectangle43@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/001-facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/001-facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/002-instagram-black.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/002-instagram-black.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Group 10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Group 10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Group 155.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Group 155.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Group 156.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Group 156.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Group 19.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Group 19.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Group 20.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Group 20.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Path 15.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Path 15.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol 10 – 26.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol 10 – 26.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol 11 – 12.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol 11 – 12.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol 12 – 12.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol 12 – 12.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol 14 – 11.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol 14 – 11.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol 15 – 11.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol 15 – 11.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol 9 – 26.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol 9 – 26.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol15–7.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol15–7.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/Symbol9–1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/Symbol9–1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/facebook_black.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/facebook_black.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/phone-call_header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/phone-call_header.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/photo_2019-01-15_16-06-22.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/photo_2019-01-15_16-06-22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/properly.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/properly.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_6.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_7.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_7.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/services_icon_8.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/services_icon_8.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/svg/shop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/svg/shop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/owlcarousel/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/owlcarousel/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/ajax-loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/fonts/slick.eot" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/fonts/slick.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/fonts/slick.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/fonts/slick.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/fonts/slick.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/fonts/slick.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick-theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick-theme.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/js/slick/slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/slick/slick.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog_article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
@@ -48,43 +179,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assest/css/_main_slider.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="159" column="15" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assest/css/_reviews.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="99" column="51" selection-start-line="99" selection-start-column="51" selection-end-line="99" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assest/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="273" column="13" lean-forward="true" selection-start-line="273" selection-start-column="13" selection-end-line="273" selection-end-column="13" />
-              <folding>
-                <element signature="e#6951#8623#0" />
-                <element signature="e#8697#9614#0" />
-                <element signature="e#9663#10267#0" />
-                <element signature="e#10330#10887#0" />
-                <element signature="e#11007#11307#0" />
-                <element signature="e#11438#11943#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <replaceStrings>
@@ -107,36 +202,52 @@
         <option value="$PROJECT_DIR$/assest/css/_page_contacts.sass" />
         <option value="$PROJECT_DIR$/assest/css/_page_portfolio.sass" />
         <option value="$PROJECT_DIR$/assest/css/_header.sass" />
-        <option value="$PROJECT_DIR$/assest/css/_main_slider.sass" />
         <option value="$PROJECT_DIR$/assest/css/_form.sass" />
         <option value="$PROJECT_DIR$/assest/css/_footer.sass" />
         <option value="$PROJECT_DIR$/assest/css/_page_services.sass" />
         <option value="$PROJECT_DIR$/assest/css/_page_blog.sass" />
-        <option value="$PROJECT_DIR$/assest/css/style.sass" />
         <option value="$PROJECT_DIR$/assest/css/_merch.sass" />
-        <option value="$PROJECT_DIR$/assest/css/_main_portfolio.sass" />
-        <option value="$PROJECT_DIR$/assest/css/_portfolio_article.sass" />
-        <option value="$PROJECT_DIR$/assest/css/_service.sass" />
         <option value="$PROJECT_DIR$/assest/css/_main_about_us.sass" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/services.html" />
+        <option value="$PROJECT_DIR$/assest/css/_pop_up.sass" />
+        <option value="$PROJECT_DIR$/assest/css/_main_slider.sass" />
+        <option value="$PROJECT_DIR$/assest/css/_main_portfolio.sass" />
+        <option value="$PROJECT_DIR$/assest/css/_reviews.sass" />
+        <option value="$PROJECT_DIR$/assest/css/_service.sass" />
+        <option value="$PROJECT_DIR$/assest/css/style.sass" />
+        <option value="$PROJECT_DIR$/assest/js/script.js" />
+        <option value="$PROJECT_DIR$/assest/css/_portfolio_article.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_merch.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_pop_up.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_page_blog.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_blog_article.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_main_services.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_main_about_us.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_page_portfolio.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_portfolio_article.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_page_contacts.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_footer.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_form.sass" />
         <option value="$PROJECT_DIR$/blog.html" />
-        <option value="$PROJECT_DIR$/blog_article.html" />
         <option value="$PROJECT_DIR$/contacts.html" />
         <option value="$PROJECT_DIR$/merch.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
         <option value="$PROJECT_DIR$/portfolio_article.html" />
         <option value="$PROJECT_DIR$/service.html" />
-        <option value="$PROJECT_DIR$/assest/css/_pop_up.sass" />
-        <option value="$PROJECT_DIR$/assest/css/_reviews.sass" />
-        <option value="$PROJECT_DIR$/assest/js/script.js" />
+        <option value="$PROJECT_DIR$/services.html" />
+        <option value="$PROJECT_DIR$/assets/css/_service.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_header.sass" />
+        <option value="$PROJECT_DIR$/blog_article.html" />
+        <option value="$PROJECT_DIR$/assets/css/_main_portfolio.sass" />
+        <option value="$PROJECT_DIR$/assets/css/_main_slider.sass" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="11" />
     <option name="y" value="23" />
     <option name="width" value="1478" />
@@ -160,18 +271,18 @@
             <path>
               <item name="Catering" type="b2602c69:ProjectViewProjectNode" />
               <item name="Catering" type="462c0819:PsiDirectoryNode" />
-              <item name="assest" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Catering" type="b2602c69:ProjectViewProjectNode" />
               <item name="Catering" type="462c0819:PsiDirectoryNode" />
-              <item name="assest" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Catering" type="b2602c69:ProjectViewProjectNode" />
               <item name="Catering" type="462c0819:PsiDirectoryNode" />
-              <item name="assest" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -185,7 +296,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assest/js/owl-carousel" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -196,6 +307,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assest/js/owl-carousel" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assest" />
@@ -241,16 +355,15 @@
       <workItem from="1557212303657" duration="33089000" />
       <workItem from="1557487404015" duration="12000" />
       <workItem from="1557487432635" duration="10142000" />
-      <workItem from="1557755915116" duration="51566000" />
+      <workItem from="1557755915116" duration="101798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315005000" />
+    <option name="totallyTimeSpent" value="365237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19456366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -265,7 +378,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286517" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30605382" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.042134833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -277,57 +390,54 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assest/img/svg/Group 156.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/svg/photo_2019-01-15_16-06-22.png">
+    <entry file="file://$PROJECT_DIR$/assets/img/svg/photo_2019-01-15_16-06-22.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assest/img/svg/photo_2019-01-15_16-06-22@2x.png" />
-    <entry file="file://$PROJECT_DIR$/assest/img/about.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/about.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/header.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/header.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/portholio 4.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/portholio 4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/portholio 3.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/portholio 3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/portholio 1.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/portholio 1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/portholio 2.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/portholio 2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/2W9B9742.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/2W9B9742.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/header 2  portfolio 5.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/header 2  portfolio 5.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/photo_2019-02-12_15-12-17.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/photo_2019-02-12_15-12-17.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/footer.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/footer.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/style.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/img/about 2.jpg">
+    <entry file="file://$PROJECT_DIR$/assets/img/about 2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/reset.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/reset.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/style.css.map">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css.map">
       <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/fonts/ubuntu.css">
+    <entry file="file://$PROJECT_DIR$/assets/fonts/ubuntu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-490">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="24" />
@@ -336,20 +446,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service.sass" />
     <entry file="file://$USER_HOME$/Downloads/NX-Language-Tutorial.ninox" />
-    <entry file="file://$PROJECT_DIR$/assest/css/_main_services.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_blog_article.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -357,42 +453,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="178" column="14" lean-forward="true" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_footer.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_page_services.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_page_services.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_page_blog.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-grid.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="114">
+          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_form.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_reviews.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="44" />
+        <state relative-caret-position="368">
+          <caret line="228" column="20" lean-forward="true" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/js/jquery.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/owlcarousel/owl.carousel.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -401,125 +486,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/bootstrap-grid.min.css">
+    <entry file="file://$PROJECT_DIR$/assets/css/_page_blog.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        <state relative-caret-position="277">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/style.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_pop_up.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="242">
+          <caret line="155" column="16" lean-forward="true" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_merch.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_main_services.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="7">
+          <caret line="82" column="28" lean-forward="true" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_page_contacts.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_merch.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="116" column="11" lean-forward="true" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_page_contacts.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_footer.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_main_about_us.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <caret line="135" column="14" lean-forward="true" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_page_portfolio.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_page_portfolio.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="76" column="18" lean-forward="true" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        <state relative-caret-position="317">
+          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_main_portfolio.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_portfolio_article.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="117" column="18" lean-forward="true" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+        <state relative-caret-position="388">
+          <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_main_about_us.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_form.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="105" column="44" lean-forward="true" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_portfolio_article.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="248" column="18" lean-forward="true" selection-start-line="248" selection-start-column="18" selection-end-line="248" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_service.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        <state relative-caret-position="370">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="235" column="65" selection-start-line="235" selection-start-column="65" selection-end-line="235" selection-end-column="65" />
+        <state relative-caret-position="166">
+          <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="167" selection-end-column="76" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#a#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog_article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="272" column="65" selection-start-line="272" selection-start-column="65" selection-end-line="272" selection-end-column="65" />
-          <folding>
-            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="220" column="65" selection-start-line="220" selection-start-column="65" selection-end-line="220" selection-end-column="65" />
-          <folding>
-            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio_article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="242" column="65" selection-start-line="242" selection-start-column="65" selection-end-line="242" selection-end-column="65" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="169" column="65" selection-start-line="169" selection-start-column="65" selection-end-line="169" selection-end-column="65" />
+        <state relative-caret-position="142">
+          <caret line="142" column="76" selection-start-line="142" selection-start-column="76" selection-end-line="142" selection-end-column="76" />
           <folding>
             <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -530,30 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_pop_up.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1001">
-          <caret line="923" column="17" lean-forward="true" selection-start-line="923" selection-start-column="17" selection-end-line="923" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="304" column="65" selection-start-line="304" selection-start-column="65" selection-end-line="304" selection-end-column="65" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/merch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="366" column="74" selection-start-line="366" selection-start-column="74" selection-end-line="366" selection-end-column="76" />
+        <state relative-caret-position="272">
+          <caret line="314" column="76" selection-start-line="314" selection-start-column="76" selection-end-line="314" selection-end-column="76" />
           <folding>
             <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -562,47 +597,141 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="181" column="76" selection-start-line="181" selection-start-column="76" selection-end-line="181" selection-end-column="76" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="610" column="39" selection-start-line="610" selection-start-column="39" selection-end-line="610" selection-end-column="39" />
+        <state relative-caret-position="254">
+          <caret line="582" column="76" selection-start-line="582" selection-start-column="76" selection-end-line="582" selection-end-column="76" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#3;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#6;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#7;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="152" column="76" selection-start-line="152" selection-start-column="76" selection-end-line="152" selection-end-column="76" />
+          <folding>
+            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="34" column="89" lean-forward="true" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+          <folding>
+            <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="481" column="8" lean-forward="true" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="8" />
+          <folding>
+            <element signature="e#87#3336#0" />
+            <element signature="e#3387#7050#0" />
+            <element signature="e#7105#7357#0" />
+            <element signature="e#7404#7764#0" />
+            <element signature="e#7824#8188#0" />
+            <element signature="e#8236#9261#0" />
+            <element signature="e#9310#10457#0" />
+            <element signature="e#10512#11494#0" />
+            <element signature="e#11546#13272#0" />
+            <element signature="e#13346#14441#0" />
+            <element signature="e#14490#15094#0" />
+            <element signature="e#15157#15714#0" />
+            <element signature="e#15735#16694#0" />
+            <element signature="e#15834#16134#0" />
+            <element signature="e#16188#16699#0" />
+            <element signature="e#16753#17326#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_blog_article.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_main_portfolio.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="513" column="75" selection-start-line="513" selection-start-column="75" selection-end-line="513" selection-end-column="75" />
+        <state relative-caret-position="136">
+          <caret line="260" column="32" selection-start-line="260" selection-start-column="32" selection-end-line="260" selection-end-column="79" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#button#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -611,32 +740,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_main_slider.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_service.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="159" column="15" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
+        <state relative-caret-position="184">
+          <caret line="170" column="16" lean-forward="true" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/css/_reviews.sass">
+    <entry file="file://$PROJECT_DIR$/assets/css/_header.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="99" column="51" selection-start-line="99" selection-start-column="51" selection-end-line="99" selection-end-column="51" />
+        <state relative-caret-position="330">
+          <caret line="199" column="15" lean-forward="true" selection-start-line="199" selection-start-column="15" selection-end-line="199" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assest/js/script.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/_main_slider.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="273" column="13" lean-forward="true" selection-start-line="273" selection-start-column="13" selection-end-line="273" selection-end-column="13" />
-          <folding>
-            <element signature="e#6951#8623#0" />
-            <element signature="e#8697#9614#0" />
-            <element signature="e#9663#10267#0" />
-            <element signature="e#10330#10887#0" />
-            <element signature="e#11007#11307#0" />
-            <element signature="e#11438#11943#0" />
-          </folding>
+        <state relative-caret-position="445">
+          <caret line="184" column="19" lean-forward="true" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="19" />
         </state>
       </provider>
     </entry>
