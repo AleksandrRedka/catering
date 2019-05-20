@@ -1205,6 +1205,7 @@ header {
   font-size: 2rem;
   line-height: 3.66rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 @media screen and (min-width: 960px) {
   .portfolio_category_item {
