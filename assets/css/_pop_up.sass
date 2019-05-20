@@ -59,6 +59,10 @@
       width: 90%
       display: flex
       justify-content: space-between
+  &_post
+    display: block
+    @media screen and (min-width: $tablet)
+      display: flex
 .buy_product
   width: 100%
   height: auto
@@ -280,7 +284,7 @@
         line-height: 2.4rem
   &_quantity
     font-size: 2.44rem
-    line-height: 4rem
+    line-height: 2.44rem
     font-family: $fontUb
     font-weight: 600
     margin-right: 2rem
@@ -291,7 +295,7 @@
     font-weight: 500
     @media screen and (min-width: $tablet)
       font-size: 3.6rem
-      line-height: 4.4rem
+      line-height: 3.6rem
     p
       display: inline-block
       font-size: 2.66rem
@@ -374,11 +378,17 @@
       line-height: 8rem
       font-family: $fontUb
       color: $black
+      @media screen and (min-width: $tablet)
+        font-size: 4rem
+        line-height: 4.5rem
   &_icon
     position: absolute
     top: 2rem
     left: -15vw
     width: 30vw
+    @media screen and (min-width: $tablet)
+      width: 15vw
+      left: -10vw
     img
       width: 100%
       height: auto

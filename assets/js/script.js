@@ -70,7 +70,7 @@ $(document).ready(
         })();
         //Gallery Slider
         (function () {
-            if($(window).width() <= '1023') {
+            if($(window).width() <= '768') {
                 $('.gallery_slider').slick({
                     dots: false,
                     infinite: true,
@@ -193,12 +193,12 @@ $(document).ready(
             function postOrder(e) {
                 e.preventDefault();
                 $('body').css('overflow', 'hidden');
-                $('.pop_up_buy').css('display', 'none');
+                $('.pop_up_buy').addClass('pop_up_buy_post');
                 $('.pop_up_thanks').addClass('pop_up_thanks_open');
                 setTimeout(function () {
                         closeShop();
-                        $('body').css('overflow', 'auto');
-                        $('.pop_up_buy').css('display', 'block');
+                        $('body').css('overflow', 'visible');
+                        $('.pop_up_buy').removeClass('.pop_up_buy_post');
                         $('.pop_up_thanks').removeClass('pop_up_thanks_open');
                     }
                     , 2000)
@@ -364,8 +364,12 @@ $(document).ready(
             let dataImages = $('.portfolio_data').children('.portfolio_data_box');
             parentCategories.on('click', 'div', function (e) {
                 portfolioSlider.empty();
-                portfolioSlider.trigger('destroy.owl.carousel');
-                portfolioSlider.slick('unslick');
+                if($(window).width() > '980'){
+                    portfolioSlider.trigger('destroy.owl.carousel');
+                };
+                if ($(window).width() < '980') {
+                    portfolioSlider.slick('unslick');
+                };
                 indexTarget = $(this).index() - 1;
                 if(indexTarget => 0){
                     let arrDataSrc =$(dataImages[indexTarget]).find('span');
@@ -411,7 +415,7 @@ $(document).ready(
                         addClassPortfolio();
                     });
                 };
-                if ($(window).width() <= '980') {
+                if ($(window).width() < '980') {
                     $('.portfolio_slider').slick({
                         dots: false,
                         infinite: true,

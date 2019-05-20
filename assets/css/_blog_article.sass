@@ -161,10 +161,13 @@
           color: $black
           @media screen and (min-width: $mobile)
             width: 100%
-            @media screen and (min-width: 1030px)
-              font-size: 1.6rem
-              line-height: 2.4rem
-              height: 7.3rem
+            @media screen and (min-width: $tablet)
+              font-size: 2.66rem
+              line-height: 3.66rem
+              @media screen and (min-width: 1030px)
+                font-size: 1.6rem
+                line-height: 2.4rem
+                height: 7.3rem
 
       &_more
         margin-top: 1.7rem
